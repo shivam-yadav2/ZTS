@@ -1,6 +1,8 @@
 @extends('master.layout')
+
+
 @section('style')
-<style>
+    <style>
         body {
             background: #f8f9fa;
         }
@@ -23,10 +25,9 @@
             color: white;
         }
     </style>
-@endsection
-@section('content')
-
-<div class="login-card">
+    @endsection
+   @section('content')
+    <div class="login-card">
         <h3>Login</h3>
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -35,15 +36,15 @@
         @endif
         <form method="POST" action="{{ url('loginCheck') }}">
             @csrf
-            <div class="mb-3">
+            <div class="mb-1">
                 <label for="email" class="form-label">Email Address</label>
                 <input type="email" class="form-control" id="email" name="email" required autofocus>
             </div>
-            <div class="mb-3">
+            <div class="mb-2">
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <button type="submit" class="btn">Login</button>
         </form>
     </div>
-    @endsection
+ @endsection

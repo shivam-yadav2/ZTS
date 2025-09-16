@@ -1,8 +1,5 @@
 @extends('master.layout')
 @section('content')
-
-
-
         <!-- Search Modal -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -25,8 +22,6 @@
         <!-- ============================================================== -->
         <div class="page-content">
             <div class="page-container">
-
-                
                 <div class="page-title-head d-flex align-items-center gap-2">
                     <div class="flex-grow-1">
                         <h4 class="fs-16 text-uppercase fw-bold mb-0">Dashboard</h4>
@@ -141,4 +136,4 @@
 
             </div> <!-- container -->
 </div>
-            @endsection    
+@endsection    
