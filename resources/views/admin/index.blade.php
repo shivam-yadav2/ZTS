@@ -20,7 +20,7 @@
         <!-- ============================================================== -->
         <!-- Start Page Content here -->
         <!-- ============================================================== -->
-        <div class="page-content">
+        <div class="">
             <div class="page-container">
                 <div class="page-title-head d-flex align-items-center gap-2">
                     <div class="flex-grow-1">

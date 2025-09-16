@@ -6,7 +6,10 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryEventController;
 
 
-Route::get('/',[AdminController::class,'login']);
+Route::get('/admin/dashboard', function () {
+    return view('admin.index');
+});
+Route::get('/admin/login',[AdminController::class,'login']);
 Route::post('loginCheck',[AdminController::class,'loginCheck']);
 
 
