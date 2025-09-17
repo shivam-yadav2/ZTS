@@ -24,9 +24,15 @@ class AdminController extends Controller
                         session()->put('name',$data->name);
                         session()->put('id',$data->id);
                         session()->put('email',$data->email);
-                        return redirect('/')->with('success',"Admin Login Successfully!");
+                        return redirect()->intended('admin/admin_index')->with('success',"Admin Login Successfully!");
                     }
-                  
                     return back()->with('error',"Invalid email or password");
+    }
+
+    public function logout(Request $request){
+        $request->session()->flush();
+
+        // Redirect to login
+        return redirect('/')->with('success', 'Logged out successfully!');
     }
 }
