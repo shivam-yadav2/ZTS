@@ -76,6 +76,7 @@
          <div class="circle-shape"></div>
       </section>
       <!-- ==== / banner end ==== -->
+
         <!-- ==== difference section start ==== -->
       <section class="difference">
          <div class="container">
@@ -198,7 +199,7 @@
                   </div>
                </div>
             </div>
-            <div class="slider-navigation">
+            <div class="slider-navigation d-flex d-lg-none">
                <button type="button" aria-label="prev slide" title="prev slide" class="prev-difference slider-btn">
                   <i class="fa-solid fa-arrow-left"></i>
                </button>
@@ -212,6 +213,130 @@
             <img src="{{asset('frontend_assets/images/difference/shape-hand.png')}}" alt="Image">
          </div>
       </section>
+       <!-- ==== difference section end ==== -->
+
+         <!-- ==== blog section start ==== -->
+      <section class="blog">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-12 col-md-8 col-xl-7">
+                  <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
+                     <span class="sub-title"><i class="icon-donation"></i>Together For A Better Tomorrow</span>
+                     <h2 class="title-animation">Our  <span> Campaigns</span>
+                     </h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row gutter-40">
+               <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="blog__single-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                     <div class="blog__single van-tilt">
+                        <div class="blog__single-thumb">
+                           <a href="blog-details.html">
+                              <img src="{{asset('frontend_assets/images/blog/one.png')}}" alt="Image">
+                           </a>
+                           <div class="tag">
+                              <a href="blog-list.html"><i class="fa-solid fa-tags"></i>Health</a>
+                           </div>
+                        </div>
+                        <div class="blog__single-inner">
+                           <div class="blog__single-meta">
+                              <p><i class="icon-user"></i>Robert Fox</p>
+                              <p><i class="icon-message"></i>Comments (03)</p>
+                           </div>
+                           <div class="blog__single-content">
+                              <h5><a href="blog-details.html">IT Service Case Studies Accelerate
+                                    Business Fly Success Tech</a>
+                              </h5>
+                           </div>
+                           <div class="blog__single-cta">
+                              <a href="blog-details.html" aria-label="blog details" title="blog details">Read
+                                 More<i class="fa-solid fa-circle-arrow-right"></i></a>
+                           </div>
+                        </div>
+                        <img src="{{asset('frontend_assets/images/blog/spade.png')}}" alt="Image" class="spade-two">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="blog__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                     <div class="blog__single van-tilt">
+                        <div class="blog__single-thumb">
+                           <a href="blog-details.html">
+                              <img src="{{asset('frontend_assets/images/blog/two.png')}}" alt="Image">
+                           </a>
+                           <div class="tag">
+                              <a href="blog-list.html"><i class="fa-solid fa-tags"></i>Education</a>
+                           </div>
+                        </div>
+                        <div class="blog__single-inner">
+                           <div class="blog__single-meta">
+                              <p><i class="icon-user"></i>Robert Fox</p>
+                              <p><i class="icon-message"></i>Comments (08)</p>
+                           </div>
+                           <div class="blog__single-content">
+                              <h5><a href="blog-details.html">IT Service Case Studies Accelerate
+                                    Business Fly Success Tech</a>
+                              </h5>
+                           </div>
+                           <div class="blog__single-cta">
+                              <a href="blog-details.html" aria-label="blog details" title="blog details">Read
+                                 More<i class="fa-solid fa-circle-arrow-right"></i></a>
+                           </div>
+                        </div>
+                        <img src="{{asset('frontend_assets/images/blog/spade.png')}}" alt="Image" class="spade-two">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="blog__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                     <div class="blog__single van-tilt">
+                        <div class="blog__single-thumb">
+                           <a href="blog-details.html">
+                              <img src="{{asset('frontend_assets/images/blog/three.png')}}" alt="Image">
+                           </a>
+                           <div class="tag">
+                              <a href="blog-list.html"><i class="fa-solid fa-tags"></i>Food</a>
+                           </div>
+                        </div>
+                        <div class="blog__single-inner">
+                           <div class="blog__single-meta">
+                              <p><i class="icon-user"></i>Robert Fox</p>
+                              <p><i class="icon-message"></i>Comments (13)</p>
+                           </div>
+                           <div class="blog__single-content">
+                              <h5><a href="blog-details.html">IT Service Case Studies Accelerate
+                                    Business Fly Success Tech</a>
+                              </h5>
+                           </div>
+                           <div class="blog__single-cta">
+                              <a href="blog-details.html" aria-label="blog details" title="blog details">Read
+                                 More<i class="fa-solid fa-circle-arrow-right"></i></a>
+                           </div>
+                        </div>
+                        <img src="{{asset('frontend_assets/images/blog/spade.png')}}" alt="Image" class="spade-two">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="section__cta cta text-center">
+                     <a href="blog-list.html" aria-label="our blog" title="our blog" class="btn--primary">View
+                        All <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="blog-bg">
+            <img src="{{asset('frontend_assets/images/blog/blog-bg.png')}}" alt="Image">
+         </div>
+         <div class="spade">
+            <img src="{{asset('frontend_assets/images/blog/spade-base.png')}}" alt="Image" class="base-img">
+         </div>
+      </section>
+      <!-- ==== / blog section end ==== -->
+
       <!-- ==== help section start ==== -->
       <section class="help-two">
          <div class="container">
@@ -311,6 +436,7 @@
          </div>
       </section>
       <!-- ==== / help section end ==== -->
+
        <!-- ==== team section start ==== -->
       <section class="team">
          <div class="container">
@@ -319,8 +445,8 @@
                   <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
                      <span class="sub-title"><i class="icon-donation"></i>Start donating poor
                         people</span>
-                     <h2 class="title-animation">Meet Our Volunteer
-                        <span>Team</span> members
+                     <h2 class="title-animation">Meet Our 
+                        <span>Core Team</span> members
                      </h2>
                   </div>
                </div>
@@ -517,6 +643,315 @@
          </div>
       </section>
       <!-- ==== / team section end ==== -->
+
+        <!-- ==== cause slider two section start ==== -->
+      <section class="cause-two">
+         <div class="container-fluid">
+             <!-- 🔹 Add the heading row here -->
+      <div class="row justify-content-center">
+         <div class="col-12 col-md-8">
+            <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
+               <span class="sub-title">Our Mission</span>
+               <h2 class="title-animation mt-0 fw-7">
+                  Empowering lives with <span>hope</span>
+               </h2>
+            </div>
+         </div>
+      </div>
+      <!-- 🔹 Heading row ends -->
+            <div class="row">
+               <div class="col-12">
+                  <div class="cause-two__inner">
+                     <div class="slider-navigation">
+                        <button type="button" aria-label="prev slide" title="prev slide"
+                           class="prev-cause-two slider-btn">
+                           <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button type="button" aria-label="next slide" title="next slide"
+                           class="next-cause-two slider-btn slider-btn-next">
+                           <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                     </div>
+
+                     <div class="cause-two__slider swiper">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <div class="cause-two__slider-single">
+                                 <div class="cause-thumb">
+                                    <img src="{{asset('frontend_assets/images/mission/mission1.jpg')}}" alt="Image">
+                                    <a href="cause-details.html">
+                                       <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="cause-two__slider-single">
+                                 <div class="cause-thumb">
+                                    <img src="{{asset('frontend_assets/images/mission/mission2.jpg')}}" alt="Image">
+                                    <a href="cause-details.html">
+                                       <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="cause-two__slider-single">
+                                 <div class="cause-thumb">
+                                    <img src="{{asset('frontend_assets/images/mission/mission3.jpg')}}" alt="Image">
+                                    <a href="cause-details.html">
+                                       <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="cause-two__slider-single">
+                                 <div class="cause-thumb">
+                                    <img src="{{asset('frontend_assets/images/mission/mission4.jpg')}}" alt="Image">
+                                    <a href="cause-details.html">
+                                       <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- <div class="swiper-slide">
+                              <div class="cause-two__slider-single">
+                                 <div class="cause-thumb">
+                                    <img src="{{asset('frontend_assets/images/cause/seven.png')}}" alt="Image">
+                                    <a href="cause-details.html">
+                                       <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="cause-two__slider-single">
+                                 <div class="cause-thumb">
+                                    <img src="{{asset('frontend_assets/images/cause/seven.png')}}" alt="Image">
+                                    <a href="cause-details.html">
+                                       <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div> -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cause-two__content-slider swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="cause-content">
+                              <h4>Swasthya</h4>
+                              <!-- <p>Child & old care</p> -->
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="cause-content">
+                              <h4>Shisksha</h4>
+                              <!-- <p>Child & old care</p> -->
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="cause-content">
+                              <h4>Swarozgar</h4>
+                              <!-- <p>Child & old care</p> -->
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="cause-content">
+                              <h4>Soch</h4>
+                              <!-- <p>Child & old care</p> -->
+                           </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                           <div class="cause-content">
+                              <h4>old people & Child trouble</h4>
+                              <p>Child & old care</p>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="cause-content">
+                              <h4>old people & Child trouble</h4>
+                              <p>Child & old care</p>
+                           </div>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ==== / cause slider two section end ==== -->
+
+         <!-- ==== team section start ==== -->
+      <section class="team-three">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-12 col-lg-10 col-xl-6">
+                  <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
+                     <span class="sub-title"><i class="icon-donation"></i>Empowering Communities Through Leadership</span>
+                     <h2 class="title-animation">Leadership
+                        <span> Influencers </span> 
+                     </h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row gutter-40">
+               <div class="col-12 col-md-6 col-xl-4">
+                  <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                     <div class="team__single van-tilt">
+                        <div class="team__single-thumb">
+                           <a href="team-details.html">
+                              <img src="{{asset('frontend_assets/images/influencer/1.png')}}" alt="Image">
+                           </a>
+                        </div>
+                        <div class="team__content-wrapper">
+                           <div class="team__single-content">
+                              <h5><a href="team-details.html">Michel Fokluz</a></h5>
+                              <p>Software Engineer</p>
+                           </div>
+                           <div class="team__icons">
+                              <div class="team__single-content__icon">
+                                 <i class="icon-share"></i>
+                              </div>
+                              <div class="team__single__thumb-social">
+                                 <ul>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-facebook-f"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-instagram"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-behance"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-xl-4">
+                  <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                     <div class="team__single van-tilt">
+                        <div class="team__single-thumb">
+                           <a href="team-details.html">
+                              <img src="{{asset('frontend_assets/images/influencer/2.png')}}" alt="Image">
+                           </a>
+                        </div>
+                        <div class="team__content-wrapper">
+                           <div class="team__single-content">
+                              <h5><a href="team-details.html">Jara Kroft</a></h5>
+                              <p>Front End Engineer</p>
+                           </div>
+                           <div class="team__icons">
+                              <div class="team__single-content__icon">
+                                 <i class="icon-share"></i>
+                              </div>
+                              <div class="team__single__thumb-social">
+                                 <ul>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-facebook-f"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-instagram"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-behance"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-xl-4">
+                  <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                     <div class="team__single van-tilt">
+                        <div class="team__single-thumb">
+                           <a href="team-details.html">
+                              <img src="{{asset('frontend_assets/images/influencer/3.png')}}" alt="Image">
+                           </a>
+                        </div>
+                        <div class="team__content-wrapper">
+                           <div class="team__single-content">
+                              <h5><a href="team-details.html">Billu Devis</a></h5>
+                              <p>Operations Manager</p>
+                           </div>
+                           <div class="team__icons">
+                              <div class="team__single-content__icon">
+                                 <i class="icon-share"></i>
+                              </div>
+                              <div class="team__single__thumb-social">
+                                 <ul>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-facebook-f"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-instagram"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="index.html">
+                                          <i class="fa-brands fa-behance"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="section__cta cta text-center">
+                     <a href="our-team.html" aria-label="our team" title="our team" class="btn--primary">View All
+                        <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="spade">
+            <img src="assets/images/sprade-green.png" alt="Image">
+         </div>
+      </section>
+      <!-- ==== / team section end ==== -->
+
          <!-- ==== counter section start ==== -->
       <section class="counter">
          <div class="container">
@@ -571,10 +1006,10 @@
             </div>
          </div>
          <div class="poor">
-            <img src="assets/images/poor-two.png" alt="Image" class="parallax-image">
+            <img src="{{asset('frontend_assets/images/poor-two.png')}}" alt="Image" class="parallax-image">
          </div>
          <div class="shape-left" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
-            <img src="assets/images/cta/shape-left.png" alt="Image" class="base-img">
+            <img src="{{asset('frontend_assets/images/cta/shape-left.png')}}" alt="Image" class="base-img">
          </div>
       </section>
       <!-- ==== / counter section end ==== -->

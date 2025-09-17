@@ -65,11 +65,10 @@
                         <div class="col-12 col-lg-6 col-xxl-4">
                            <div class="topbar__list-wrapper">
                               <ul class="topbar__list">
-                                 <li><a href="mailto:support@example.com"><i
-                                          class="fa-regular fa-envelope"></i>support@example.com</a>
+                                 <li><a href="mailto:zindagitujhesalaam@gmail.com"><i
+                                          class="fa-regular fa-envelope"></i>zindagitujhesalaam@gmail.com</a>
                                  </li>
-                                 <li><a href="tel:2305-587-3407"><i class="fa-solid fa-phone"></i>+2(305)
-                                       587-3407</a>
+                                 <li><a href="tel:522 4105853"><i class="fa-solid fa-phone"></i>+91 522 4105853</a>
                                  </li>
                               </ul>
                            </div>
@@ -100,21 +99,21 @@
                                  </select>
                               </div>
                               <div class="social">
-                                 <a href="https://www.facebook.com/" target="_blank" aria-label="share us on facebook"
+                                 <a href="https://www.facebook.com/ZindagiTujheSaalam" target="_blank" aria-label="share us on facebook"
                                     title="facebook">
                                     <i class="fa-brands fa-facebook-f"></i>
                                  </a>
-                                 <a href="https://vimeo.com/" target="_blank" aria-label="share us on vimeo"
-                                    title="vimeo">
-                                    <i class="fa-brands fa-vimeo-v"></i>
-                                 </a>
-                                 <a href="https://x.com/" target="_blank" aria-label="share us on twitter"
+                                 <a href="https://x.com/ZtSalaam/" target="_blank" aria-label="share us on twitter"
                                     title="twitter">
                                     <i class="fa-brands fa-twitter"></i>
                                  </a>
                                  <a href="https://www.linkedin.com/" target="_blank" aria-label="share us on linkedin"
                                     title="linkedin">
                                     <i class="fa-brands fa-linkedin-in"></i>
+                                 </a>
+                                 <a href="https://www.instagram.com/zindagitujhesalam/" target="_blank" aria-label="share us on instagram"
+                                    title="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
                                  </a>
                               </div>
                            </div>
@@ -236,101 +235,98 @@
                                        </li>
                                     </ul> -->
                                  </li>
+                                 <li class="navbar__item navbar__item--has-children nav-fade">
+                                    <a href="#" aria-label="dropdown menu"
+                                       class="navbar__dropdown-label dropdown-label-alter">About</a>
+                                    <ul class="navbar__sub-menu">
+                                       <li>
+                                          <a href="faq.html">Our Guiding Principles</a>
+                                       </li>
+                                       <li class="navbar__item navbar__item--has-children">
+                                          <a aria-label="dropdown menu"
+                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Our Team</a>
+                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
+                                             <li>
+                                                <a href="#">Core Member</a>
+                                             </li>
+                                             <li>
+                                                <a href="#">Leadership Influencer</a>
+                                             </li>
+                                             <li>
+                                                <a href="#">Advisory Board</a>
+                                             </li>
+                                             <li>
+                                                <a href="#">Members</a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li class="navbar__item navbar__item--has-children">
+                                          <a aria-label="dropdown menu"
+                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Our Journey</a>
+                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
+                                             <li>
+                                                <a href="#">Human First</a>
+                                             </li>
+                                             <li>
+                                                <a href="#">Muhim</a>
+                                             </li>
+                                             <li>
+                                                <a href="#">Jagriti</a>
+                                             </li>
+                                             <li>
+                                                <a href="#">Sneh</a>
+                                             </li>
+                                             <li>
+                                                <a href="#">Muskaan</a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="navbar__item navbar__item--has-children nav-fade">
+                                    <a href="#" aria-label="dropdown menu"
+                                       class="navbar__dropdown-label dropdown-label-alter">Campaigns</a>
+                                    <ul class="navbar__sub-menu">
+                                       <li>
+                                          <a href="#">Phone A Friend</a>
+                                       </li>
+                                       <li>
+                                          <a href="#">Responsible India Possible India</a>
+                                       </li>
+                                       <li>
+                                          <a href="#">Be A Hero</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="navbar__item navbar__item--has-children nav-fade">
+                                    <a href="#" aria-label="dropdown menu"
+                                       class="navbar__dropdown-label dropdown-label-alter">ZTS Appeal</a>
+                                    <ul class="navbar__sub-menu">
+                                       <li>
+                                          <a href="#">MEFS</a>
+                                       </li>
+                                       <li>
+                                          <a href="#">SMWB</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 
+                                 <li class="navbar__item navbar__item--has-children nav-fade">
+                                    <a href="#" aria-label="dropdown menu"
+                                       class="navbar__dropdown-label dropdown-label-alter">Careers</a>
+                                    <ul class="navbar__sub-menu">
+                                       <li>
+                                          <a href="#">Join</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+
                                  <li class="navbar__item nav-fade">
-                                    <a href="about-us.html">About Us</a>
+                                    <a href="#">Gallery</a>
                                  </li>
-                                 <li class="navbar__item navbar__item--has-children nav-fade">
-                                    <a href="#" aria-label="dropdown menu"
-                                       class="navbar__dropdown-label dropdown-label-alter">Causes</a>
-                                    <ul class="navbar__sub-menu">
-                                       <li>
-                                          <a href="our-causes.html">Our Causes</a>
-                                       </li>
-                                       <li>
-                                          <a href="cause-details.html">Cause Details</a>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li class="navbar__item navbar__item--has-children nav-fade">
-                                    <a href="#" aria-label="dropdown menu"
-                                       class="navbar__dropdown-label dropdown-label-alter">Pages</a>
-                                    <ul class="navbar__sub-menu">
-                                       <li>
-                                          <a href="faq.html">FAQ</a>
-                                       </li>
-                                       <li>
-                                          <a href="donate-us.html">Donate Us</a>
-                                       </li>
-                                       <li>
-                                          <a href="become-volunteer.html">Become Volunteer</a>
-                                       </li>
-                                       <li class="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Events</a>
-                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="events.html">Events</a>
-                                             </li>
-                                             <li>
-                                                <a href="event-details.html">Event Details</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li class="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Shop</a>
-                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="shop.html">Our Shop</a>
-                                             </li>
-                                             <li>
-                                                <a href="product-details.html">Product Details</a>
-                                             </li>
-                                             <li>
-                                                <a href="cart.html">View Cart</a>
-                                             </li>
-                                             <li>
-                                                <a href="checkout.html">Cehckout</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li class="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Team</a>
-                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="our-team.html">Our Teams</a>
-                                             </li>
-                                             <li>
-                                                <a href="team-details.html">Team Details</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li>
-                                          <a href="coming-soon.html">Coming Soon</a>
-                                       </li>
-                                       <li>
-                                          <a href="404.html">Error</a>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li class="navbar__item navbar__item--has-children nav-fade">
-                                    <a href="#" aria-label="dropdown menu"
-                                       class="navbar__dropdown-label dropdown-label-alter">News</a>
-                                    <ul class="navbar__sub-menu">
-                                       <li>
-                                          <a href="blog-list.html">News List View</a>
-                                       </li>
-                                       <li>
-                                          <a href="blog-grid.html">News Grid View</a>
-                                       </li>
-                                       <li>
-                                          <a href="blog-details.html">News Details</a>
-                                       </li>
-                                    </ul>
-                                 </li>
+
                                  <li class="navbar__item nav-fade">
-                                    <a href="contact-us.html">Contact Us</a>
+                                    <a href="#">Contact Us</a>
                                  </li>
                               </ul>
                            </div>
@@ -340,7 +336,7 @@
                               </div>
                               <div class="contact-content">
                                  <p>Call Us Now</p>
-                                 <a href="tel:01-793-7938">(+01)-793-7938 </a>
+                                 <a href="tel:522 4105853">(+91)522 4105853 </a>
                               </div>
                            </div>
                         </div>
