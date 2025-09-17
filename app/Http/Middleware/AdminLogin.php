@@ -16,7 +16,7 @@ class AdminLogin
     public function handle(Request $request, Closure $next): Response
     {
         if(!session()->has('id')){
-            return redirect()->guest('/')->with('error','Please login first');
+            return redirect()->guest('/admin/login')->with('error','Please login first');
         }
         return $next($request);
     }

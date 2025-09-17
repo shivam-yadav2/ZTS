@@ -33,17 +33,18 @@ class GalleryEventController extends Controller
      */
     public function store(Request $request)
     {
+       
         $validator = Validator::make($request->all(), [
             'event_name'        => 'required|min:5|max:200',
             'event_description' => 'required|min:10|max:500',
             'event_date'        => 'required|date',
             'event_img'         => 'required|image|mimes:jpeg,jpg,webp,png',
         ]);
-
+        
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         }
-
+  
         $imageName = null;
 
         if ($request->hasFile('event_img')) {
@@ -70,7 +71,7 @@ class GalleryEventController extends Controller
         ]);
 
         //return "Data added successfully";
-         return redirect(url('events'))->with('success','Record added successfully');
+         return redirect(url('admin/events'))->with('success','Record added successfully');
     }
 
     /**
@@ -134,7 +135,7 @@ class GalleryEventController extends Controller
         ]);
 
         //return "Data added successfully";
-         return redirect(url('events'))->with('success','Record Updated successfully');
+         return redirect(url('admin/events'))->with('success','Record Updated successfully');
 
     }
 
@@ -155,7 +156,7 @@ class GalleryEventController extends Controller
     // Delete record from DB
     $data->delete();
 
-    return redirect(url('events'))->with('success', 'Record deleted successfully');
+    return redirect(url('admin/events'))->with('success', 'Record deleted successfully');
 
     }
 

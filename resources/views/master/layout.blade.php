@@ -28,6 +28,8 @@
 
     <!-- Icons css -->
     <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/d1f12562cc.js" crossorigin="anonymous"></script>
 
     @yield('style')
 </head>
@@ -102,26 +104,22 @@
                         <a data-bs-toggle="collapse" href="#sidebarInvoice" aria-expanded="false"
                             aria-controls="sidebarInvoice" class="side-nav-link">
                             <span class="menu-icon"><i class="ti ti-file-invoice"></i></span>
-                            <span class="menu-text"> Invoice</span>
+                            <span class="menu-text">Gallery Event</span>
                             <span class="menu-arrow"></span>
                         </a>
                         <div class="collapse" id="sidebarInvoice">
                             <ul class="sub-menu">
                                 <li class="side-nav-item">
-                                    <a href="/apps-invoices.html" class="side-nav-link">
-                                        <span class="menu-text">Invoices</span>
+                                    <a href="{{ url('admin/events/create') }}" class="side-nav-link">
+                                        <span class="menu-text">Create Events</span>
                                     </a>
                                 </li>
                                 <li class="side-nav-item">
-                                    <a href="/apps-invoice-details.html" class="side-nav-link">
-                                        <span class="menu-text">View Invoice</span>
+                                    <a href="{{ url('admin/events') }}" class="side-nav-link">
+                                        <span class="menu-text">View Event</span>
                                     </a>
                                 </li>
-                                <li class="side-nav-item">
-                                    <a href="/apps-invoice-create.html" class="side-nav-link">
-                                        <span class="menu-text">Create Invoice</span>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
                     </li>
@@ -130,46 +128,22 @@
                         <a data-bs-toggle="collapse" href="#sidebarPages" aria-expanded="false"
                             aria-controls="sidebarPages" class="side-nav-link">
                             <span class="menu-icon"><i class="ti ti-files"></i></span>
-                            <span class="menu-text"> Pages2 </span>
+                            <span class="menu-text">Gallery Image</span>
                             <span class="menu-arrow"></span>
                         </a>
                         <div class="collapse" id="sidebarPages">
                             <ul class="sub-menu">
                                 <li class="side-nav-item">
-                                    <a href="pages-starter.html" class="side-nav-link">
-                                        <span class="menu-text">Starter Page</span>
+                                    <a href="{{ url('admin/showForm') }}" class="side-nav-link">
+                                        <span class="menu-text">Add Images</span>
                                     </a>
                                 </li>
                                 <li class="side-nav-item">
-                                    <a href="pages-pricing.html" class="side-nav-link">
-                                        <span class="menu-text">Pricing</span>
+                                    <a href="{{ url('admin/events') }}" class="side-nav-link">
+                                        <span class="menu-text">View Images</span>
                                     </a>
                                 </li>
-                                <li class="side-nav-item">
-                                    <a href="pages-faq.html" class="side-nav-link">
-                                        <span class="menu-text">FAQ</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="pages-maintenance.html" class="side-nav-link">
-                                        <span class="menu-text">Maintenance</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="pages-timeline.html" class="side-nav-link">
-                                        <span class="menu-text">Timeline</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="pages-coming-soon.html" class="side-nav-link">
-                                        <span class="menu-text">Coming Soon</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="pages-terms-conditions.html" class="side-nav-link">
-                                        <span class="menu-text">Terms & Conditions</span>
-                                    </a>
-                                </li>
+                          
                             </ul>
                         </div>
                     </li>
