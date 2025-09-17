@@ -35,3 +35,4 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
 
 //Frontend Pages Routes
 Route::view('/', 'frontend.index');
+Route::view('/contact', 'frontend.contact');

@@ -1039,9 +1039,14 @@
      .testimonial-seven-paragraph {
           font-size: 33px;
      }
-     .testimonial-seven-thumb img {
-          width: 100%;
-     }
+    .testimonial-seven-thumb img {
+    border-radius: 37px;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-position: top;
+}
      .contact-seven-area .contact__content {
           padding: 60px 40px;
           margin-bottom: 30px;

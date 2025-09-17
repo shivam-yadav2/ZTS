@@ -103,7 +103,8 @@
   --white: #ffffff;
   --black: #000000;
   --primary-color: #046a58;
-  --secondary-color: #122f2a;
+  --secondary-color: #73c48f;
+  --secondary-color2: #122f2a;
   --tertiary-color: #046a58;
   --quaternary-color: #00715d;
   --quinary-color: #061408;
@@ -3782,7 +3783,9 @@ div {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   .header-secondary .navbar__menu-wrapper {
-    background-color: transparent;
+    /* background-color: transparent; */
+  background-color: var(--base-color);
+padding: 0px 30px;
   }
   .header-secondary .main-header__menu-box {
     padding-inline: 0px !important;
@@ -7763,7 +7766,7 @@ div {
  --------- (5.06) team section styles start ---------
  ==== */
 .team {
-  padding: 100px 0px;
+  padding: 0px 0px !important;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -18778,7 +18781,12 @@ div {
   padding: 120px 0 100px;
 }
 .testimonial-seven-thumb img {
-	border-radius: 37px;
+    border-radius: 37px;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-position: top;
 }
 .testimonial-seven-thumb-quate {
 	position: absolute;
