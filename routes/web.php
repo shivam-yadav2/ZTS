@@ -24,3 +24,6 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function(){
      Route::delete('delete/{id}',[GalleryImageController::class,'delete']);
 
 });
+
+//Frontend Pages Routes
+Route::view('/','frontend.index');
