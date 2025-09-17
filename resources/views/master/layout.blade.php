@@ -152,51 +152,23 @@
                         <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false"
                             aria-controls="sidebarPagesAuth" class="side-nav-link">
                             <span class="menu-icon"><i class="ti ti-lock"></i></span>
-                            <span class="menu-text"> Auth Pages </span>
+                            <span class="menu-text">Contact Us </span>
                             <span class="menu-arrow"></span>
                         </a>
                         <div class="collapse" id="sidebarPagesAuth">
                             <ul class="sub-menu">
                                 <li class="side-nav-item">
-                                    <a href="/auth-login.html" class="side-nav-link">
-                                        <span class="menu-text">Login</span>
+                                    <a href="{{ url('admin/contact/showForm') }}" class="side-nav-link">
+                                        <span class="menu-text">Add Contact</span>
                                     </a>
                                 </li>
                                 <li class="side-nav-item">
-                                    <a href="/auth-register.html" class="side-nav-link">
-                                        <span class="menu-text">Register</span>
+                                    <a href="{{ url('admin/index') }}" class="side-nav-link">
+                                        <span class="menu-text">View Contact</span>
                                     </a>
                                 </li>
-                                <li class="side-nav-item">
-                                    <a href="/auth-logout.html" class="side-nav-link">
-                                        <span class="menu-text">Logout</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="/auth-recoverpw.html" class="side-nav-link">
-                                        <span class="menu-text">Recover Password</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="/auth-createpw.html" class="side-nav-link">
-                                        <span class="menu-text">Create Password</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="/auth-lock-screen.html" class="side-nav-link">
-                                        <span class="menu-text">Lock Screen</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="/auth-confirm-mail.html" class="side-nav-link">
-                                        <span class="menu-text">Confirm Mail</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="/auth-login-pin.html" class="side-nav-link">
-                                        <span class="menu-text">Login with PIN</span>
-                                    </a>
-                                </li>
+                               
+                               
                             </ul>
                         </div>
                     </li>
