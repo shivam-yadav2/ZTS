@@ -12,7 +12,7 @@
    <link rel="shortcut icon" href="{{asset('frontend_assets/images/favicon.png')}}" type="image/x-icon">
    <link rel="icon" href="{{asset('frontend_assets/images/favicon.png')}}" type="image/x-icon">
    <!-- #title -->
-   <title>Charifund | Nonprofit NGO Fundraising HTML5 Template</title>
+   <title>Zindagi Tujhe Salaam | Nonprofit NGO </title>
    <!-- #keywords -->
    <meta name="keywords" content="charity, nonprofit, fundraising, donation, html, bootstrap, scss">
    <!-- #description -->
@@ -141,193 +141,84 @@
                         <div class="navbar__menu-wrapper">
                            <div class="navbar__menu d-none d-xl-block">
                               <ul class="navbar__list">
+                                 <li class="navbar__item  nav-fade">
+                                    <a href="#" 
+                                       >Home</a>
+                                    
+                                 </li>
                                  <li class="navbar__item navbar__item--has-children nav-fade">
                                     <a href="#" aria-label="dropdown menu"
-                                       class="navbar__dropdown-label dropdown-label-alter">Home</a>
-                                    <!-- <ul class="navbar__sub-menu mega-menu">
+                                       class="navbar__dropdown-label dropdown-label-alter">About Us</a>
+                                    <ul class="navbar__sub-menu">
                                        <li>
-                                          <div class="mega-content-wrapper">
-                                             <img src="assets/images/home-one.png" alt="Image">
-                                             <div class="mega-content">
-                                                <a href="index.html" class="btn--primary">Multipage</a>
-                                                <a href="index-one-page.html" class="btn--secondary">One
-                                                   Page</a>
-                                             </div>
-                                          </div>
-                                          <a href="index.html">Home One</a>
+                                          <a href="faq.html">Our Guiding Principles</a>
+                                       </li>
+                                       
+                                       <li class="navbar__item navbar__item--has-children">
+                                          <a aria-label="dropdown menu"
+                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Our Team</a>
+                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
+                                             <li>
+                                                <a href="events.html">Core Members</a>
+                                             </li>
+                                             <li>
+                                                <a href="event-details.html">Leadership Influencers</a>
+                                             </li>
+                                             <li>
+                                                <a href="event-details.html">Advisory Board</a>
+                                             </li>
+                                             <li>
+                                                <a href="event-details.html">Members</a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li class="navbar__item navbar__item--has-children">
+                                          <a aria-label="dropdown menu"
+                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Our Journey</a>
+                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
+                                             <li>
+                                                <a href="shop.html">Human First</a>
+                                             </li>
+                                             <li>
+                                                <a href="product-details.html">Muhim</a>
+                                             </li>
+                                             <li>
+                                                <a href="cart.html">Jagrati</a>
+                                             </li>
+                                             <li>
+                                                <a href="checkout.html">Sneh</a>
+                                             </li>
+                                             <li>
+                                                <a href="checkout.html">Muskaan</a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       
+                                       
+                                    </ul>
+                                 </li>
+                                 <li class="navbar__item navbar__item--has-children nav-fade">
+                                    <a href="#" aria-label="dropdown menu"
+                                       class="navbar__dropdown-label dropdown-label-alter">Campaigns</a>
+                                    <ul class="navbar__sub-menu">
+                                       <li>
+                                          <a href="our-causes.html">Phone A Friend</a>
                                        </li>
                                        <li>
-                                          <div class="mega-content-wrapper">
-                                             <img src="assets/images/home-two.png" alt="Image">
-                                             <div class="mega-content">
-                                                <a href="index-two.html" class="btn--primary">Multipage</a>
-                                                <a href="index-two-one-page.html" class="btn--secondary">One Page</a>
-                                             </div>
-                                          </div>
-                                          <a href="index-two.html">Home Two</a>
+                                          <a href="cause-details.html">Responsible India Possible India</a>
                                        </li>
                                        <li>
-                                          <div class="mega-content-wrapper">
-                                             <img src="assets/images/home-three.png" alt="Image">
-                                             <div class="mega-content">
-                                                <a href="index-three.html" class="btn--primary">Multipage</a>
-                                                <a href="index-three-one-page.html" class="btn--secondary">One Page</a>
-                                             </div>
-                                          </div>
-                                          <a href="index-three.html">Home Three</a>
+                                          <a href="our-causes.html">Be A Hero</a>
                                        </li>
-                                       <li>
-                                          <div class="mega-content-wrapper">
-                                             <img src="assets/images/home-four.png" alt="Image">
-                                             <div class="mega-content">
-                                                <a href="index-four.html" class="btn--primary">Multipage</a>
-                                                <a href="index-four-one-page.html" class="btn--secondary">One Page</a>
-                                             </div>
-                                             <span class="new">New</span>
-                                          </div>
-                                          <a href="index-four.html">Home Four</a>
-                                       </li>
-
-                                       <li>
-                                          <div class="mega-content-wrapper">
-                                             <img src="assets/images/home-five.png" alt="Image">
-                                             <div class="mega-content">
-                                                <a href="index-five.html" class="btn--primary">Multipage</a>
-                                                <a href="index-five-one-page.html" class="btn--secondary">One Page</a>
-                                             </div>
-                                             <span class="new">New</span>
-                                          </div>
-                                          <a href="index-five.html">Home Five</a>
-                                       </li>
-
-                                       <li>
-                                          <div class="mega-content-wrapper">
-                                             <img src="assets/images/home-six.png" alt="Image">
-                                             <div class="mega-content">
-                                                <a href="index-six.html" class="btn--primary">Multipage</a>
-                                                <a href="index-six-one-page.html" class="btn--secondary">One Page</a>
-                                             </div>
-                                             <span class="new">New</span>
-                                          </div>
-                                          <a href="index-six.html">Home Six</a>
-                                       </li>
-
-                                       <li>
-                                          <div class="mega-content-wrapper">
-                                             <img src="assets/images/home-seven.png" alt="Image">
-                                             <div class="mega-content">
-                                                <a href="index-seven.html" class="btn--primary">Multipage</a>
-                                                <a href="index-seven-one-page.html" class="btn--secondary">One Page</a>
-                                             </div>
-                                             <span class="new">New</span>
-                                          </div>
-                                          <a href="index-seven.html">Home Seven</a>
-                                       </li>
-                                       <li>
-                                          <div class="mega-content-wrapper">
-                                             <img src="assets/images/home-eight.png" alt="Image">
-                                             <div class="mega-content">
-                                                <a href="index-eight.html" class="btn--primary">Multipage</a>
-                                                <a href="index-eight-one-page.html" class="btn--secondary">One Page</a>
-                                             </div>
-                                             <span class="new">New</span>
-                                          </div>
-                                          <a href="index-eight.html">Home Eight</a>
-                                       </li>
-                                    </ul> -->
+                                    </ul>
+                                 </li>
+                                 
+                                 
+                                 <li class="navbar__item nav-fade">
+                                    <a href="contact-us.html">Gallery</a>
                                  </li>
                                  <li class="navbar__item nav-fade">
-                                    <a href="about-us.html">About Us</a>
-                                 </li>
-                                 <li class="navbar__item navbar__item--has-children nav-fade">
-                                    <a href="#" aria-label="dropdown menu"
-                                       class="navbar__dropdown-label dropdown-label-alter">Causes</a>
-                                    <ul class="navbar__sub-menu">
-                                       <li>
-                                          <a href="our-causes.html">Our Causes</a>
-                                       </li>
-                                       <li>
-                                          <a href="cause-details.html">Cause Details</a>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li class="navbar__item navbar__item--has-children nav-fade">
-                                    <a href="#" aria-label="dropdown menu"
-                                       class="navbar__dropdown-label dropdown-label-alter">Pages</a>
-                                    <ul class="navbar__sub-menu">
-                                       <li>
-                                          <a href="faq.html">FAQ</a>
-                                       </li>
-                                       <li>
-                                          <a href="donate-us.html">Donate Us</a>
-                                       </li>
-                                       <li>
-                                          <a href="become-volunteer.html">Become Volunteer</a>
-                                       </li>
-                                       <li class="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Events</a>
-                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="events.html">Events</a>
-                                             </li>
-                                             <li>
-                                                <a href="event-details.html">Event Details</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li class="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Shop</a>
-                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="shop.html">Our Shop</a>
-                                             </li>
-                                             <li>
-                                                <a href="product-details.html">Product Details</a>
-                                             </li>
-                                             <li>
-                                                <a href="cart.html">View Cart</a>
-                                             </li>
-                                             <li>
-                                                <a href="checkout.html">Cehckout</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li class="navbar__item navbar__item--has-children">
-                                          <a aria-label="dropdown menu"
-                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Team</a>
-                                          <ul class="navbar__sub-menu navbar__sub-menu__nested">
-                                             <li>
-                                                <a href="our-team.html">Our Teams</a>
-                                             </li>
-                                             <li>
-                                                <a href="team-details.html">Team Details</a>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li>
-                                          <a href="coming-soon.html">Coming Soon</a>
-                                       </li>
-                                       <li>
-                                          <a href="404.html">Error</a>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li class="navbar__item navbar__item--has-children nav-fade">
-                                    <a href="#" aria-label="dropdown menu"
-                                       class="navbar__dropdown-label dropdown-label-alter">News</a>
-                                    <ul class="navbar__sub-menu">
-                                       <li>
-                                          <a href="blog-list.html">News List View</a>
-                                       </li>
-                                       <li>
-                                          <a href="blog-grid.html">News Grid View</a>
-                                       </li>
-                                       <li>
-                                          <a href="blog-details.html">News Details</a>
-                                       </li>
-                                    </ul>
+                                    <a href="contact-us.html">Career</a>
                                  </li>
                                  <li class="navbar__item nav-fade">
                                     <a href="contact-us.html">Contact Us</a>
@@ -346,11 +237,11 @@
                         </div>
                         <div class="navbar__options">
                            <div class="navbar__mobile-options ">
-                              <div class="search-box">
+                              {{-- <div class="search-box">
                                  <button class="open-search" aria-label="search products" title="open search box">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                  </button>
-                              </div>
+                              </div> --}}
                               <a href="donate-us.html" class="btn--primary d-none d-md-flex">Donate Now <i
                                     class="fa-solid fa-arrow-right"></i></a>
                            </div>
@@ -427,33 +318,8 @@
        <!-- ==== footer start ==== -->
       <footer class="footer-two">
          <div class="container">
-            <div class="row align-items-center gutter-30">
-               <div class="col-12 col-lg-7 col-xxl-6">
-                  <div class="footer-two__newsletter-content">
-                     <h3 class="title-animation">
-                        Subscribe to Our Newsletter
-                     </h3>
-                     <p>Regular inspections and feedback mechanisms</p>
-                  </div>
-               </div>
-               <div class="col-12 col-lg-5 col-xxl-5 offset-xxl-1">
-                  <div class="footer-two__newsletter-form">
-                     <form action="#" method="post">
-                        <input type="email" required name="subscribe-email" id="subscribeEmail"
-                           placeholder="Enter Email">
-                        <button type="submit" aria-label="subscribe to our newsletter"
-                           title="subscribe to our newsletter" class="btn--primary"> <i
-                              class="fa-solid fa-paper-plane"></i>
-                        </button>
-                     </form>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-12">
-                  <hr class="divider">
-               </div>
-            </div>
+           
+            
             <div class="row gutter-60">
                <div class="col-12 col-md-6 col-xl-3">
                   <div class="footer-two__widget" data-aos="fade-up" data-aos-duration="1000">
