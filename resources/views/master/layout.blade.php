@@ -154,6 +154,56 @@
                         </div>
                     </li>
 
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#sidebarPagesAuths" aria-expanded="false"
+                            aria-controls="sidebarPagesAuth" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-lock"></i></span>
+                            <span class="menu-text">Enquiry</span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="sidebarPagesAuths">
+                            <ul class="sub-menu">
+                                <li class="side-nav-item">
+                                    <a href="{{ url('admin/enquiry/enquiryForm') }}" class="side-nav-link">
+                                        <span class="menu-text">Add Enquiry</span>
+                                    </a>
+                                </li>
+                                <li class="side-nav-item">
+                                    <a href="{{ url('admin/enquiry/index') }}" class="side-nav-link">
+                                        <span class="menu-text">View Enquiry</span>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#sidebarPagesAuth1" aria-expanded="false"
+                            aria-controls="sidebarPagesAuth" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-lock"></i></span>
+                            <span class="menu-text">Core Member</span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="sidebarPagesAuth1">
+                            <ul class="sub-menu">
+                                <li class="side-nav-item">
+                                    <a href="{{ url('admin/coremember/CoreMemberForm') }}" class="side-nav-link">
+                                        <span class="menu-text">Add Member</span>
+                                    </a>
+                                </li>
+                                <li class="side-nav-item">
+                                    <a href="{{ url('admin/coremember/index') }}" class="side-nav-link">
+                                        <span class="menu-text">View Member</span>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+</li>
+
                    
 
                 <div class="clearfix"></div>

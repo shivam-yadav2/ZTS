@@ -6,7 +6,7 @@
                 <div class="col-xl-12">
                     <div class="card">
                         <div class="card-header border-bottom border-dashed d-flex align-items-center">
-                            <h4 class="header-title">Enquiry List</h4>
+                            <h4 class="header-title">Members List</h4>
                         </div>
                         <div class="card-body">
 
