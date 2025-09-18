@@ -17658,7 +17658,9 @@ html[data-topbar-color=dark] .app-topbar .logo .logo-dark {
 }
 
 .logo-lg img {
-    height: var(--greeva-logo-lg-height)
+    height: var(--greeva-logo-lg-height);
+    width: 100%;
+    height: 65px;
 }
 
 .logo-sm img {
