@@ -7,6 +7,8 @@
         <div class="card">
           <div class="card-header border-bottom border-dashed d-flex align-items-center">
             <h4 class="header-title">Gallery List</h4>
+            <button class="btn btn-danger text-white w-50 p-2 ms-4"><a href="{{ route('events.create') }}" class="text-white">Add</a></button>
+
           </div>
           <div class="card-body">
 
@@ -45,6 +47,7 @@
                         <a href="{{ route('events.edit', $value->id) }}" class="ms-2"> <i
                             class="fa-solid fa-pen-to-square text-success"></i></a>
                             <a href="{{ url('admin/showImg/'.$value->id) }}" class="ms-2"><i class="fa-solid fa-eye"></i></a>
+                            <a href="{{ url('admin/showForm') }}" class="ms-2"><i class="fa-solid fa-plus"></i></a>
                       </td>
                     </tr>
                   @endforeach

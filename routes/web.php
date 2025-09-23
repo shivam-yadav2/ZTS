@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\CoreMemberController;
+use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\GalleryImageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
@@ -31,6 +33,22 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::get('edit/{id}', [ContactUsController::class, 'edit']);
     Route::post('update/{id}', [ContactUsController::class, 'update']);
     Route::get('destroy/{id}', [ContactUsController::class, 'destroy']);
+
+    // enquiry routes
+    Route::get('enquiry/enquiryForm', [EnquiryController::class, 'enquiryForm']);
+    Route::get('enquiry/index', [EnquiryController::class, 'index']);
+    Route::post('enquiry/store', [EnquiryController::class, 'store']);
+    Route::get('enquiry/edit/{id}', [EnquiryController::class, 'edit']);
+    Route::post('enquiry/update/{id}', [EnquiryController::class, 'update']);
+    Route::get('enquiry/destroy/{id}', [EnquiryController::class, 'destroy']);
+
+    // CoreMember routes
+    Route::get('coremember/CoreMemberForm', [CoreMemberController::class, 'CoreMemberForm']);
+    Route::get('coremember/index', [CoreMemberController::class, 'index']);
+    Route::post('coremember/store', [CoreMemberController::class, 'store']);
+    Route::get('coremember/edit/{id}', [CoreMemberController::class, 'edit']);
+    Route::put('coremember/update/{id}', [CoreMemberController::class, 'update']);
+    Route::get('coremember/destroy/{id}', [CoreMemberController::class, 'destroy']);
 });
 
 //Frontend Pages Routes
