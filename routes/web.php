@@ -4,6 +4,7 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CoreMemberController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\GalleryImageController;
+use App\Http\Controllers\GuidingPrincipleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryEventController;
@@ -21,7 +22,7 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::get('logout', [AdminController::class, 'logout']);
     Route::resource('events', GalleryEventController::class);
     Route::get('showForm', [GalleryImageController::class, 'showForm']);
-    Route::post('store', [GalleryImageController::class, 'store']);
+    Route::post('galleryimg/store', [GalleryImageController::class, 'store']);
     Route::get('showevents', [GalleryEventController::class, 'showevents']);
     Route::get('showImg/{id}', [GalleryImageController::class, 'showImg']);
     Route::delete('delete/{id}', action: [GalleryImageController::class, 'delete']);
@@ -49,6 +50,8 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::get('coremember/edit/{id}', [CoreMemberController::class, 'edit']);
     Route::put('coremember/update/{id}', [CoreMemberController::class, 'update']);
     Route::get('coremember/destroy/{id}', [CoreMemberController::class, 'destroy']);
+
+
 });
 
 //Frontend Pages Routes

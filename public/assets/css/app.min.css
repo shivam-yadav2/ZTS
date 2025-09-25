@@ -16592,10 +16592,10 @@ html[data-bs-theme=dark] #light-dark-mode .ti-moon::before {
     -ms-flex-align: center;
     align-items: center;
     gap: 10px;
-    border-width: 0 1px;
+    /* border-width: 0 1px;
     border-style: solid;
     border-color: var(--greeva-topbar-user-border);
-    background-color: var(--greeva-topbar-user-bg);
+    background-color: var(--greeva-topbar-user-bg); */
     min-height: var(--greeva-topbar-height);
     -webkit-transition: none;
     transition: none

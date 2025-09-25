@@ -10,7 +10,7 @@
 
         <div class="card-body">
 
-            <form action="{{ url('admin/store') }}" method="post" class="dropzone" id="myAwesomeDropzone"
+            <form action="{{ url('admin/galleryimg/store') }}" method="post" class="dropzone" id="myAwesomeDropzone"
                 data-plugin="dropzone" data-previews-container="#file-previews"
                 data-upload-preview-template="#uploadPreviewTemplate" enctype="multipart/form-data"
                 >

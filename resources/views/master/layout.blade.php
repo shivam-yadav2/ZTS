@@ -79,7 +79,7 @@
                         </a>
                     </li>
 
-                    
+
 
                     <li class="side-nav-item">
                         <a data-bs-toggle="collapse" href="#sidebarInvoice" aria-expanded="false"
@@ -202,11 +202,11 @@
 
                             </ul>
                         </div>
-</li>
+                    </li>
 
-                   
 
-                <div class="clearfix"></div>
+
+                    <div class="clearfix"></div>
             </div>
         </div>
         <!-- Sidenav Menu End -->
@@ -223,7 +223,7 @@
                             <span class="logo-lg"><img src="/assets/images/logo.png" alt="logo"></span>
                             <span class="logo-sm"><img src="/assets/images/logo.png" alt="small logo"></span>
                         </span>
-        
+
                         <span class="logo-dark">
                             <span class="logo-lg"><img src="/assets/images/logo-light.png" alt="dark logo"></span>
                             <span class="logo-sm"><img src="/assets/images/logo.png" alt="small logo"></span>
@@ -249,12 +249,12 @@
                         <span class="ms-auto fw-medium">⌘K</span>
                     </div> --}}
 
-                    
+
                 </div>
 
                 <div class="d-flex align-items-center gap-2">
 
-                    
+
 
                     <!-- Light/Dark Mode Button -->
                     <div class="topbar-item d-none d-sm-flex">
@@ -266,10 +266,29 @@
                     <!-- User Dropdown -->
                     <div class="topbar-item nav-user">
                         <button class="btn btn-warning text-white"><a
-                            href="{{ url('admin/logout') }}">Logout</a></button>
+                                href="{{ url('admin/logout') }}">Logout</a></button>
+
+
+                        <div class="dropdown">
+                            <a class="topbar-link dropdown-toggle drop-arrow-none px-2" data-bs-toggle="dropdown"
+                                data-bs-offset="0,19" type="button" aria-haspopup="false" aria-expanded="false">
+                              
+                                <span class="d-lg-flex flex-column gap-1 d-none">
+                                    <h5 class="my-0">
+                                    @if (session()->has('name'))
+                                           <span>Welcome  {{ session()->get('name') }}</span>
+                                         @endif
+
+                                    </h5>
+                                   
+                                </span>
+                              
+                            </a>
+                            
+
+                        </div>
                     </div>
                 </div>
-            </div>
         </header>
         <!-- Topbar End -->
 
@@ -308,7 +327,7 @@
 
     </div>
 
- 
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         @if (session('success'))
@@ -349,7 +368,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
+        </script>
 
 </body>
 
