@@ -1,16 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Http\Controllers\Controller;
 use App\Models\User;
 use Auth;
 use Illuminate\Http\Request;
 
+
 class AdminController extends Controller
 {
     public function login(){
-        return view('admin.login');
+        return view('Admin.pages.login');
     }
     public function loginCheck(Request $request){
         $request->validate([
