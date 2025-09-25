@@ -1,11 +1,12 @@
 @extends('master.frontmaster')
 @section('content')
+    <!-- === Banner Section start === -->
     <section class="banner-two">
          <div class="banner-two__slider swiper">
             <div class="swiper-wrapper">
                <div class="swiper-slide">
                   <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="frontend_assets/images/slide1.jpg">
+                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide1.jpg')}}">
                      </div>
                      <div class="container">
                         <div class="row">
@@ -26,7 +27,7 @@
                </div>
                <div class="swiper-slide">
                   <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="frontend_assets/images/slide2.jpg">
+                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide2.jpg')}}">
                      </div>
                      <div class="container">
                         <div class="row">
@@ -47,7 +48,7 @@
                </div>
                <div class="swiper-slide">
                   <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="frontend_assets/images/slide3.jpg">
+                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide3.jpg')}}">
                      </div>
                      <div class="container">
                         <div class="row">
@@ -68,7 +69,7 @@
                </div>
                <div class="swiper-slide">
                   <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="frontend_assets/images/slide4.jpg">
+                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide4.jpg')}}">
                      </div>
                      <div class="container">
                         <div class="row">
@@ -99,19 +100,20 @@
             </button>
          </div>
          <div class="shape">
-            <img src="frontend_assets/images/shape.png" alt="Image">
+            <img src="{{asset('frontend_assets/images/shape.png')}}" alt="Image">
          </div>
          <div class="shape-left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-            <img src="frontend_assets/images/banner/banner-two-shape.png" alt="Image">
+            <img src="{{asset('frontend_assets/images/banner/banner-two-shape.png')}}" alt="Image">
          </div>
          <div class="sprade-shape">
-            <img src="frontend_assets/images/sprade-base.png" alt="Image" class="base-img" data-aos="zoom-in"
+            <img src="{{asset('frontend_assets/images/sprade-base.png')}}" alt="Image" class="base-img" data-aos="zoom-in"
                data-aos-duration="1000">
          </div>
          <div class="unity">
-            <img src="frontend_assets/images/unity.png" alt="Image">
+            <img src="{{asset('frontend_assets/images/unity.png')}}" alt="Image">
          </div>
       </section>
+      <!-- ===  Banner Section End === -->
 
     <!-- ==== difference section start ==== -->
     <section class="difference">
