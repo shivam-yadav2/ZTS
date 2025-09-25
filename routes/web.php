@@ -10,10 +10,11 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryEventController;
 
 
+Route::view('/','Admin.pages.index');
+Route::view('GalleryEventForm','Admin.pages.GalleryEvent.GalleryEventForm');
 
 Route::get('/admin/login', [AdminController::class, 'login']);
 Route::post('loginCheck', [AdminController::class, 'loginCheck']);
-
 
 Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::get('dashboard', function () {
@@ -57,3 +58,10 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
 //Frontend Pages Routes
 Route::view('/', 'frontend.index');
 Route::view('/contact', 'frontend.contact');
+
+//About Us Page Routes
+Route::view('/about/guiding_principle', 'frontend.about.guiding_principle');
+Route::view('/about/team/core_member', 'frontend.about.team.core_member');
+Route::view('/about/team/influencer', 'frontend.about.team.influencer');
+Route::view('/about/team/board', 'frontend.about.team.board');
+Route::view('/about/team/member', 'frontend.about.team.member');

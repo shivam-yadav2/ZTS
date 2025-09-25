@@ -96,6 +96,7 @@
                                             <a href="https://www.instagram.com/zindagitujhesalam/" target="_blank"
                                                 aria-label="share us on instagram" title="instagram">
                                                 <i class="fa-brands fa-instagram"></i>
+                                                
                                             </a>
                                         </div>
                                     </div>
@@ -131,7 +132,7 @@
                                                     class="navbar__dropdown-label dropdown-label-alter">About Us</a>
                                                 <ul class="navbar__sub-menu">
                                                     <li>
-                                                        <a href="faq.html">Our Guiding Principles</a>
+                                                        <a href="#">Our Guiding Principles</a>
                                                     </li>
 
                                                     <li class="navbar__item navbar__item--has-children">

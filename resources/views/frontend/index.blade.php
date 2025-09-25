@@ -274,7 +274,7 @@
                         <div class="blog__single van-tilt">
                             <div class="blog__single-thumb">
                                 <a href="blog-details.html">
-                                    <img src="{{ asset('frontend_assets/images/blog/one.png') }}" alt="Image">
+                                    <img src="{{ asset('frontend_assets/images/campaign/campaign1.jpg') }}" alt="Image">
                                 </a>
                                 <div class="tag">
                                     <a href="blog-list.html"><i class="fa-solid fa-tags"></i>Health</a>
@@ -305,7 +305,7 @@
                         <div class="blog__single van-tilt">
                             <div class="blog__single-thumb">
                                 <a href="blog-details.html">
-                                    <img src="{{ asset('frontend_assets/images/blog/two.png') }}" alt="Image">
+                                    <img src="{{ asset('frontend_assets/images/campaign/campaign2.jpg') }}" alt="Image">
                                 </a>
                                 <div class="tag">
                                     <a href="blog-list.html"><i class="fa-solid fa-tags"></i>Education</a>
@@ -336,7 +336,7 @@
                         <div class="blog__single van-tilt">
                             <div class="blog__single-thumb">
                                 <a href="blog-details.html">
-                                    <img src="{{ asset('frontend_assets/images/blog/three.png') }}" alt="Image">
+                                    <img src="{{ asset('frontend_assets/images/campaign/campaign3.jpg') }}" alt="Image">
                                 </a>
                                 <div class="tag">
                                     <a href="blog-list.html"><i class="fa-solid fa-tags"></i>Food</a>
@@ -615,9 +615,7 @@
     </section>
     <!-- ==== / help section end ==== -->
 
-
-
-    <!-- ==== team section start ==== -->
+  <!-- ==== Core Member start ==== -->
     <section class="team">
         <div class="container">
             <div class="row justify-content-center">
@@ -991,9 +989,7 @@
     </section>
     <!-- ==== / cause slider two section end ==== -->
 
-
-    
-    <!-- ==== / team section end ==== -->
+     <!-- ==== / team section end ==== -->
     <section class="testimonial-seven-area project-panel-area position-relative z-1">
         <div class="container">
             <div class="row">
@@ -1082,13 +1078,14 @@
         </div>
     </section>
 
+    <!-- === Advisory Board Start ===-->
     <section class="team ff-team pb-0">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
                     <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
-                        <span class="sub-title">We are always open for children</span>
-                        <h2 class="title-animation mt-0 fw-7">Meat the Team <span>member</span>
+                        <span class="sub-title">Meet our esteemed Standards Advisory Panel who review, inform and guide ZTS through the development of our standards.</span>
+                        <h2 class="title-animation mt-0 fw-7"> Advisory <span>Board</span>
                         </h2>
                     </div>
                 </div>
@@ -1099,7 +1096,7 @@
                         <div class="team__single van-tilt">
                             <div class="team__single-thumb">
                                 <a href="team-details.html">
-                                    <img src="/frontend_assets/images/team/one.png" alt="Image">
+                                    <img src="/frontend_assets/images/board/1.png" alt="Image">
                                 </a>
                                 <div class="team__icons">
                                     <div class="team__single-content__icon">
@@ -1132,7 +1129,7 @@
                                 </div>
                             </div>
                             <div class="team__single-content">
-                                <h6><a href="team-details.html">Michel Fokluz</a></h6>
+                                <h6><a href="team-details.html">Dr. Rajeev Mishra</a></h6>
                                 <p>Volunteer</p>
                             </div>
                         </div>
@@ -1143,7 +1140,7 @@
                         <div class="team__single van-tilt">
                             <div class="team__single-thumb">
                                 <a href="team-details.html">
-                                    <img src="/frontend_assets/images/team/two.png" alt="Image">
+                                    <img src="/frontend_assets/images/board/2.png" alt="Image">
                                 </a>
                                 <div class="team__icons">
                                     <div class="team__single-content__icon">
@@ -1176,7 +1173,7 @@
                                 </div>
                             </div>
                             <div class="team__single-content">
-                                <h6><a href="team-details.html">Arian Drobloas</a></h6>
+                                <h6><a href="team-details.html">Mr. Ashvin Deshpande</a></h6>
                                 <p>Volunteer</p>
                             </div>
                         </div>
@@ -1187,7 +1184,7 @@
                         <div class="team__single van-tilt">
                             <div class="team__single-thumb">
                                 <a href="team-details.html">
-                                    <img src="/frontend_assets/images/team/three.png" alt="Image">
+                                    <img src="/frontend_assets/images/board/3.png" alt="Image">
                                 </a>
                                 <div class="team__icons">
                                     <div class="team__single-content__icon">
@@ -1220,7 +1217,7 @@
                                 </div>
                             </div>
                             <div class="team__single-content">
-                                <h6><a href="team-details.html">Jara Klintof</a></h6>
+                                <h6><a href="team-details.html">Mr. Anshuman Prasad</a></h6>
                                 <p>Volunteer</p>
                             </div>
                         </div>
@@ -1231,7 +1228,7 @@
                         <div class="team__single van-tilt">
                             <div class="team__single-thumb">
                                 <a href="team-details.html">
-                                    <img src="/frontend_assets/images/team/four.png" alt="Image">
+                                    <img src="/frontend_assets/images/board/4.png" alt="Image">
                                 </a>
                                 <div class="team__icons">
                                     <div class="team__single-content__icon">
@@ -1264,7 +1261,7 @@
                                 </div>
                             </div>
                             <div class="team__single-content">
-                                <h6><a href="team-details.html">Aiden Markram</a></h6>
+                                <h6><a href="team-details.html">Mr. Siddhant Kumar</a></h6>
                                 <p>Volunteer</p>
                             </div>
                         </div>
@@ -1283,6 +1280,7 @@
         </div>
         <div class="shp"></div>
     </section>
+    <!-- === Advisory Board End ===-->
 
     <section class="blog ff-blog">
         <div class="container">
@@ -1393,9 +1391,7 @@
                 </div>
     </section>
 
-
-
-    <!-- ==== counter section start ==== -->
+ <!-- ==== counter section start ==== -->
     <section class="counter">
         <div class="container">
             <div class="row">
@@ -1457,4 +1453,75 @@
         </div>
     </section>
     <!-- ==== / counter section end ==== -->
+
+       <!-- ====  Our Counsellors Panel Start ==== -->
+      <section class="team-seven-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-8 col-lg-7">
+                  <div class="section-seven-wrapper mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                     <h2 class="section-seven-title char-animation">Our counsellors panel</h2>
+                     <p class="section-seven-paragraph">communication and utilizes cutting edge logistic planning to get your shipment completed
+                        on time. itself founded of backgrounds, which simply.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4">
+                  <div class="team-seven-button d-flex justify-content-end mt-40" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                     <a href="contact-us.html" class="btn-seven-primary btn--primary btn-six-primary d-none d-md-flex fw-medium rounded-5">Check your causes <span><img src="{{asset('frontend_assets/images/icon/arrow-btn-seven.svg')}}" alt="arrow"></span></a>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="team-seven-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                     <div class="team-seven-thumb position-relative z-1">
+                        <a href="team-details.html"><img src="{{asset('frontend_assets/images/team/team-seven-thumb1.jpg')}}" alt="thumb"></a>
+                        <div class="team-seven-wrap">
+                           <h4 class="team-seven-title"><a href="team-details.html">Estamina Cordix</a></h4>
+                           <div class="team-seven-social">
+                              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                              <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+                              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="team-seven-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                     <div class="team-seven-thumb position-relative z-1">
+                        <a href="team-details.html"><img src="{{asset('frontend_assets/images/team/team-seven-thumb2.jpg')}}" alt="thumb"></a>
+                        <div class="team-seven-wrap">
+                           <h4 class="team-seven-title"><a href="team-details.html">Estamina Cordix</a></h4>
+                           <div class="team-seven-social">
+                              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                              <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+                              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="team-seven-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                     <div class="team-seven-thumb position-relative z-1">
+                        <a href="team-details.html"><img src="{{asset('frontend_assets/images/team/team-seven-thumb3.jpg')}}" alt="thumb"></a>
+                        <div class="team-seven-wrap">
+                           <h4 class="team-seven-title"><a href="team-details.html">Estamina Cordix</a></h4>
+                           <div class="team-seven-social">
+                              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                              <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+                              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ====  Our Counsellors Panel end ==== -->
 @endsection
