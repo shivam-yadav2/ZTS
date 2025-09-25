@@ -9,10 +9,11 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryEventController;
 
 
+Route::view('/','Admin.pages.index');
+Route::view('GalleryEventForm','Admin.pages.GalleryEvent.GalleryEventForm');
 
 Route::get('/admin/login', [AdminController::class, 'login']);
 Route::post('loginCheck', [AdminController::class, 'loginCheck']);
-
 
 Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::get('dashboard', function () {
