@@ -121,7 +121,7 @@
                     <div class="col-12 col-lg-5 col-xl-5">
                         <div class="commit__thumb">
                             <div class="thumb-lg">
-                                <img src="{{asset('frontend_assets/images/commit-thumb.png')}}" alt="Image">
+                                <img src="{{asset('frontend_assets/images/journey/human_first.jpg')}}" alt="Image">
 
                             </div>
                             <div class="thumb-sm">
@@ -145,9 +145,9 @@
                                 <h2 class="title-animation mt-0">Helping each other can
                                     make world better
                                 </h2>
-                                <p class="text-gr-2">Volunteering offers opportunities to develop new skills and gain
+                                <!-- <p class="text-gr-2">Volunteering offers opportunities to develop new skills and gain
                                     valuable experience. This can include leadership, communication, project
-                                </p>
+                                </p> -->
                                 <p class="text-gr-2">I see human all around but with no humanity....Mahatma Gandhi
                                 </p>
                                 <p class="text-gr-2">Is it right???? Yes...up to some extent it is right because the race of Success, Money & Respect begins from the time when a child takes birth. We all start dreaming to make the child successful, rich individual who can take care of all the responsibilities.
@@ -215,24 +215,24 @@
         <!-- ==== / commit section end ==== -->
 
 <!-- ==== service section start ==== -->
-        <section class="ff-service pt-120 pb-120">
+        <section class="ff-service pt-120 pb-120 mb-4">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10 col-xl-7">
                         <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
-                            <span class="sub-title">We are always open for children</span>
-                            <h2 class="title-animation mt-0 fw-6 text-white">Helping each other can
+                            <span class="sub-title mt-5">We are always open for children</span>
+                            <h2 class="title-animation mt-4 fw-6 text-white">Helping each other can
                                 make world better
 
                             </h2>
                         </div>
                     </div>
                 </div>
-                <div class="row gutter-30">
+                <div class="row gutter-30 pb-5">
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64"
+                                <img src="{{asset('frontend_assets/images/journey/icon-1.png')}}" width="65" height="64" viewBox="0 0 65 64"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_686)">
                                         <path
@@ -248,21 +248,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Educate & help
-                                    poor people</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Direct Donations</p>
+                                <p class="mt-20">Online Donation (Through DD/Cheque) </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53"
+                                <img src="{{asset('frontend_assets/images/journey/icon-2.png')}}" width="53" height="53" viewBox="0 0 53 53"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_667)">
                                         <path
@@ -281,21 +278,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Helping People
-                                    & Donation</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Development Agencies</p>
+                                <p class="mt-20">National and international organisations (Educational institutions, donor organisations etc) can partner with Zindagi Tujhe Salaam under Alliances to further the development initiatives at grassroots level. </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"
+                                <img src="{{asset('frontend_assets/images/journey/icon-3.png')}}" width="55" height="55" viewBox="0 0 55 55"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_700)">
                                         <path
@@ -338,20 +332,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Ensure Safety &Treatment</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Individuals</p>
+                                <p class="mt-20">In our journey so far, we have received immense support from numerous individuals across all ages and segments. </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
+                                <img src="{{asset('frontend_assets/images/journey/icon-4.png')}}" width="66" height="66" viewBox="0 0 66 66"
                                     fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M33.0282 6.60303C21.5368 6.60303 12.208 15.9325 12.208 27.4232C12.208 38.9145 21.5368 48.244 33.0282 48.244C44.5195 48.244 53.8483 38.9145 53.8483 27.4232C53.8483 15.9325 44.5195 6.60303 33.0282 6.60303ZM33.0282 10.6655C42.277 10.6655 49.7858 18.1743 49.7858 27.4232C49.7858 36.672 42.277 44.1815 33.0282 44.1815C23.7793 44.1808 16.2705 36.672 16.2705 27.4232C16.2705 18.1743 23.7793 10.6655 33.0282 10.6655Z"
@@ -368,21 +360,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">Awwarded service
-                                    & Treatment</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Colleges, Students Associations</p>
+                                <p class="mt-20">We at ZTS in our journey so far, worked in association with the youth for our welfare initiatives and have received remarkable support.We beckon your valuable support for our innovative initiatives </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64"
+                                <img src="{{asset('frontend_assets/images/journey/icon-5.png')}}" width="65" height="64" viewBox="0 0 65 64"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_686)">
                                         <path
@@ -398,21 +387,24 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Educate & help
-                                    poor people</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Grassroots NGOs</p>
+                                <p class="mt-20">You can partner with Zindagi Tujhe Salaam under different programs </p>
+                                <ul>
+                                    <li>Jagrati - Educational Program</li>
+                                    <li>Muhim Awareness Program</li>
+                                    <li>Sneh- Mental & Physical Health</li>
+                                    <li>Muskaan-Spreading Happiness</li>
+                                </ul>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53"
+                                <img src="{{asset('frontend_assets/images/journey/icon-6.png')}}" width="53" height="53" viewBox="0 0 53 53"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_667)">
                                         <path
@@ -431,21 +423,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Helping People
-                                    & Donation</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Events</p>
+                                <p class="mt-20">This is a department where we organize different charity raising events. We have decided to celebrate a day as a CHARITY DAY with all the schools and institution. </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"
+                                <img src="{{asset('frontend_assets/images/journey/icon-7.png')}}" width="55" height="55" viewBox="0 0 55 55"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_700)">
                                         <path
@@ -488,20 +477,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Ensure Safety &Treatment</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Corporates</p>
+                                <p class="mt-20">Support us through our Pay Roll Giving programme,Employee Engagement,Cause Related Marketing,Direct Child Support,Youth Support </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
+                                <img src="{{asset('frontend_assets/images/journey/icon-8.png')}}" width="66" height="66" viewBox="0 0 66 66"
                                     fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M33.0282 6.60303C21.5368 6.60303 12.208 15.9325 12.208 27.4232C12.208 38.9145 21.5368 48.244 33.0282 48.244C44.5195 48.244 53.8483 38.9145 53.8483 27.4232C53.8483 15.9325 44.5195 6.60303 33.0282 6.60303ZM33.0282 10.6655C42.277 10.6655 49.7858 18.1743 49.7858 27.4232C49.7858 36.672 42.277 44.1815 33.0282 44.1815C23.7793 44.1808 16.2705 36.672 16.2705 27.4232C16.2705 18.1743 23.7793 10.6655 33.0282 10.6655Z"
@@ -518,21 +505,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">Awwarded service
-                                    & Treatment</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Schools</p>
+                                <p class="mt-20">ZTS believe that schools by virtue of their reach are greatly instrumental in providing the much needed impetus to our movement for the development of underprivileged children and youth. </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64"
+                                <img src="{{asset('frontend_assets/images/journey/icon-9.png')}}" width="65" height="64" viewBox="0 0 65 64"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_686)">
                                         <path
@@ -548,21 +532,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Educate & help
-                                    poor people</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Celebrities</p>
+                                <p class="mt-20">ZTS has received immense support from many celebrities of the state and appreciate their big contribution in bringing the organization to this height. </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53"
+                                <img src="{{asset('frontend_assets/images/journey/icon-10.png')}}" width="53" height="53" viewBox="0 0 53 53"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_667)">
                                         <path
@@ -581,21 +562,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Helping People
-                                    & Donation</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Media House</p>
+                                <p class="mt-20">The media fraternity has given, Zindagi Tujhe Salaam overwhelming support so far. </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"
+                                <img src="{{asset('frontend_assets/images/journey/icon-11.png')}}" width="55" height="55" viewBox="0 0 55 55"
                                     fill="none">
                                     <g clip-path="url(#clip0_67_700)">
                                         <path
@@ -638,20 +616,18 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">We Ensure Safety &Treatment</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Products</p>
+                                <p class="mt-20">This is a unique mode of participation promoted by Zindagi Tujhe Salaam an innovative series of Gifts conceptualised, designed and produced by Human First Department, with an intention to provide people accross the nation an opportunity to acknowledge their relatives, loved ones, employees, clients and associates for their contribution by gifting them something unique from an array of the choicest of items. The product range of products assure you of the highest quality and finishes, with loads of options to choose from. this is an opportunity to be a part of this program and bring a smile in the lives of thousands of destitute children and youth. All proceeds will be utilized towards funding Zindagi Tujhe Salaam various development projects. </p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
                         <div class="ff-service__single">
                             <div class="thumb">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
+                                <img src="{{asset('frontend_assets/images/journey/icon-12.png')}}" width="66" height="66" viewBox="0 0 66 66"
                                     fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M33.0282 6.60303C21.5368 6.60303 12.208 15.9325 12.208 27.4232C12.208 38.9145 21.5368 48.244 33.0282 48.244C44.5195 48.244 53.8483 38.9145 53.8483 27.4232C53.8483 15.9325 44.5195 6.60303 33.0282 6.60303ZM33.0282 10.6655C42.277 10.6655 49.7858 18.1743 49.7858 27.4232C49.7858 36.672 42.277 44.1815 33.0282 44.1815C23.7793 44.1808 16.2705 36.672 16.2705 27.4232C16.2705 18.1743 23.7793 10.6655 33.0282 10.6655Z"
@@ -668,14 +644,12 @@
                                 </svg>
                             </div>
                             <div class="content mt-15">
-                                <p class="txt-lg fw-7">Awwarded service
-                                    & Treatment</p>
-                                <p class="mt-20">Transmax is the world tr
-                                    we uphold industry Cu
-                                    stomer Oriented </p>
-                                <div class="mt-30">
+                                <p class="txt-lg fw-7">Volunteers</p>
+                                <p class="mt-20">Volunteerism or volunteer services have been part of virtually every civilization and society. Defined in broad terms it is the contribution made by individuals in terms of quality time, specialized skills, fiscal support, etc. This entails varied shades and actions ranging from well-being of the neighbours, the community or the society at large. </p>
+                                <p class="mt-20">It is also the basis for a load of activities of development organizations and institutions alike Zindagi Tujhe Salaam also intimately links a number of activities in its operational areas depending upon volunteer efforts.</p>
+                                <!-- <div class="mt-30">
                                     <a href="our-causes.html">Read More<i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

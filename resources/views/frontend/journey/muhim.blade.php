@@ -212,8 +212,8 @@
                 <div class="row gutter-30 align-items-center">
                     <div class="col-12 col-md-8 col-xl-7">
                         <div class="section__header mb-0">
-                            <span class="sub-title">We are always open for children</span>
-                            <h2 class="title-animation mt-0 fw-7 hb text-white">our non-profit services
+                            <span class="sub-title mt-4">We are always open for children</span>
+                            <h2 class="title-animation mt-2 fw-7 hb text-white">our non-profit services
                                 you must love
                             </h2>
                         </div>
@@ -226,8 +226,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
+                <div class="row mt-4">
+                    <div class="col-12 pb-5">
                         <div class="ff-service-three-inner mt-60">
                             <div class="ff-service-three-single">
                                 <div class="thumb">
@@ -251,7 +251,7 @@
                                 </div>
                                 <div class="content">
                                     <a href="our-causes.html" aria-label="view details">
-                                        Corporate Gifts donate
+                                         Workshops in schools
                                     </a>
                                 </div>
                             </div>
@@ -270,25 +270,30 @@
                                 </div>
                                 <div class="content">
                                     <a href="our-causes.html" aria-label="view details">
-                                        Corporate Gifts donate
+                                        Society campus
                                     </a>
                                 </div>
                             </div>
-                            <div class="ff-service-three-single ff-service-three-single-alt">
-                                <div class="content mt-0">
+                            <div class="ff-service-three-single">
+                                <div class="thumb">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                        fill="none">
+                                        <path
+                                            d="M28.5 22.5V19.5C28.5 19.1022 28.342 18.7206 28.0607 18.4393C27.7794 18.158 27.3978 18 27 18H21C20.6022 18 20.2206 18.158 19.9393 18.4393C19.658 18.7206 19.5 19.1022 19.5 19.5V22.5H16.5C16.1022 22.5 15.7206 22.658 15.4393 22.9393C15.158 23.2206 15 23.6022 15 24V30C15 30.3978 15.158 30.7794 15.4393 31.0607C15.7206 31.342 16.1022 31.5 16.5 31.5H19.5V34.5C19.5 34.8978 19.658 35.2794 19.9393 35.5607C20.2206 35.842 20.6022 36 21 36H27C27.3978 36 27.7794 35.842 28.0607 35.5607C28.342 35.2794 28.5 34.8978 28.5 34.5V31.5H31.5C31.8978 31.5 32.2794 31.342 32.5607 31.0607C32.842 30.7794 33 30.3978 33 30V24C33 23.6022 32.842 23.2206 32.5607 22.9393C32.2794 22.658 31.8978 22.5 31.5 22.5H28.5ZM30 28.5H27C26.6022 28.5 26.2206 28.658 25.9393 28.9393C25.658 29.2206 25.5 29.6022 25.5 30V33H22.5V30C22.5 29.6022 22.342 29.2206 22.0607 28.9393C21.7794 28.658 21.3978 28.5 21 28.5H18V25.5H21C21.3978 25.5 21.7794 25.342 22.0607 25.0607C22.342 24.7794 22.5 24.3978 22.5 24V21H25.5V24C25.5 24.3978 25.658 24.7794 25.9393 25.0607C26.2206 25.342 26.6022 25.5 27 25.5H30V28.5Z" />
+                                        <path
+                                            d="M43.5 12H33V7.5C33 7.10218 32.842 6.72064 32.5607 6.43934C32.2794 6.15804 31.8978 6 31.5 6H16.5C16.1022 6 15.7206 6.15804 15.4393 6.43934C15.158 6.72064 15 7.10218 15 7.5V12H4.5C4.10218 12 3.72064 12.158 3.43934 12.4393C3.15804 12.7206 3 13.1022 3 13.5V40.5C3 40.8978 3.15804 41.2794 3.43934 41.5607C3.72064 41.842 4.10218 42 4.5 42H43.5C43.8978 42 44.2794 41.842 44.5607 41.5607C44.842 41.2794 45 40.8978 45 40.5V13.5C45 13.1022 44.842 12.7206 44.5607 12.4393C44.2794 12.158 43.8978 12 43.5 12ZM18 9H30V12H18V9ZM42 39H6V15H42V39Z" />
+                                    </svg>
+                                    <a href="our-causes.html" class="arr">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                                <div class="content">
                                     <a href="our-causes.html" aria-label="view details">
-                                        Corporate Gifts donate
+                                        Meeting out personally
                                     </a>
-                                    <p class="text-gr mt-10">Find information for
-                                        people with dis</p>
-                                    <div class="mt-20">
-                                        <a href="our-causes.html" class="arr">
-                                            Read More
-                                            <i class="fa-solid fa-arrow-right-long"></i>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
+                           
                             <div class="ff-service-three-single">
                                 <div class="thumb">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43"
@@ -302,7 +307,7 @@
                                 </div>
                                 <div class="content">
                                     <a href="our-causes.html" aria-label="view details">
-                                        Corporate Gifts donate
+                                        Doing plays on awareness on parenting
                                     </a>
                                 </div>
                             </div>
@@ -326,7 +331,7 @@
                                 </div>
                                 <div class="content">
                                     <a href="our-causes.html" aria-label="view details">
-                                        Corporate Gifts donate
+                                        Doing activity to let them know about their child by organising competitions
                                     </a>
                                 </div>
                             </div>
@@ -338,7 +343,7 @@
                 <img src="{{asset('frontend_assets/images/cgf.png')}}" alt="Image">
             </div>
             <div class="h-green">
-                <img src="{{('frontend_assets/images/h-green.png')}}" alt="Image">
+                <img src="{{asset('frontend_assets/images/h-green.png')}}" alt="Image">
             </div>
         </section>
         <!-- ==== / service section end ==== -->
