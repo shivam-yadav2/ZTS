@@ -7,13 +7,33 @@ document.querySelectorAll(".sidebar-menu .dropdown").forEach(function (dropdown)
     var item = this;
 
     // Close all sibling dropdowns
+   // sidebar submenu collapsible js
+document.querySelectorAll(".sidebar-menu .dropdown").forEach(function (dropdown) {
+  dropdown.addEventListener("click", function () {
+    var item = this;
+
+    // Close all sibling dropdowns
     item.parentNode.querySelectorAll(".dropdown").forEach(function (sibling) {
       if (sibling !== item) {
-        sibling.querySelector(".sidebar-submenu").style.display = 'none';
+        const siblingSubmenu = sibling.querySelector(".sidebar-submenu");
+        if (siblingSubmenu) {
+          siblingSubmenu.style.display = 'none';
+        }
         sibling.classList.remove("dropdown-open");
         sibling.classList.remove("open");
       }
     });
+
+    // Toggle the current dropdown
+    var submenu = item.querySelector(".sidebar-submenu");
+    if (submenu) {   // ✅ prevent error
+      submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    item.classList.toggle("dropdown-open");
+  });
+});
+
 
     // Toggle the current dropdown
     var submenu = item.querySelector(".sidebar-submenu");

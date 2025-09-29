@@ -32,6 +32,6 @@ class AdminController extends Controller
         $request->session()->flush();
 
         // Redirect to login
-        return redirect('admin/login')->with('success', 'Logged out successfully!');
+        return redirect('/admin/login')->with('success', 'Logged out successfully!');
     }
 }

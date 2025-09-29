@@ -12,22 +12,23 @@ class EnquiryController extends Controller
     public function index()
     {
         $enquiry = Enquiry::all();
-        return view('admin.Enquiry.EnquiryList', compact('enquiry'));
+        return view('admin.pages.Enquiry.EnquiryList', compact('enquiry'));
     }
     public function enquiryForm(){
-        return view('admin.Enquiry.AddEnquiryForm');
+        return view('admin.pages.Enquiry.AddEnquiryForm');
     }
     public function store(Request $request)
     {
+ 
       $record=  $request->validate([
             'name' => 'required|min:2',
-            'mobile' => 'required|max:10',
+            'mobile' => 'required|digits:10',
             'email' => 'required|email',
             'subject' => 'required',
             'msg' => 'required',
          
         ]);
-
+       
         Enquiry::create([
             'name' => $request->name,  
             'mobile' => $request->mobile,
@@ -35,7 +36,7 @@ class EnquiryController extends Controller
             'subject' => $request->subject,
             'msg' => $request->msg,
         ]);
-
+        
         return redirect('admin/enquiry/index')->with('success', 'Enquiry added successfully!');
     }
 
@@ -44,7 +45,7 @@ class EnquiryController extends Controller
    public function edit($id)
    {
        $enquiry = Enquiry::findOrFail($id);
-       return view('admin.Enquiry.EnquiryUpdate', compact('enquiry'));
+       return view('admin.pages.Enquiry.EnquiryUpdate', compact('enquiry'));
    }
 
    /** Update a contact record.

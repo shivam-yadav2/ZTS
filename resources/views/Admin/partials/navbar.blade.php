@@ -16,23 +16,35 @@
 
             </div>
         </div>
+
+        
+     
         <div class="col-auto">
             <div class="flex flex-wrap items-center gap-3">
-                <button type="button" id="theme-toggle" class="w-10 h-10 bg-neutral-200 dark:bg-neutral-700 dark:text-white rounded-full flex justify-center items-center">
-                    <span id="theme-toggle-dark-icon" class="hidden">
-                        <i class="ri-sun-line"></i>
-                    </span>
-                    <span id="theme-toggle-light-icon" class="hidden">
-                        <i class="ri-moon-line"></i>
-                    </span>
-                </button>
+            <div>
+                        <button type="button" class="btn border border-success-600 text-success-600 hover:bg-success-600 hover:text-white rounded-full px-5 py-[11px] flex items-center gap-2">
+                      <a href="{{ url('admin/logout') }}"> Logout</a>
+                        <iconify-icon icon="mingcute:square-arrow-right-line" class="text-xl"></iconify-icon>
+                    </button>
+        </div>
 
-              
+            <button type="button" id="theme-toggle" class="w-10 h-10 bg-neutral-200 dark:bg-neutral-700 dark:text-white rounded-full flex justify-center items-center">
+                            <span id="theme-toggle-dark-icon" class="hidden">
+                                <i class="ri-sun-line"></i>
+                            </span>
+                            <span id="theme-toggle-light-icon" class="">
+                                <i class="ri-moon-line"></i>
+                            </span>
+                        </button>
+                
             
 
 
                 <button data-dropdown-toggle="dropdownProfile" class="flex justify-center items-center rounded-full" type="button">
-                    <img src="assets/images/user.png" alt="image" class="w-10 h-10 object-fit-cover rounded-full">
+                    @if (session()->has(''))
+                    
+                    @endif
+                    <img src="{{ url('assets/images/user.png') }}" alt="image" class="w-10 h-10 object-fit-cover rounded-full">
                 </button>
                 <div id="dropdownProfile" class="z-10 hidden bg-white dark:bg-neutral-700 rounded-lg shadow-lg dropdown-menu-sm p-3">
                     <div class="py-3 px-4 rounded-lg bg-primary-50 dark:bg-primary-600/25 mb-4 flex items-center justify-between gap-2">

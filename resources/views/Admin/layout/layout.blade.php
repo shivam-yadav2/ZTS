@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    @include('Admin.partials.head')
+    @include('admin.partials.head')
 
 <body class="dark:bg-neutral-800 bg-neutral-100 dark:text-white">
 
     <!-- ..::  header area start ::.. -->
-    @include('Admin.partials.sidebar')
+    @include('admin.partials.sidebar')
     <!-- ..::  header area end ::.. -->
 
     <main class="dashboard-main">
 
         <!-- ..::  navbar start ::.. -->
-        @include('Admin.partials.navbar')
+        @include('admin.partials.navbar')
         <!-- ..::  navbar end ::.. -->
 
         <div class="dashboard-main-body">
             <!-- ..::  breadcrumb  start ::.. -->
-            @include('Admin.partials.breadcrumb')
+            @include('admin.partials.breadcrumb')
             <!-- ..::  breadcrumb end ::.. -->
 
             {{-- This is where page content will be injected --}}
@@ -24,15 +24,29 @@
         </div>
 
         <!-- ..::  footer  start ::.. -->
-        @include('Admin.partials.footer')
+        @include('admin.partials.footer')
         <!-- ..::  footer end ::.. -->
 
     </main>
 
     <!-- ..::  scripts  start ::.. -->
-    @include('Admin.partials.script')
+    @include('admin.partials.script')
     <!-- ..::  scripts  end ::.. -->
 
     @yield('script')
+
+        <!-- SweetAlert CSS & JS -->
+<!-- Blade Template -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+@if(session('success'))
+<script>
+Swal.fire({
+  icon: 'success',
+  title: 'Success!',
+  text: '{{ session('success') }}',
+});
+</script>
+@endif
 </body>
 </html>
