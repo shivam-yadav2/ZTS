@@ -77,8 +77,14 @@ Route::view('/', 'frontend.index');
 Route::view('/contact', 'frontend.contact');
 
 //About Us Page Routes
-Route::view('/about/guiding_principle', 'frontend.about.guiding_principle');
-Route::view('/about/team/core_member', 'frontend.about.team.core_member');
-Route::view('/about/team/influencer', 'frontend.about.team.influencer');
-Route::view('/about/team/board', 'frontend.about.team.board');
-Route::view('/about/team/member', 'frontend.about.team.member');
+Route::view('/about/guiding_principle', 'frontend.guiding_principle');
+Route::view('/about/team/core_member', 'frontend.team.core_member');
+Route::view('/about/team/influencer', 'frontend.team.influencer');
+Route::view('/about/team/board', 'frontend.team.board');
+Route::view('/about/team/member', 'frontend.team.member');
+
+Route::view('/about/journey/human_first','frontend.journey.human_first');
+Route::view('/about/journey/muhim','frontend.journey.muhim');
+Route::view('/about/journey/jagrati','frontend.journey.jagrati');
+Route::view('/about/journey/sneh','frontend.journey.sneh');
+Route::view('/about/journey/muskaan','frontend.journey.muskaan');
