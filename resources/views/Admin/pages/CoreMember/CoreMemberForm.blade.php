@@ -27,15 +27,18 @@
                         <label class="form-label"> name:</label>
                         <input type="text" name="name" class="form-control">
                     </div>
-                    <div class="col-span-12">
-                        <label class="form-label"> description:</label>
-                        <input type="text" name="description" class="form-control">
-                    </div>
+                    
                 
                     <div class="col-span-12">
                             <label class="form-label">Image: </label>
                             <input class="border border-neutral-200 dark:border-neutral-600 w-full rounded-lg text-lg" name="img" type="file">
                         </div>
+
+                        <div class="lg:col-span-12 col-span-12">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="4" cols="50" name="description" placeholder="Enter a description..."> </textarea>
+                        </div>
+
                       <div class="col-span-12">
                       <button type="submit" class="btn bg-primary-100 text-primary-600 hover:bg-primary-700 hover:text-white rounded-lg px-6 py-[14px]">  Add</button>
                       </div>

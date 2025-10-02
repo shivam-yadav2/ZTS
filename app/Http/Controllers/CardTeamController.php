@@ -1,0 +1,141 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\TeamCard;
+use Illuminate\Support\Facades\File;
+
+class CardTeamController extends Controller
+{
+
+    // Core member methods starts from here
+
+    // Show all records
+    public function index()
+    {
+        $data = TeamCard::where('type','coremember')->get();
+        return view('admin.pages.TeamCard.Member.MemberTeamCardList', compact('data'));
+    }
+
+    // Show the add form
+    public function showForm()
+    {
+        return view('admin.pages.TeamCard.Member.MemberTeamCardForm');
+    }
+
+    // Store new record
+    public function store(Request $request)
+    {
+   
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'img' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048',
+            'msg' => 'required|string',
+            'type'=>'required',
+        ]);
+  
+        $team = new TeamCard();
+        $team->name = $request->name;
+        $team->description = $request->msg;
+        $team->type=$request->type;
+
+        // Handle image upload
+        if ($request->hasFile('img')) {
+            $file = $request->file('img');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('assets/uploads/teamcard'), $filename);
+            $team->img = $filename;
+        }
+
+        $team->save();
+
+        return redirect()->back()->with('success', 'Team member added successfully!');
+    }
+
+    // Show edit form
+    public function edit($id)
+    {
+        $data = TeamCard::findOrFail($id);
+        return view('admin.pages.TeamCard.Member.MemberUpdateCard', compact('data'));
+    }
+
+    // Update record
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'img' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+            'msg' => 'nullable|string',
+        ]);
+
+        $team = TeamCard::findOrFail($id);
+        $team->name = $request->name;
+        $team->description = $request->msg;
+        $team->type=$request->type;
+        // Handle image update
+        if ($request->hasFile('img')) {
+            // Delete old image if exists
+            $oldPath = public_path('assets/uploads/teamcard/' . $team->img);
+            if (File::exists($oldPath)) {
+                File::delete($oldPath);
+            }
+
+            $file = $request->file('img');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('assets/uploads/teamcard'), $filename);
+            $team->img = $filename;
+        }
+
+        $team->save();
+
+        return redirect('admin/teamcard/index')->with('success', 'Team member updated successfully!');
+    }
+
+    // Delete record
+    public function destroy($id)
+    {
+        $team = TeamCard::findOrFail($id);
+
+        // Delete image
+        $path = public_path('assets/uploads/teamcard/' .$team->img);
+        if (File::exists($path)) {
+            File::delete($path);
+        }
+
+        $team->delete();
+
+        return redirect()->back()->with('success', 'Team member deleted successfully!');
+    }
+
+
+    // Advisory section cards starts form here 
+    // store method already made at above
+    public function advisoryindex()
+    {
+        $advisory_data = TeamCard::where('type', 'advisory')->get();
+        return view('admin.pages.TeamCard.Advisory.AdvisoryTeamCardList', compact('advisory_data'));
+    }
+
+    // Show the add form
+    public function  advisoryshowForm()
+    {
+        return view('admin.pages.TeamCard.Advisory.AdvisoryTeamCardForm');
+    }
+
+      public function advisorydestroy($id)
+    {
+        $team = TeamCard::findOrFail($id);
+
+        // Delete image
+        $path = public_path('assets/uploads/teamcard/' .$team->img);
+        if (File::exists($path)) {
+            File::delete($path);
+        }
+
+        $team->delete();
+
+        return redirect()->back()->with('success', 'Team member deleted successfully!');
+    }
+}

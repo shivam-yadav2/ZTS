@@ -113,6 +113,52 @@
                 </ul>
             </li>
         
+            <li class="dropdown">
+                <a href="javascript:void(0)">
+                    <iconify-icon icon="solar:pie-chart-outline" class="menu-icon"></iconify-icon>
+                    <span>Member Team Card</span>
+                </a>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <a href="{{ url('admin/teamcard/teamcardForm') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i>Add card</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('admin/teamcard/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View card</a>
+                    </li>
+                
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">
+                    <iconify-icon icon="solar:pie-chart-outline" class="menu-icon"></iconify-icon>
+                    <span>Advisory Team Card</span>
+                </a>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <a href="{{ url('admin/advisory/teamcardForm') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i>Add card</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('admin/advisory/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View card</a>
+                    </li>
+                
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">
+                    <iconify-icon icon="solar:pie-chart-outline" class="menu-icon"></iconify-icon>
+                    <span>Member Team Card</span>
+                </a>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <a href="{{ url('admin/teamcard/teamcardForm') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i>Add card</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('admin/teamcard/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View card</a>
+                    </li>
+                
+                </ul>
+            </li>
+
                 <a href="{{url('widgets')}}">
                     <iconify-icon icon="fe:vector" class="menu-icon"></iconify-icon>
                     <span>Widgets</span>

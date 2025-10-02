@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CardTeamController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CoreMemberController;
 use App\Http\Controllers\EnquiryController;
@@ -70,6 +71,21 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::put('ourjourney/update/{id}', [OurJourneyController::class, 'update']);
     Route::get('ourjourney/destroy/{id}', [OurJourneyController::class, 'destroy']);
 
+    // store method  route for our team card 
+    Route::post('teamcard/store', [CardTeamController::class, 'store']);
+    // Our Team Card core member routes
+    Route::get('teamcard/teamcardForm', [CardTeamController::class, 'showForm']);
+    Route::get('teamcard/index', [CardTeamController::class, 'index']);
+    Route::get('teamcard/edit/{id}', [CardTeamController::class, 'edit']);
+    Route::put('teamcard/update/{id}', [CardTeamController::class, 'update']);
+    Route::get('teamcard/destroy/{id}', [CardTeamController::class, 'destroy']);
+
+    //Advisory cards routes start here 
+    Route::get('advisory/teamcardForm', [CardTeamController::class, 'advisoryshowForm']);
+    Route::get('advisory/index', [CardTeamController::class, 'advisoryindex']);
+    Route::get('advisory/edit/{id}', [CardTeamController::class, 'edit']);
+    Route::put('advisory/update/{id}', [CardTeamController::class, 'update']);
+    Route::get('advisory/destroy/{id}', [CardTeamController::class, 'advisorydestroy']);
 });
 
 //Frontend Pages Routes
