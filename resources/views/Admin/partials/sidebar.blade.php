@@ -3,10 +3,10 @@
         <iconify-icon icon="radix-icons:cross-2"></iconify-icon>
     </button>
     <div>
-        <a href="{{ url('index') }}" class="sidebar-logo">
-            <img src="assets/images/logo.png " alt="site logo" class="light-logo">
-            <img src="assets/images/logo-light.png " alt="site logo" class="dark-logo">
-            <img src="assets/images/logo-icon.png" alt="site logo" class="logo-icon">
+        <a href="index.html" class="sidebar-logo">
+            <img src="{{ asset('assets/images/logo.png') }}" alt="site logo" class="light-logo">
+            <img src="{{ asset('assets/images/logo-light.png') }}" alt="site logo" class="dark-logo">
+            <img src="{{ asset('assets/images/logo-icon.png') }}" alt="site logo" class="logo-icon">
         </a>
     </div>
     <div class="sidebar-menu-area">
@@ -16,239 +16,100 @@
                     <iconify-icon icon="solar:home-smile-angle-outline" class="menu-icon"></iconify-icon>
                     <span>Dashboard</span>
                 </a>
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="{{ url('index') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> AI</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('index2') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> CRM</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('index3') }}"><i class="ri-circle-fill circle-icon text-info-600 w-auto"></i> eCommerce</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('index4') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> Cryptocurrency</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('index5') }}"><i class="ri-circle-fill circle-icon text-success-600 w-auto"></i> Investment</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('index6') }}"><i class="ri-circle-fill circle-icon text-purple-600 w-auto"></i> LMS / Learning System</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('index7') }}"><i class="ri-circle-fill circle-icon text-info-600 w-auto"></i> NFT & Gaming</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('index8') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> Medical</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('index9') }}"><i class="ri-circle-fill circle-icon text-purple-600 w-auto"></i> Analytics</a>
-                    </li>
-                </ul>
+         
             </li>
-            <li class="sidebar-menu-group-title">Application</li>
-            <li>
-                <a href="{{ url('email') }}">
-                    <iconify-icon icon="mage:email" class="menu-icon"></iconify-icon>
-                    <span>Email</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ url('chatMessage') }}">
-                    <iconify-icon icon="bi:chat-dots" class="menu-icon"></iconify-icon>
-                    <span>Chat</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ url('calendarMain') }}">
-                    <iconify-icon icon="solar:calendar-outline" class="menu-icon"></iconify-icon>
-                    <span>Calendar</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ url('kanban') }}">
-                    <iconify-icon icon="material-symbols:map-outline" class="menu-icon"></iconify-icon>
-                    <span>Kanban</span>
-                </a>
-            </li>
+           
             <li class="dropdown">
                 <a href="javascript:void(0)">
                     <iconify-icon icon="hugeicons:invoice-03" class="menu-icon"></iconify-icon>
-                    <span>Invoice</span>
+                    <span>Gallery Event</span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
-                        <a href="invoiceList') ?>"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> List</a>
+                        <a href="{{ url('admin/events/create') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Add Event</a>
                     </li>
                     <li>
-                        <a href="invoicePreview') ?>"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Preview</a>
+                        <a href="{{ url('admin/events') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View Events</a>
                     </li>
-                    <li>
-                        <a href="invoiceAdd') ?>"><i class="ri-circle-fill circle-icon text-info-600 w-auto"></i> Add new</a>
-                    </li>
-                    <li>
-                        <a href="invoiceEdit') ?>"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> Edit</a>
-                    </li>
+                   
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)">
-                    <iconify-icon icon="hugeicons:ai-brain-03" class="menu-icon"></iconify-icon>
-                    <span>Ai Application</span>
-                </a>
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="textGenerator') ?>"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Text Generator</a>
-                    </li>
-                    <li>
-                        <a href="codeGenerator') ?>"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Code Generator</a>
-                    </li>
-                    <li>
-                        <a href="imageGenerator') ?>"><i class="ri-circle-fill circle-icon text-info-600 w-auto"></i> Image Generator</a>
-                    </li>
-                    <li>
-                        <a href="voiceGenerator') ?>"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> Voice Generator</a>
-                    </li>
-                    <li>
-                        <a href="videoGenerator') ?>"><i class="ri-circle-fill circle-icon text-success-600 w-auto"></i> Video Generator</a>
-                    </li>
-                </ul>
-            </li>
+  
 
             <li class="dropdown">
                 <a href="javascript:void(0)">
                     <iconify-icon icon="hugeicons:bitcoin-circle" class="menu-icon"></iconify-icon>
-                    <span>Crypto Currency</span>
+                    <span>Enquiry</span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
-                        <a href="wallet') ?>"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Wallet</a>
+                        <a href="{{ url('admin/enquiry/enquiryForm') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Add enquiry</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('admin/enquiry/index') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> View enquiry</a>
                     </li>
                 </ul>
             </li>
 
-            <li class="sidebar-menu-group-title">UI Elements</li>
+      
 
             <li class="dropdown">
                 <a href="javascript:void(0)">
                     <iconify-icon icon="solar:document-text-outline" class="menu-icon"></iconify-icon>
-                    <span>Components</span>
+                    <span>Core Member</span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
-                        <a href="{{ url('typography') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Typography</a>
+                        <a href="{{ url('admin/coremember/CoreMemberForm') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Add member</a>
                     </li>
                     <li>
-                        <a href=" {{ url('colors') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Colors</a>
+                        <a href=" {{ url('admin/coremember/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View Member</a>
                     </li>
-                    <li>
-                        <a href="{{ url('button') }}"><i class="ri-circle-fill circle-icon text-success-600 w-auto"></i> Button</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('dropdown') }}"><i class="ri-circle-fill circle-icon text-purple-600  dark:text-purple-400 w-auto"></i> Dropdown</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('alert') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Alerts</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('card') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> Card</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('carousel') }}"><i class="ri-circle-fill circle-icon text-info-600 w-auto"></i> Carousel</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('avatar') }}"><i class="ri-circle-fill circle-icon text-success-600 w-auto"></i> Avatars</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('progress') }} "><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Progress bar</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('tabs') }} "><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Tab & Accordion</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('pagination') }} "><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> Pagination</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('badges') }}"><i class="ri-circle-fill circle-icon text-info-600 w-auto"></i> Badges</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('tooltip') }} "><i class="ri-circle-fill circle-icon dark:text-purple-400 w-auto"></i> Tooltip & Popover</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('videos') }} "><i class="ri-circle-fill circle-icon text-cyan-600 w-auto"></i> Videos</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('starRating') }}"><i class="ri-circle-fill circle-icon text-[#7f27ff] w-auto"></i> Star Ratings</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('tags') }}"><i class="ri-circle-fill circle-icon text-[#8252e9] w-auto"></i> Tags</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('list') }}"><i class="ri-circle-fill circle-icon text-[#e30a0a] w-auto"></i> List</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('calendar') }}"><i class="ri-circle-fill circle-icon text-yellow-400 w-auto"></i> Calendar</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('radio') }}"><i class="ri-circle-fill circle-icon text-orange-500 w-auto"></i> Radio</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('switch') }}"><i class="ri-circle-fill circle-icon text-pink-600 w-auto"></i> Switch</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('imageUpload') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Upload</a>
-                    </li>
+              
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="javascript:void(0)">
                     <iconify-icon icon="heroicons:document" class="menu-icon"></iconify-icon>
-                    <span>Forms</span>
+                    <span>Guiding Principle</span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
-                        <a href="{{ url('form') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Input Forms</a>
+                        <a href="{{ url('admin/guidingprinciple/GuidingPrincipleForm') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i>Add</a>
                     </li>
                     <li>
-                        <a href="{{ url('formLayout') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Input Layout</a>
+                        <a href="{{ url('admin/guidingprinciple/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View</a>
                     </li>
-                    <li>
-                        <a href="{{ url('formValidation') }}"><i class="ri-circle-fill circle-icon text-success-600 w-auto"></i> Form Validation</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('wizard') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> Form Wizard</a>
-                    </li>
+                  
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="javascript:void(0)">
                     <iconify-icon icon="mingcute:storage-line" class="menu-icon"></iconify-icon>
-                    <span>Table</span>
+                    <span>Our Journey</span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
-                        <a href="{{ url('tableBasic') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Basic Table</a>
+                        <a href="{{ url('admin/ourjourney/OurJourneyForm') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i>Add</a>
                     </li>
                     <li>
-                        <a href="{{ url('tableData') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Data Table</a>
+                        <a href="{{ url('admin/ourjourney/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View</a>
                     </li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="javascript:void(0)">
                     <iconify-icon icon="solar:pie-chart-outline" class="menu-icon"></iconify-icon>
-                    <span>Chart</span>
+                    <span>Contact</span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
-                        <a href="{{ url('lineChart') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> Line Chart</a>
+                        <a href="{{ url('admin/contact/showForm') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i>Add contact</a>
                     </li>
                     <li>
-                        <a href="{{ url('columnChart') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Column Chart</a>
+                        <a href="{{ url('admin/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View Contact</a>
                     </li>
-                    <li>
-                        <a href="{{ url('pieChart') }}"><i class="ri-circle-fill circle-icon text-success-600 w-auto"></i> Pie Chart</a>
-                    </li>
+                
                 </ul>
             </li>
         

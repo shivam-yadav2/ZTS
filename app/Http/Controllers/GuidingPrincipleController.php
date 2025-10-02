@@ -19,7 +19,7 @@ class GuidingPrincipleController extends Controller
     public function index()
     {
         $info = GuidingPrinciple::all();
-        // return view('admin.CoreMember.CoreMemberList',compact('info'));
+         return view('admin.pages.GuidingPrinciple.GuidingPrincipleList',compact('info'));
     }
 
     /**
@@ -27,7 +27,7 @@ class GuidingPrincipleController extends Controller
      */
     public function GuidingprincipleForm()
     {
-        // return view('admin.CoreMember.CoreMemberForm');
+        return view('admin.pages.GuidingPrinciple.GuidingPrincipleForm');
     }
 
     /**
@@ -35,24 +35,24 @@ class GuidingPrincipleController extends Controller
      */
     public function store(Request $request)
     {
-
+     
         $validator = Validator::make($request->all(), [
             'icon' => 'required|image|mimes:jpeg,jpg,webp,png',
             'heading' => 'required|min:5|max:200',
             'description' => 'required|min:10|max:500',
         ]);
 
-        // if ($validator->fails()) {
-        //     return redirect()->back()->withErrors($validator)->withInput();
-        // }
-
-
         if ($validator->fails()) {
-            return response()->json([
-                'success' => false,
-                'errors' => $validator->errors()
-            ], 422);
+            return redirect()->back()->withErrors($validator)->withInput();
         }
+
+
+        // if ($validator->fails()) {
+        //     return response()->json([
+        //         'success' => false,
+        //         'errors' => $validator->errors()
+        //     ], 422);
+        // }
 
         
         $imageName = null;
@@ -79,12 +79,8 @@ class GuidingPrincipleController extends Controller
             'description' => $request->description,
         ]);
 
-        return response()->json([
-            'msg' => 'Data added successfully',
-            'data' => $data,
-        ]);
-        //return "Data added successfully";
-        //  return redirect(url('admin/coremember/index'))->with('success','Record added successfully');
+      
+           return redirect(url('admin/guidingprinciple/index'))->with('success','Record added successfully');
     }
 
 
@@ -95,7 +91,7 @@ class GuidingPrincipleController extends Controller
     public function edit(string $id)
     {
         $data = GuidingPrinciple::find($id);
-        // return view('admin.CoreMember.CoreMemberUpdate',compact('data'));
+        return view('admin.pages.GuidingPrinciple.GuidingPrincipleUpdate',compact('data'));
     }
 
     /**
@@ -139,13 +135,10 @@ class GuidingPrincipleController extends Controller
             'description' => $request->description,
 
         ]);
-        return response()->json([
-            'msg' => 'Data updated successfully',
-            'data' => $data,
-        ]);
+       
 
         //return "Data added successfully";
-        //  return redirect(url('admin/coremember/index'))->with('success','Record Updated successfully');
+          return redirect(url('admin/guidingprinciple/index'))->with('success','Record Updated successfully');
 
     }
 
@@ -165,11 +158,8 @@ class GuidingPrincipleController extends Controller
 
         // Delete record from DB
         $data->delete();
-        return response()->json([
-            'msg' => 'Data deleted successfully',
-
-        ]);
-        // return redirect(url('admin/coremember/index'))->with('success', 'Record deleted successfully');
+      
+        return redirect(url('admin/guidingprinciple/index'))->with('success', 'Record deleted successfully');
 
     }
 

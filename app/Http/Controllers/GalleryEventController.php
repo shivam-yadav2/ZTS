@@ -17,7 +17,7 @@ class GalleryEventController extends Controller
     public function index()
     {
         $info=GalleryEvent::all();
-        return view('admin.GalleryEvent.GalleryList',compact('info'));
+        return view('admin.pages.GalleryEvent.GalleryList',compact('info'));
     }
 
     /**
@@ -25,7 +25,7 @@ class GalleryEventController extends Controller
      */
     public function create()
     {
-        return view('admin.GalleryEvent.GalleryEventForm');
+        return view('admin.pages.GalleryEvent.GalleryEventForm');
     }
 
     /**
@@ -41,10 +41,11 @@ class GalleryEventController extends Controller
             'event_img'         => 'required|image|mimes:jpeg,jpg,webp,png',
         ]);
         
+    
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         }
-  
+       
         $imageName = null;
 
         if ($request->hasFile('event_img')) {
@@ -88,7 +89,7 @@ class GalleryEventController extends Controller
     public function edit(string $id)
     {
         $data=GalleryEvent::find($id);
-        return view('admin.GalleryEvent.GalleryEventUpdate',compact('data'));
+        return view('admin.pages.GalleryEvent.GalleryEventUpdate',compact('data'));
     }
 
     /**
@@ -137,7 +138,7 @@ class GalleryEventController extends Controller
         //return "Data added successfully";
          return redirect(url('admin/events'))->with('success','Record Updated successfully');
 
-    }
+    }   
 
     /**
      * Remove the specified resource from storage.

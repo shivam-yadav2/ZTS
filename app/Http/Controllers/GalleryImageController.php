@@ -14,23 +14,25 @@ class GalleryImageController extends Controller
     public function showForm()
     {
         $events = GalleryEvent::all();
-        return view('admin.GalleryImg.GalleryImgForm', compact('events'));
+        return view('admin.pages.GalleryImg.GalleryImgForm', compact('events'));
     }
     public function store(Request $request)
     {
         $request->validate([
-            'img' => 'required',
-            'img.*' => 'image|mimes:jpeg,jpg,png,webp|max:2048',
+            'event_img'   => 'required',
+            'event_img.*' => 'image|mimes:jpeg,jpg,png,webp|max:2048',
         ], [
-            'img.required' => 'Please select at least one image.',
-            'img.*.image' => 'All uploaded files must be images.',
-            'img.*.mimes' => 'Images must be jpeg, jpg, png, or webp format.',
-            'img.*.max' => 'Each image must not be larger than 2MB.',
+            'event_img.required'    => 'Please select at least one image.',
+            'event_img.*.image'     => 'Each file must be an image.',
+            'event_img.*.mimes'     => 'Each file must be jpeg, jpg, png, or webp format.',
+            'event_img.*.max'       => 'Each file must not be larger than 2MB.',
         ]);
+        
+       
 
 
-        if ($request->hasFile('img')) {
-            foreach ($request->file('img') as $image) {
+        if ($request->hasFile('event_img')) {
+            foreach ($request->file('event_img') as $image) {
                 $imageName = time() . '_' . uniqid() . '.webp';
                 $destinationPath = public_path('assets/uploads/galleryimg');
 
@@ -48,14 +50,14 @@ class GalleryImageController extends Controller
                 ]);
             }
         }
-
+     //   dd($request->all());
         return redirect()->back()->with('success', 'Images uploaded successfully!');
     }
 
     public function showImg($eventId)
     {
         $images = GalleryImage::where('event_id', $eventId)->get();
-        return view('admin.GalleryImg.GalleryImgList', compact('images'));
+        return view('admin.pages.GalleryImg.GalleryImgList', compact('images'));
     }
     public function delete($id) 
     {

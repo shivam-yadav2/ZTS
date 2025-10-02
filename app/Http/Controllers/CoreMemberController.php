@@ -18,7 +18,7 @@ class CoreMemberController extends Controller
     public function index()
     {
         $info=CoreMember::all();
-        return view('admin.CoreMember.CoreMemberList',compact('info'));
+        return view('admin.pages.CoreMember.CoreMemberList',compact('info'));
     }
 
     /**
@@ -26,7 +26,7 @@ class CoreMemberController extends Controller
      */
     public function CoreMemberForm()
     {
-        return view('admin.CoreMember.CoreMemberForm');
+        return view('admin.pages.CoreMember.CoreMemberForm');
     }
 
     /**
@@ -81,7 +81,7 @@ class CoreMemberController extends Controller
     public function edit(string $id)
     {
         $data=CoreMember::find($id);
-        return view('admin.CoreMember.CoreMemberUpdate',compact('data'));
+        return view('admin.pages.CoreMember.CoreMemberUpdate',compact('data'));
     }
 
     /**

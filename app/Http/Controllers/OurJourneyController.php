@@ -19,11 +19,7 @@ class OurJourneyController extends Controller
     public function index()
     {
         $info = OurJourney::all();
-        return response()->json([
-            'data' => $info,
-        ]);
-
-        // return view('admin.CoreMember.CoreMemberList',compact('info'));
+         return view('admin.pages.OurJourney.OurJourneyList',compact('info'));
     }
 
     /**
@@ -31,7 +27,7 @@ class OurJourneyController extends Controller
      */
     public function OurJourneyForm()
     {
-        // return view('admin.CoreMember.CoreMemberForm');
+         return view('admin.pages.OurJourney.OurJourneyForm');
     }
 
     /**
@@ -72,12 +68,9 @@ class OurJourneyController extends Controller
             'description' => $request->description,
         ]);
 
-        return response()->json([
-            'msg' => 'record added successfully',
-            'data' => $data,
-        ]);
+       
         //return "Data added successfully";
-        //  return redirect(url('admin/coremember/index'))->with('success','Record added successfully');
+         return redirect(url('admin/ourjourney/index'))->with('success','Record added successfully');
     }
 
 
@@ -88,8 +81,8 @@ class OurJourneyController extends Controller
     public function edit(string $id)
     {
         $data = OurJourney::find($id);
-        return $data;
-        // return view('admin.CoreMember.CoreMemberUpdate',compact('data'));
+        
+         return view('admin.pages.OurJourney.OurJourneyUpdate',compact('data'));
     }
 
     /**
@@ -132,12 +125,9 @@ class OurJourneyController extends Controller
 
         ]);
 
-        return response()->json([
-            'msg' => 'record updated sucessfully',
-            'data' => $record,
-        ]);
+     
         //return "Data added successfully";
-        //   return redirect(url('admin/coremember/index'))->with('success','Record Updated successfully');
+        return redirect(url('admin/ourjourney/index'))->with('success','Record Updated successfully');
 
     }
 
@@ -157,11 +147,9 @@ class OurJourneyController extends Controller
 
         // Delete record from DB
         $data->delete();
-        return response()->json([
-            'msg' => 'record deleted successfully',
-        ]);
+     
 
-        //  return redirect(url('admin/coremember/index'))->with('success', 'Record deleted successfully');
+          return redirect(url('admin/ourjourney/index'))->with('success', 'Record deleted successfully');
 
     }
 
