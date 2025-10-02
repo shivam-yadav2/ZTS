@@ -296,7 +296,7 @@
                         <div class="help-two__content">
                             <div class="section__content">
                                 <span class="sub-title">We are always open for children</span>
-                                <h2 class="title-animation mt-0">Helping each other can
+                                <h2 class="title mt-0">Helping each other can
                                     make world better
                                 </h2>
                                 <!-- <p class="text-gr-2">Volunteering offers opportunities to develop new skills and gain
@@ -368,6 +368,17 @@
         </section>
         <!-- ==== / commit section end ==== -->
 
+<!-- ==== service section start ==== -->
+        <section class="ff-service py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-7">
+                        <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <span class="sub-title">We are always open for children</span>
+                            <h2 class="title-animation mt-0 fw-6 text-white">Helping each other can
+                                make world better
+
+                            </h2>
         <!-- === Service Section start === -->
     <section class="journey-section">
         <div class="container">
