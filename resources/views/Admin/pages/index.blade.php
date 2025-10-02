@@ -1,4 +1,4 @@
-@extends('Admin.layout.layout')
+@extends('admin.layout.layout')
 
 @section('content')
     
@@ -104,4 +104,6 @@
         var chart = new ApexCharts(document.querySelector("#barChart"), options);
         chart.render();
     </script>
+
+
 @endsection

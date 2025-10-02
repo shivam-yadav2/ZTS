@@ -1,4 +1,4 @@
-<div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+<div class="flex flex-wrap items-center justify-between gap-2">
     <h6 class="font-semibold mb-0 dark:text-white"></h6>
     <ul class="flex items-center gap-[6px]">
         <li class="font-medium">

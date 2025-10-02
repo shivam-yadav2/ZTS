@@ -132,7 +132,7 @@
                                                     class="navbar__dropdown-label dropdown-label-alter">About Us</a>
                                                 <ul class="navbar__sub-menu">
                                                     <li>
-                                                        <a href="#">Our Guiding Principles</a>
+                                                        <a href="/about/guiding_principle">Our Guiding Principles</a>
                                                     </li>
 
                                                     <li class="navbar__item navbar__item--has-children">
@@ -141,16 +141,16 @@
                                                             Team</a>
                                                         <ul class="navbar__sub-menu navbar__sub-menu__nested">
                                                             <li>
-                                                                <a href="events.html">Core Members</a>
+                                                                <a href="/about/team/core_member">Core Members</a>
                                                             </li>
                                                             <li>
-                                                                <a href="event-details.html">Leadership Influencers</a>
+                                                                <a href="/about/team/influencer">Leadership Influencers</a>
                                                             </li>
                                                             <li>
-                                                                <a href="event-details.html">Advisory Board</a>
+                                                                <a href="/about/team/board">Advisory Board</a>
                                                             </li>
                                                             <li>
-                                                                <a href="event-details.html">Members</a>
+                                                                <a href="/about/team/member">Members</a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -160,19 +160,19 @@
                                                             Journey</a>
                                                         <ul class="navbar__sub-menu navbar__sub-menu__nested">
                                                             <li>
-                                                                <a href="shop.html">Human First</a>
+                                                                <a href="/about/journey/human_first">Human First</a>
                                                             </li>
                                                             <li>
-                                                                <a href="product-details.html">Muhim</a>
+                                                                <a href="/about/journey/muhim">Muhim</a>
                                                             </li>
                                                             <li>
-                                                                <a href="cart.html">Jagrati</a>
+                                                                <a href="/about/journey/jagrati">Jagrati</a>
                                                             </li>
                                                             <li>
-                                                                <a href="checkout.html">Sneh</a>
+                                                                <a href="/about/journey/sneh">Sneh</a>
                                                             </li>
                                                             <li>
-                                                                <a href="checkout.html">Muskaan</a>
+                                                                <a href="/about/journey/muskaan">Muskaan</a>
                                                             </li>
                                                         </ul>
                                                     </li>

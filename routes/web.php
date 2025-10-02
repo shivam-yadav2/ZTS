@@ -1,16 +1,18 @@
 <?php
 
+use App\Http\Controllers\CardTeamController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CoreMemberController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\GalleryImageController;
 use App\Http\Controllers\GuidingPrincipleController;
+use App\Http\Controllers\OurJourneyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryEventController;
 
 
-Route::view('/','Admin.pages.index');
+// Route::view('/','Admin.pages.index');
 Route::view('GalleryEventForm','Admin.pages.GalleryEvent.GalleryEventForm');
 
 Route::get('/admin/login', [AdminController::class, 'login']);
@@ -18,22 +20,22 @@ Route::post('loginCheck', [AdminController::class, 'loginCheck']);
 
 Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::get('dashboard', function () {
-        return view('admin.index');
+        return view('admin.pages.index');
     });
     Route::get('logout', [AdminController::class, 'logout']);
     Route::resource('events', GalleryEventController::class);
     Route::get('showForm', [GalleryImageController::class, 'showForm']);
-    Route::post('galleryimg/store', [GalleryImageController::class, 'store']);
+    Route::post('galleryimg/store', [GalleryImageController::class,'store']);
     Route::get('showevents', [GalleryEventController::class, 'showevents']);
     Route::get('showImg/{id}', [GalleryImageController::class, 'showImg']);
-    Route::delete('delete/{id}', action: [GalleryImageController::class, 'delete']);
+    Route::delete('delete/{id}',  [GalleryImageController::class, 'delete']);
     //  contact us routes
     Route::get('contact/showForm', [ContactUsController::class, 'showForm']);
     Route::get('index', [ContactUsController::class, 'index']);
     Route::post('store', [ContactUsController::class, 'store']);
     Route::get('show', [ContactUsController::class, 'show']);
     Route::get('edit/{id}', [ContactUsController::class, 'edit']);
-    Route::post('update/{id}', [ContactUsController::class, 'update']);
+    Route::put('update/{id}', [ContactUsController::class, 'update']);
     Route::get('destroy/{id}', [ContactUsController::class, 'destroy']);
 
     // enquiry routes
@@ -52,7 +54,38 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::put('coremember/update/{id}', [CoreMemberController::class, 'update']);
     Route::get('coremember/destroy/{id}', [CoreMemberController::class, 'destroy']);
 
+    // GuidingPriciple routes
+    Route::get('guidingprinciple/GuidingPrincipleForm', [GuidingPrincipleController::class, 'GuidingprincipleForm']);
+    Route::get('guidingprinciple/index', [GuidingPrincipleController::class, 'index']);
+    Route::post('guidingprinciple/store', [GuidingPrincipleController::class, 'store']);
+    Route::get('guidingprinciple/edit/{id}', [GuidingPrincipleController::class, 'edit']);
+    Route::put('guidingprinciple/update/{id}', [GuidingPrincipleController::class, 'update']);
+    Route::get('guidingprinciple/destroy/{id}', [GuidingPrincipleController::class, 'destroy']);
 
+
+    // Our Journey routes
+    Route::get('ourjourney/OurJourneyForm', [OurJourneyController::class, 'OurJourneyForm']);
+    Route::get('ourjourney/index', [OurJourneyController::class, 'index']);
+    Route::post('ourjourney/store', [OurJourneyController::class, 'store']);
+    Route::get('ourjourney/edit/{id}', [OurJourneyController::class, 'edit']);
+    Route::put('ourjourney/update/{id}', [OurJourneyController::class, 'update']);
+    Route::get('ourjourney/destroy/{id}', [OurJourneyController::class, 'destroy']);
+
+    // store method  route for our team card 
+    Route::post('teamcard/store', [CardTeamController::class, 'store']);
+    // Our Team Card core member routes
+    Route::get('teamcard/teamcardForm', [CardTeamController::class, 'showForm']);
+    Route::get('teamcard/index', [CardTeamController::class, 'index']);
+    Route::get('teamcard/edit/{id}', [CardTeamController::class, 'edit']);
+    Route::put('teamcard/update/{id}', [CardTeamController::class, 'update']);
+    Route::get('teamcard/destroy/{id}', [CardTeamController::class, 'destroy']);
+
+    //Advisory cards routes start here 
+    Route::get('advisory/teamcardForm', [CardTeamController::class, 'advisoryshowForm']);
+    Route::get('advisory/index', [CardTeamController::class, 'advisoryindex']);
+    Route::get('advisory/edit/{id}', [CardTeamController::class, 'edit']);
+    Route::put('advisory/update/{id}', [CardTeamController::class, 'update']);
+    Route::get('advisory/destroy/{id}', [CardTeamController::class, 'advisorydestroy']);
 });
 
 //Frontend Pages Routes
