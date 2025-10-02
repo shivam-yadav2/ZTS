@@ -1,4 +1,248 @@
 @extends('master.frontmaster')
+
+@section('css')
+<style>
+        :root {
+            --primary-yellow: rgb(255, 193, 7);
+            --light-yellow: rgba(255, 193, 7, 0.12);
+            --primary-green: rgb(115, 196, 143);
+            --light-green: rgba(115, 196, 143, 0.15);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .education-section {
+            padding: 4rem 0;
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, var(--light-yellow) 50%, var(--light-green) 100%);
+        }
+        
+        .image-container {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+            transition: all 0.4s ease;
+        }
+        
+        .image-container:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        
+        .image-container:hover img {
+            transform: scale(1.08);
+        }
+        
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+        
+        .image-container:hover .image-overlay {
+            transform: translateY(0);
+        }
+        
+        .image-overlay h5 {
+            color: white;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .content-wrapper {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .content-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 0;
+            background: linear-gradient(to bottom, var(--primary-yellow), var(--primary-green));
+            transition: height 0.4s ease;
+        }
+        
+        .content-wrapper:hover::before {
+            height: 100%;
+        }
+        
+        .content-wrapper:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            transform: translateX(5px);
+        }
+        
+        .quote-section {
+            background: linear-gradient(135deg, var(--light-yellow) 0%, var(--light-green) 100%);
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            border: 3px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .quote-section::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(135deg, var(--primary-yellow), var(--primary-green));
+            border-radius: 15px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .quote-section:hover::before {
+            opacity: 1;
+        }
+        
+        .quote-section:hover {
+            transform: scale(1.02);
+        }
+        
+        .quote-line {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #333;
+            text-align: center;
+            margin: 0.8rem 0;
+            transition: color 0.3s ease;
+        }
+        
+        .quote-section:hover .quote-line {
+            color: #000;
+        }
+        
+        .highlight-box {
+            background: var(--light-green);
+            border-left: 5px solid var(--primary-green);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-box:hover {
+            background: rgba(115, 196, 143, 0.25);
+            border-left-width: 8px;
+            transform: translateX(8px);
+        }
+        
+        .highlight-text {
+            background: linear-gradient(to right, var(--primary-yellow) 0%, transparent 100%);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #333;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-text:hover {
+            background: var(--primary-yellow);
+            transform: scale(1.05);
+        }
+        
+        .section-heading {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-yellow), var(--primary-green));
+            border-radius: 2px;
+            transition: width 0.4s ease;
+        }
+        
+        .content-wrapper:hover .section-heading::after {
+            width: 100%;
+        }
+        
+        p {
+            text-align: justify;
+            color: #555;
+            margin-bottom: 1.2rem;
+        }
+        
+        .jagrati-box {
+            background: linear-gradient(to right, var(--light-yellow), var(--light-green));
+            border: 3px solid var(--primary-green);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .jagrati-box::before {
+            content: '✦';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 3rem;
+            color: var(--primary-yellow);
+            opacity: 0.3;
+            transition: all 0.4s ease;
+        }
+        
+        .jagrati-box:hover::before {
+            opacity: 0.6;
+            transform: rotate(180deg) scale(1.2);
+        }
+        
+        .jagrati-box:hover {
+            border-color: var(--primary-yellow);
+            box-shadow: 0 10px 30px rgba(115, 196, 143, 0.3);
+            transform: translateY(-5px);
+        }
+        
+        .jagrati-title {
+            color: var(--primary-green);
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+@endsection
+
 @section('content')
 <!-- === Banner Section start === -->
     <section class="banner-two">
@@ -116,16 +360,14 @@
       <!-- ===  Banner Section End === -->
 
        <!-- ==== / About cart start ==== -->
-      <section class="about-six-area">
+      <!-- <section class="about-six-area mt-5">
          <div class="container">
             <div class="row align-items-center justify-content-between">
                <div class="col-xl-5 col-lg-7 col-md-10">
                   <div class="about-six-thumb position-relative z-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                     <img src="{{asset('frontend_assets/images/about-six-thumb.png')}}" alt="thumb">
+                     <img src="{{asset('frontend_assets/images/journey/jagrati.jpg')}}" alt="thumb">
                      <div class="about-six-shape">
-                        <img class="about-six-shape-1" src="{{asset('frontend_assets/images/about-six-shape1.png')}}" alt="shape">
-                        <img class="about-six-shape-2" src="{{asset('frontend_assets/images/about-six-shape2.png')}}" alt="shape">
-                        <img class="about-six-shape-3" src="{{asset('frontend_assets/images/about-six-shape3.png')}}" alt="shape">
+                     
                         <div class="banner-six-circle about-six-circle">
                            <div class="banner-six-circle-wrap about-six-circle-wrap">
                               <svg class="banner-six-rotate-content" width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -213,6 +455,65 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
       <!-- ==== / About cart end ==== -->
+
+
+
+       <!-- About section start -->
+          <section class="education-section">
+        <div class="container">
+            <div class="row g-4 align-items-center mb-5">
+                <div class="col-lg-5">
+                    <div class="image-container">
+                        <img src="{{asset('frontend_assets/images/journey/muhim.jpg')}}" alt="Rural Education Students">
+                        <div class="image-overlay">
+                            <h5>Empowering Rural Students</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="content-wrapper">
+                        <h2 class="section-heading h3">The State of Rural Education in India</h2>
+                        <p>In India, education is considered to be of utmost importance. A survey named called the Annual Status of Education Report (ASER), shows that even though the number of rural students attending schools is rising, but more than half of the students in fifth grade are unable to read a second grade text book and are not able to solve simple mathematical problems. Not only this, the level of math's and reading further declining. Though efforts are being made, they are not in the right direction. The reason cited for this problem in surveys is the increasing number of single classroom to educate students from more than one grade. In some states attendance of teachers and students is also declining. These are a few reasons why schools have failed to educate rural India.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="content-wrapper mb-4">
+                        <h3 class="section-heading h4">Quality and Access: The Major Concerns</h3>
+                        <p>Quality and access to education is the major concern in rural schools as there are fewer committed teachers, lack of proper text books and learning material in the schools. Though Government schools exist, but when compared to private schools then quality is a major issue. Majority of people living in villages have understood the importance of education and know that it is the only way to get rid of poverty. But due to lack of money they are not able to send their children to private schools and hence depend upon government schools for education.</p>
+                        
+                        <div class="highlight-box">
+                            <p class="mb-0">Above that, in some of the government schools there is only one teacher for the entire school and if they don't show up at work, then it is a holiday. If the <span class="highlight-text">quality along with number of teachers</span> and, that too committed teacher can be improved in these schools, then aspiring rural children and India can fulfill their dreams of doing something great.</p>
+                        </div>
+                        
+                        <p>Poverty is another setback. Government schools are not as good and private schools are expensive. This results in a very low number of students actually clearing their secondary education and taking admission in colleges for further studies. The foundation to turn India into a strong nation has to be laid down at primary and rural levels and so the quality of education right from the beginning should be excellent.</p>
+                    </div>
+                    
+                    <div class="content-wrapper mb-4">
+                        <h3 class="section-heading h4">A Vision for National Progress</h3>
+                        <p>In our national perception, Education refines sensitivities and perceptions that contribute to national cohesion, a scientific temper and independence of mind and spirit - thus furthering the goals of socialism, secularism and democracy enshrined in our Constitution.</p>
+                    </div>
+                    
+                    <div class="quote-section">
+                        <p class="quote-line"><strong>We give them roots, we give them wings</strong></p>
+                        <p class="quote-line">And great joys from, little things,</p>
+                        <p class="quote-line">A hope that they will soar,</p>
+                        <p class="quote-line">A hope that they will try,</p>
+                        <p class="quote-line"><strong>We are sure that one day, Our children will learn to fly.</strong></p>
+                    </div>
+                    
+                    <div class="jagrati-box">
+                        <h4 class="jagrati-title">JAGRATI - Igniting Mind... Empowering Child...</h4>
+                        <p class="mb-0">And For This ZTS has taken a step forward in this area and started A School Adaptation Program named <span class="highlight-text">JAGRATI</span> 'Igniting Mind... Empowering Child... It is a 20 point agenda to develop the rural education system in India.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- About section end -->
 @endsection

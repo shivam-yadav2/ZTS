@@ -1,5 +1,7 @@
 @extends('master.frontmaster')
+
 @section('content')
+
 <!-- === Banner Section start === -->
     <section class="banner-two">
          <div class="banner-two__slider swiper">
@@ -114,6 +116,7 @@
          </div>
     </section>
       <!-- ===  Banner Section End === -->
+
         <!-- ==== commit section start ==== -->
         <section class="commit help-two ff-commit pt-120 pb-120">
             <div class="container">
@@ -121,7 +124,7 @@
                     <div class="col-12 col-lg-5 col-xl-5">
                         <div class="commit__thumb">
                             <div class="thumb-lg">
-                                <img src="{{asset('frontend_assets/images/commit-thumb.png')}}" alt="Image">
+                                <img src="{{asset('frontend_assets/images/journey/muhim.jpg')}}" alt="Image">
 
                             </div>
                             <div class="thumb-sm">
@@ -154,49 +157,6 @@
                                 <p class="text-gr-2">Why our country is lacking in searching talent instead of India being a treasure box of talent. We have only four Indian Oscar winners those are A R Rahman,  Resul Pookutty,  Satyajit Ray and Bhanu Athdiya. The Nobel Prizes first awarded in 1901 and only six citizens of India ever awarded the Nobel Prize. In Olympics, since 1900, just nine gold medals, six silver and eleven bronze, so a total of just twenty six medals! We have just three-Man Booker Prize (of which Kiran Desai lives in USA). Therefore, our action is to bring changes, transform India into better India because "To improve is to change; often, “to be perfect is to change.” Zindagi Tujhe Salaam is to sow seeds enabling individual transformation, which will lead to transmutation of India and eventually world redemption.
                                 </p>
                             </div>
-                            <!-- <div class="help-two__inner cta">
-                                <div class="help-two__inner-content">
-                                    <div class="help__content-icon-group">
-                                        <div class="help__content-icon">
-                                            <div class="thumb">
-                                                <i class="icon-make-donation"></i>
-                                            </div>
-                                            <div class="content">
-                                                <h6 class="fw-5">Start helping them</h6>
-                                                <p>Raising awareness about the charity's mission and cause.</p>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="help__content-icon">
-                                            <div class="thumb">
-                                                <i class="icon-support-heart"></i>
-                                            </div>
-                                            <div class="content">
-                                                <h6 class="fw-5">Make Donations</h6>
-                                                <p>Raising awareness about the charity's mission and cause.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cta">
-                                        <a href="our-causes.html" aria-label="check causes" title="check causes"
-                                            class="btn--primary">Check
-                                            Our Causes</a>
-                                    </div>
-                                </div>
-                                <div class="help-two-card-wrapper">
-                                    <div class="help-two__card van-tilt">
-                                        <div class="help-card-thumb">
-                                            <img src="assets/images/help/author.png" alt="Image">
-                                            <i class="icon-star"></i>
-                                        </div>
-                                        <div class="help-card-content">
-                                            <h4>35,734</h4>
-                                            <h6>Helped Fund</h6>
-                                            <p>Quisque dignissim enim diam</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -206,7 +166,8 @@
             </div>
         </section>
         <!-- ==== / commit section end ==== -->
-    <!-- ==== service section start ==== -->
+    
+        <!-- ==== service section start ==== -->
         <section class="ff-servicce-three pt-120">
             <div class="container">
                 <div class="row gutter-30 align-items-center">
@@ -347,6 +308,7 @@
             </div>
         </section>
         <!-- ==== / service section end ==== -->
+
            <!-- ==== image gallery section start ==== -->
         <div class="gallery">
             <div class="gallery__inner">
@@ -427,6 +389,7 @@
             </div>
         </div>
         <!-- ==== / image gallery section end ==== -->
+
            <!-- ==== event section start ==== -->
       <section class="event event-alt">
          <div class="container">
