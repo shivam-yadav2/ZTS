@@ -143,45 +143,22 @@
                 
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)">
-                    <iconify-icon icon="solar:pie-chart-outline" class="menu-icon"></iconify-icon>
-                    <span>Member Team Card</span>
-                </a>
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="{{ url('admin/teamcard/teamcardForm') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i>Add card</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('admin/teamcard/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View card</a>
-                    </li>
-                
-                </ul>
-            </li>
+         
 
-                <a href="{{url('widgets')}}">
-                    <iconify-icon icon="fe:vector" class="menu-icon"></iconify-icon>
-                    <span>Widgets</span>
-                </a>
             </li>
             <li class="dropdown">
                 <a href="javascript:void(0)">
                     <iconify-icon icon="flowbite:users-group-outline" class="menu-icon"></iconify-icon>
-                    <span>Users</span>
+                    <span>Leadership</span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
-                        <a href="{{ url('usersList') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Users List</a>
+                        <a href="{{ url('admin/leadership/showForm') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i>Add Leadership cards</a>
                     </li>
                     <li>
-                        <a href="{{ url('usersGrid') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i> Users Grid</a>
+                        <a href="{{ url('admin/leadership/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View cards</a>
                     </li>
-                    <li>
-                        <a href="{{ url('addUser') }}"><i class="ri-circle-fill circle-icon text-info-600 w-auto"></i> Add User</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('viewProfile') }}"><i class="ri-circle-fill circle-icon text-danger-600 w-auto"></i> View Profile</a>
-                    </li>
+                  
                 </ul>
             </li>
 

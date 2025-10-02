@@ -111,7 +111,7 @@ class CardTeamController extends Controller
 
 
     // Advisory section cards starts form here 
-    // store method already made at above
+    // store method already made on above
     public function advisoryindex()
     {
         $advisory_data = TeamCard::where('type', 'advisory')->get();
@@ -138,4 +138,113 @@ class CardTeamController extends Controller
 
         return redirect()->back()->with('success', 'Team member deleted successfully!');
     }
+
+     // Show edit form
+     public function advisoryedit($id)
+     {
+         $data = TeamCard::findOrFail($id);
+         return view('admin.pages.TeamCard.Advisory.AdvisoryUpdateCard', compact('data'));
+     }
+ 
+     // Update record
+     public function advisoryupdate(Request $request, $id)
+     {
+         $request->validate([
+             'name' => 'nullable|string|max:255',
+             'img' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+             'msg' => 'nullable|string',
+         ]);
+ 
+         $team = TeamCard::findOrFail($id);
+         $team->name = $request->name;
+         $team->description = $request->msg;
+         $team->type=$request->type;
+         // Handle image update
+         if ($request->hasFile('img')) {
+             // Delete old image if exists
+             $oldPath = public_path('assets/uploads/teamcard/' .$team->img);
+             if (File::exists($oldPath)) {
+                 File::delete($oldPath);
+             }
+ 
+             $file = $request->file('img');
+             $filename = time() . '.' . $file->getClientOriginalExtension();
+             $file->move(public_path('assets/uploads/teamcard'), $filename);
+             $team->img = $filename;
+         }
+ 
+         $team->save();
+ 
+         return redirect('admin/advisory/index')->with('success', 'Team member updated successfully!');
+     }
+
+
+
+      // Leadership  section cards starts form here 
+    // store method already made on above
+    public function leadershipindex()
+    {
+        $leadership_data = TeamCard::where('type', 'leadership')->get();
+        return view('admin.pages.TeamCard.Leadership.LeadershipTeamCardList', compact('leadership_data'));
+    }
+
+    // Show the add form
+    public function  leadershipshowForm()
+    {
+        return view('admin.pages.TeamCard.Leadership.LeadershipTeamCardForm');
+    }
+
+      public function leadershipdestroy($id)
+    {
+        $team = TeamCard::findOrFail($id);
+
+        // Delete image
+        $path = public_path('assets/uploads/teamcard/' .$team->img);
+        if (File::exists($path)) {
+            File::delete($path);
+        }
+
+        $team->delete();
+
+        return redirect()->back()->with('success', 'Team member deleted successfully!');
+    }
+
+     // Show edit form
+     public function leadershipedit($id)
+     {
+         $data = TeamCard::findOrFail($id);
+         return view('admin.pages.TeamCard.Leadership.LeadershipUpdateCard', compact('data'));
+     }
+ 
+     // Update record
+     public function leadershipupdate(Request $request, $id)
+     {
+         $request->validate([
+             'name' => 'nullable|string|max:255',
+             'img' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+             'msg' => 'nullable|string',
+         ]);
+ 
+         $team = TeamCard::findOrFail($id);
+         $team->name = $request->name;
+         $team->description = $request->msg;
+         $team->type=$request->type;
+         // Handle image update
+         if ($request->hasFile('img')) {
+             // Delete old image if exists
+             $oldPath = public_path('assets/uploads/teamcard/' .$team->img);
+             if (File::exists($oldPath)) {
+                 File::delete($oldPath);
+             }
+ 
+             $file = $request->file('img');
+             $filename = time() . '.' . $file->getClientOriginalExtension();
+             $file->move(public_path('assets/uploads/teamcard'), $filename);
+             $team->img = $filename;
+         }
+ 
+         $team->save();
+ 
+         return redirect('admin/leadership/index')->with('success', 'Team member updated successfully!');
+     }
 }

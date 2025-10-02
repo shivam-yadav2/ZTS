@@ -83,9 +83,17 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     //Advisory cards routes start here 
     Route::get('advisory/teamcardForm', [CardTeamController::class, 'advisoryshowForm']);
     Route::get('advisory/index', [CardTeamController::class, 'advisoryindex']);
-    Route::get('advisory/edit/{id}', [CardTeamController::class, 'edit']);
-    Route::put('advisory/update/{id}', [CardTeamController::class, 'update']);
+    Route::get('advisory/edit/{id}', [CardTeamController::class, 'advisoryedit']);
+    Route::put('advisory/update/{id}', [CardTeamController::class, 'advisoryupdate']);
     Route::get('advisory/destroy/{id}', [CardTeamController::class, 'advisorydestroy']);
+
+
+    //Leadership cards routes start here 
+    Route::get('leadership/showForm', [CardTeamController::class, 'leadershipshowForm']);
+    Route::get('leadership/index', [CardTeamController::class, 'leadershipindex']);
+    Route::get('leadership/edit/{id}', [CardTeamController::class, 'leadershipedit']);
+    Route::put('leadership/update/{id}', [CardTeamController::class, 'leadershipupdate']);
+    Route::get('leadership/destroy/{id}', [CardTeamController::class, 'leadershipdestroy']);
 });
 
 //Frontend Pages Routes
