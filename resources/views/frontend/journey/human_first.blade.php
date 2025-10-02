@@ -142,7 +142,7 @@
                         <div class="help-two__content">
                             <div class="section__content">
                                 <span class="sub-title">We are always open for children</span>
-                                <h2 class="title-animation mt-0">Helping each other can
+                                <h2 class="title mt-0">Helping each other can
                                     make world better
                                 </h2>
                                 <p class="text-gr-2">Volunteering offers opportunities to develop new skills and gain
@@ -215,7 +215,7 @@
         <!-- ==== / commit section end ==== -->
 
 <!-- ==== service section start ==== -->
-        <section class="ff-service pt-120 pb-120">
+        <section class="ff-service py-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10 col-xl-7">

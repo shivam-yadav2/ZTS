@@ -171,7 +171,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xl-6 col-lg-9">
+               <div class="col-xl-6 col-lg-9 p-5">
                   <div class="about-six-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                      <div class="section-six-wrapper">
                         <h6 class="section-six-subtitle">About Protecting Trees</h6>

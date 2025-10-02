@@ -60,7 +60,7 @@ Route::view('/', 'frontend.index');
 Route::view('/contact', 'frontend.contact');
 
 //About Us Page Routes
-Route::view('/about/guiding_principle', 'frontend.about.guiding_principle');
+Route::view('/about/guiding_principle', 'frontend.guiding_principle');
 Route::view('/about/team/core_member', 'frontend.team.core_member');
 Route::view('/about/team/influencer', 'frontend.team.influencer');
 Route::view('/about/team/board', 'frontend.team.board');
