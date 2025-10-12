@@ -9,20 +9,32 @@
                 <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">Upload File & Description</h2>
             </div>
 
+
             <!-- Card Body -->
             <div class="p-6">
                 <form action="{{ url('admin/ourjourney/store') }}" method="post" enctype="multipart/form-data" class="space-y-6">
                     @csrf
+                    @if ($errors->any())
+                    <div class="mb-4 p-3 bg-red-100 text-red-700 rounded">
+                        <ul class="list-disc pl-5">
+                            @foreach ($errors->all() as $error )
+                            <li class="text-red-400">{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    
+                    @endif
                     <!-- File Input -->
+                     <input type="hidden" value="Muhim" name="type">
                     <div>
-                        <label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">Upload File</label>
+                        <label class="block text-sm font-medium text-neutral-700 dark:text-white mb-2">Upload File</label>
                         <input type="file" name="img"
-                            class="block w-full text-sm text-neutral-700 dark:text-neutral-300 border border-neutral-300 dark:border-neutral-600 rounded-lg cursor-pointer bg-white dark:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 p-2">
+                            class="block w-full text-sm text-neutral-700 dark:text-white border border-neutral-300 dark:border-neutral-600 rounded-lg cursor-pointer bg-white dark:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 p-2">
                     </div>
 
                     <!-- Textarea -->
                     <div>
-                        <label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">Description</label>
+                        <label class="block text-sm font-medium text-neutral-700 dark:text-white mb-2">Description</label>
                         <textarea name="description" rows="4"
                             class="w-full rounded-lg border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-700 text-neutral-800 dark:text-neutral-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 p-4 resize-none placeholder:text-neutral-400"
                             placeholder="Enter a description..."></textarea>

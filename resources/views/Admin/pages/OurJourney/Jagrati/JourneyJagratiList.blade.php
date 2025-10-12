@@ -1,11 +1,11 @@
 @extends('admin.layout.layout')
 @section('content')
-
+               
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
         <div class="col-span-12 lg:col-span-12">
             <div class="card border-0 overflow-hidden">
                 <div class="card-header">
-                    <h5 class="card-title text-lg mb-0">Our Journey</h5>
+                    <h5 class="card-title text-lg mb-0">Jagrati Our Journey</h5>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -26,7 +26,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($info as $value)
+                                @foreach ($infojagrati as $value)
 
                                     <tr class="odd:bg-neutral-100 dark:odd:bg-neutral-600">
                                         <td>
@@ -46,14 +46,14 @@
                                         <td class="text-center">
                                             <span
                                                 class="bg-success-100 dark:bg-success-600/25 text-success-600 dark:text-success-400 px-8 py-1.5 rounded-full font-medium text-sm">
-                                                <a href="{{ url('admin/ourjourney/destroy/' . $value->id) }}">
+                                                <a href="{{ url('admin/ourjourney/jagrati/destroy/' . $value->id) }}">
                                                     Delete
                                                 </a>
 
                                             </span>
                                             <span
                                                 class="bg-success-100 dark:bg-success-600/25 text-success-600 dark:text-success-400 px-8 py-1.5 rounded-full font-medium text-sm">
-                                                <a href="{{ url('admin/ourjourney/edit/' . $value->id) }}">
+                                                <a href="{{ url('admin/ourjourney/jagrati/edit/' . $value->id) }}">
                                                     Edit
                                                 </a>
 
@@ -63,6 +63,9 @@
                                 @endforeach
                             </tbody>
                         </table>
+                        <div class="mt-4">
+                            {{ $infojagrati->links() }}
+                        </div>
                     </div>
                 </div>
             </div><!-- card end -->

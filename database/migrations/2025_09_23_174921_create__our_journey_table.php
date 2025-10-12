@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('img');
             $table->longText(column: 'description');
+            $table->enum('type',['HumanFirst','Muhim','Jagrati','Sneh','Muskan']);
             $table->timestamps();
         });
     }

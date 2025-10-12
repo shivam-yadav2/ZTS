@@ -64,12 +64,51 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
 
 
     // Our Journey routes
-    Route::get('ourjourney/OurJourneyForm', [OurJourneyController::class, 'OurJourneyForm']);
-    Route::get('ourjourney/index', [OurJourneyController::class, 'index']);
+    // Human First page card route
+    Route::get('ourjourney/humanfirst/OurJourneyForm', [OurJourneyController::class, 'OurJourneyForm']);
+    Route::get('ourjourney/humanfirst/index', [OurJourneyController::class, 'index']);
     Route::post('ourjourney/store', [OurJourneyController::class, 'store']);
-    Route::get('ourjourney/edit/{id}', [OurJourneyController::class, 'edit']);
-    Route::put('ourjourney/update/{id}', [OurJourneyController::class, 'update']);
-    Route::get('ourjourney/destroy/{id}', [OurJourneyController::class, 'destroy']);
+    Route::get('ourjourney/humanfirst/edit/{id}', [OurJourneyController::class, 'edit']);
+    Route::put('ourjourney/humanfirst/update/{id}', [OurJourneyController::class, 'update']);
+    Route::get('ourjourney/humanfirst/destroy/{id}', [OurJourneyController::class, 'destroy']);
+
+    // MUHIM page card route
+    // store method already made on above 
+    Route::get('ourjourney/muhim/OurJourneyForm', [OurJourneyController::class, 'muhimJourneyForm']);
+    Route::get('ourjourney/muhim/index', [OurJourneyController::class, 'muhimindex']);
+    Route::get('ourjourney/muhim/edit/{id}', [OurJourneyController::class, 'muhimedit']);
+    Route::put('ourjourney/muhim/update/{id}', [OurJourneyController::class, 'muhimupdate']);
+    Route::get('ourjourney/muhim/destroy/{id}', [OurJourneyController::class, 'muhimdestroy']);
+
+
+
+      // Jagrati  page card route
+    // store method already made on above 
+    Route::get('ourjourney/jagrati/OurJourneyForm', [OurJourneyController::class, 'jagratiJourneyForm']);
+    Route::get('ourjourney/jagrati/index', [OurJourneyController::class, 'jagratiindex']);
+    Route::get('ourjourney/jagrati/edit/{id}', [OurJourneyController::class, 'jagratiedit']);
+    Route::put('ourjourney/jagrati/update/{id}', [OurJourneyController::class, 'jagratiupdate']);
+    Route::get('ourjourney/jagrati/destroy/{id}', [OurJourneyController::class, 'jagratidestroy']);
+
+
+
+         // Sneh  page card route
+    // store method already made on above 
+    Route::get('ourjourney/sneh/OurJourneyForm', [OurJourneyController::class, 'snehJourneyForm']);
+    Route::get('ourjourney/sneh/index', [OurJourneyController::class, 'snehindex']);
+    Route::get('ourjourney/sneh/edit/{id}', [OurJourneyController::class, 'snehedit']);
+    Route::put('ourjourney/sneh/update/{id}', [OurJourneyController::class, 'snehupdate']);
+    Route::get('ourjourney/sneh/destroy/{id}', [OurJourneyController::class, 'snehdestroy']);
+
+
+        // Muskan  page card route
+    // store method already made on above 
+    Route::get('ourjourney/muskan/OurJourneyForm', [OurJourneyController::class, 'muskanJourneyForm']);
+    Route::get('ourjourney/muskan/index', [OurJourneyController::class, 'muskanindex']);
+    Route::get('ourjourney/muskan/edit/{id}', [OurJourneyController::class, 'muskanedit']);
+    Route::put('ourjourney/muskan/update/{id}', [OurJourneyController::class, 'muskanupdate']);
+    Route::get('ourjourney/muskan/destroy/{id}', [OurJourneyController::class, 'muskandestroy']);
+
 
     // store method  route for our team card 
     Route::post('teamcard/store', [CardTeamController::class, 'store']);

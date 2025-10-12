@@ -10,5 +10,8 @@ class OurJourney extends Model
     public $fillable=[
         'img',
         'description',
+        'type',
     ];
+
+    
 }
