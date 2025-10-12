@@ -249,6 +249,22 @@
                   
                 </ul>
             </li>
+            
+            <li class="dropdown">
+                <a href="javascript:void(0)">
+                    <iconify-icon icon="flowbite:users-group-outline" class="menu-icon"></iconify-icon>
+                    <span>Home Slider</span>
+                </a>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <a href="{{ url('admin/slider/showForm') }}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i>Add Slider</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('admin/slider/index') }}"><i class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View Slider</a>
+                    </li>
+                  
+                </ul>
+            </li>
 
 
 

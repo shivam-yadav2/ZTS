@@ -6,7 +6,9 @@ use App\Http\Controllers\CoreMemberController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\GalleryImageController;
 use App\Http\Controllers\GuidingPrincipleController;
+use App\Http\Controllers\HomeSliderController;
 use App\Http\Controllers\OurJourneyController;
+use App\Models\HomeSlider;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryEventController;
@@ -133,6 +135,15 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::get('leadership/edit/{id}', [CardTeamController::class, 'leadershipedit']);
     Route::put('leadership/update/{id}', [CardTeamController::class, 'leadershipupdate']);
     Route::get('leadership/destroy/{id}', [CardTeamController::class, 'leadershipdestroy']);
+
+    //Home Slider routes start 
+    Route::get('slider/showForm', [HomeSliderController::class, 'showForm']);
+    Route::post('slider/store',[HomeSliderController::class,'sliderstore']);
+    Route::get('slider/index', [HomeSliderController::class, 'sliderindex']);
+    Route::get('slider/edit/{id}', [HomeSliderController::class, 'slideredit']);
+    Route::post('slider/update/{id}', [HomeSliderController::class, 'sliderupdate']);
+    Route::get('slider/destroy/{id}', [HomeSliderController::class, 'sliderdestroy']);
+    Route::post('slider/toggleStatus/{id}', [HomeSliderController::class, 'toggleStatus']);
 });
 
 //Frontend Pages Routes
