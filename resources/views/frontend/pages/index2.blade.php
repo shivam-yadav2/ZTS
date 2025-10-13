@@ -1924,7 +1924,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -1945,7 +1945,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9  col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -1966,7 +1966,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -1987,7 +1987,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -2060,7 +2060,7 @@
                     <div class="help-two__content">
                         <div class="section__content">
                             <span class="sub-title"><i class="icon-donation"></i>Make a Difference with Your
-                                Donation</span>
+                                Contribution</span>
                             <h2 class="title-animation">Welcome to
                                 Zindagi Tujhe <span> Salaam</span>
                             </h2>
@@ -2077,7 +2077,7 @@
                                                              </div>
                                                              <div class="content">
                                                                 <h6>Start helping them</h6>
-                                                                <p>Raising awareness about the charity's mission and cause.</p>
+                                                                <p>Raising awareness about the Contribution's mission and cause.</p>
                                                              </div>
                                                           </div>
                                                           <hr>
@@ -2086,8 +2086,8 @@
                                                                 <i class="icon-support-heart"></i>
                                                              </div>
                                                              <div class="content">
-                                                                <h6>Make Donations</h6>
-                                                                <p>Raising awareness about the charity's mission and cause.</p>
+                                                                <h6>Make Contributions</h6>
+                                                                <p>Raising awareness about the Contribution's mission and cause.</p>
                                                              </div>
                                                           </div>
                                                        </div>
@@ -2694,7 +2694,7 @@
                             Support initiatives that provide counseling and resources where needed most. Every contribution makes a difference.
                         </p>
                         <div class="text-center">
-                            <button class="btn action-btn btn-contribute">Donate</button>
+                            <button class="btn action-btn btn-contribute">Contribute</button>
                         </div>
                     </div>
                 </div>

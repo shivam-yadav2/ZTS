@@ -19,7 +19,7 @@ class Text extends \Faker\Provider\Text
      * eBook and Project Gutenberg at the bottom of this file.  Included is
      * important information about your specific rights and restrictions in
      * how the file may be used.  You can also find out about how to make a
-     * donation to Project Gutenberg, and how to get involved.
+     * Contribution to Project Gutenberg, and how to get involved.
      *
      *
      * **Welcome To The World of Free Plain Vanilla Electronic Texts**
@@ -2633,7 +2633,7 @@ EOT;
     The Project Gutenberg Literary Archive Foundation has been created
     to secure a future for Project Gutenberg into the next millennium.
 
-    We need your donations more than ever!
+    We need your Contributions more than ever!
 
     As of February, 2002, contributions are being solicited from people
     and organizations in: Alabama, Alaska, Arkansas, Connecticut,
@@ -2655,21 +2655,21 @@ EOT;
     In answer to various questions we have received on this:
 
     We are constantly working on finishing the paperwork to legally
-    request donations in all 50 states.  If your state is not listed and
+    request Contributions in all 50 states.  If your state is not listed and
     you would like to know if we have added it since the list you have,
     just ask.
 
-    While we cannot solicit donations from people in states where we are
+    While we cannot solicit Contributions from people in states where we are
     not yet registered, we know of no prohibition against accepting
-    donations from donors in these states who approach us with an offer to
+    Contributions from donors in these states who approach us with an offer to
     donate.
 
-    International donations are accepted, but we don't know ANYTHING about
+    International Contributions are accepted, but we don't know ANYTHING about
     how to make them tax-deductible, or even if they CAN be made
     deductible, and don't have the staff to handle it even if there are
     ways.
 
-    Donations by check or money order may be sent to:
+    Contributions by check or money order may be sent to:
 
     Project Gutenberg Literary Archive Foundation
     PMB 113
@@ -2681,16 +2681,16 @@ EOT;
 
     The Project Gutenberg Literary Archive Foundation has been approved by
     the US Internal Revenue Service as a 501(c)(3) organization with EIN
-    [Employee Identification Number] 64-622154.  Donations are
+    [Employee Identification Number] 64-622154.  Contributions are
     tax-deductible to the maximum extent permitted by law.  As fund-raising
     requirements for other states are met, additions to this list will be
     made and fund-raising will begin in the additional states.
 
-    We need your donations more than ever!
+    We need your Contributions more than ever!
 
-    You can get up to date donation information online at:
+    You can get up to date Contribution information online at:
 
-    http://www.gutenberg.net/donation.html
+    http://www.gutenberg.net/Contribution.html
 
     ***
 

@@ -256,7 +256,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -277,7 +277,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9  col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -298,7 +298,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -319,7 +319,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>

@@ -3528,7 +3528,7 @@ EOT;
          prepare (or are legally required to prepare) your periodic tax
          returns.  Royalty payments should be clearly marked as such and
          sent to the Project Gutenberg Literary Archive Foundation at the
-         address specified in Section 4, "Information about donations to
+         address specified in Section 4, "Information about Contributions to
          the Project Gutenberg Literary Archive Foundation."
 
     - You provide a full refund of any money paid by a user who notifies
@@ -3623,7 +3623,7 @@ EOT;
     Project Gutenberg-tm is synonymous with the free distribution of
     electronic works in formats readable by the widest variety of computers
     including obsolete, old, middle-aged and new computers.  It exists
-    because of the efforts of hundreds of volunteers and donations from
+    because of the efforts of hundreds of volunteers and Contributions from
     people in all walks of life.
 
     Volunteers and financial support to provide volunteers with the
@@ -3633,7 +3633,7 @@ EOT;
     Gutenberg Literary Archive Foundation was created to provide a secure
     and permanent future for Project Gutenberg-tm and future generations.
     To learn more about the Project Gutenberg Literary Archive Foundation
-    and how your efforts and donations can help, see Sections 3 and 4
+    and how your efforts and Contributions can help, see Sections 3 and 4
     and the Foundation web page at http://www.pglaf.org.
 
 
@@ -3662,38 +3662,38 @@ EOT;
          Chief Executive and Director
          gbnewby@pglaf.org
 
-    Section 4.  Information about Donations to the Project Gutenberg
+    Section 4.  Information about Contributions to the Project Gutenberg
     Literary Archive Foundation
 
     Project Gutenberg-tm depends upon and cannot survive without wide
-    spread public support and donations to carry out its mission of
+    spread public support and Contributions to carry out its mission of
     increasing the number of public domain and licensed works that can be
     freely distributed in machine readable form accessible by the widest
-    array of equipment including outdated equipment.  Many small donations
+    array of equipment including outdated equipment.  Many small Contributions
     ($1 to $5,000) are particularly important to maintaining tax exempt
     status with the IRS.
 
     The Foundation is committed to complying with the laws regulating
-    charities and charitable donations in all 50 states of the United
+    charities and charitable Contributions in all 50 states of the United
     States.  Compliance requirements are not uniform and it takes a
     considerable effort, much paperwork and many fees to meet and keep up
-    with these requirements.  We do not solicit donations in locations
+    with these requirements.  We do not solicit Contributions in locations
     where we have not received written confirmation of compliance.  To
-    SEND DONATIONS or determine the status of compliance for any
+    SEND ContributionS or determine the status of compliance for any
     particular state visit http://pglaf.org
 
     While we cannot and do not solicit contributions from states where we
     have not met the solicitation requirements, we know of no prohibition
-    against accepting unsolicited donations from donors in such states who
+    against accepting unsolicited Contributions from donors in such states who
     approach us with offers to donate.
 
-    International donations are gratefully accepted, but we cannot make
-    any statements concerning tax treatment of donations received from
+    International Contributions are gratefully accepted, but we cannot make
+    any statements concerning tax treatment of Contributions received from
     outside the United States.  U.S. laws alone swamp our small staff.
 
-    Please check the Project Gutenberg Web pages for current donation
-    methods and addresses.  Donations are accepted in a number of other
-    ways including checks, online payments and credit card donations.
+    Please check the Project Gutenberg Web pages for current Contribution
+    methods and addresses.  Contributions are accepted in a number of other
+    ways including checks, online payments and credit card Contributions.
     To donate, please visit: http://pglaf.org/donate
 
     Section 5.  General Information About Project Gutenberg-tm electronic
@@ -3714,7 +3714,7 @@ EOT;
          http://www.gutenberg.org
 
     This Web site includes information about Project Gutenberg-tm,
-    including how to make donations to the Project Gutenberg Literary
+    including how to make Contributions to the Project Gutenberg Literary
     Archive Foundation, how to help produce our new eBooks, and how to
     subscribe to our email newsletter to hear about new eBooks.
     */

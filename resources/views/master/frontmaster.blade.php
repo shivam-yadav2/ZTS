@@ -15,7 +15,7 @@
     <!-- #title -->
     <title>Zindagi Tujhe Salaam | Nonprofit NGO </title>
     <!-- #keywords -->
-    <meta name="keywords" content="charity, nonprofit, fundraising, donation, html, bootstrap, scss">
+    <meta name="keywords" content="Contribution, nonprofit, fundraising, donation, html, bootstrap, scss">
     <!-- #description -->
     <meta name="description" content="Nonprofit NGO Fundraising HTML5 Template">
     <!-- google fonts -->
@@ -226,7 +226,7 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                  </button>
                               </div> --}}
-                                        <a href="donate-us.html" class="btn--primary d-none d-md-flex">Donate Now <i
+                                        <a href="Contribute-us.html" class="btn--primary d-none d-md-flex">Contribute Now <i
                                                 class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                     <button class="open-offcanvas-nav d-flex d-xl-none"
@@ -258,7 +258,7 @@
                 </div>
                 <div class="mobile-menu__list"></div>
                 <div class="mobile-menu__cta nav-fade d-block d-md-none">
-                    <a href="donate-us.html" class="btn--primary ">Donate Now <i
+                    <a href="Contribute-us.html" class="btn--primary ">Contribute Now <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="mobile-menu__social social nav-fade">

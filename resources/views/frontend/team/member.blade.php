@@ -173,7 +173,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 col-xl-6">
                     <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
-                        <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                        <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                             people</span>
                         <h2 class="title-animation">Meet Our
                             <span>Core Team</span> members

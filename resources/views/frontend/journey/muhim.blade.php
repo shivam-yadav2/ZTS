@@ -14,7 +14,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -35,7 +35,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9  col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -56,7 +56,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -77,7 +77,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -134,7 +134,7 @@
                                 <h4><span class="odometer fw-7" data-odometer-final="20000"></span><span
                                         class="prefix fw-7">+</span>
                                 </h4>
-                                <p class="text-black">People have donated here</p>
+                                <p class="text-black">People have Contributed here</p>
                             </div>
                             <div class="vertical-text">
                                 <h5>We Give <span>Donations</span> to Poor People </h5>
@@ -398,7 +398,7 @@
             <div class="row justify-content-center">
                <div class="col-12 col-md-8 col-xl-7">
                   <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
-                     <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                     <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                         people</span>
                      <h2 class="title-animation">Checkout our upcoming full <span>event</span> list</h2>
                   </div>
@@ -413,8 +413,8 @@
                         </div>
                         <div class="event__content">
                            <span>October 19, 2025</span>
-                           <h4><a href="event-details.html">Transforming Lives Charity Golf Tournam
-                                 Entdges Charity Networking Event</a>
+                           <h4><a href="event-details.html">Transforming Lives Contribution Golf Tournam
+                                 Entdges Contribution Networking Event</a>
                            </h4>
                            <p><i class="fa-solid fa-location-dot"></i> 135 W, 46nd Street, New York</p>
                         </div>
@@ -430,7 +430,7 @@
                         <div class="event__content">
                            <span>October 19, 2025</span>
                            <h4><a href="event-details.html">Unity in Giving Community
-                                 Charity Event</a>
+                                 Contribution Event</a>
                            </h4>
                            <p><i class="fa-solid fa-location-dot"></i> 135 W, 46nd Street, New York</p>
                         </div>
@@ -444,7 +444,7 @@
                         <div class="event__content">
                            <span>October 19, 2025</span>
                            <h4><a href="event-details.html">Unity in Giving Community
-                                 Charity Event</a>
+                                 Contribution Event</a>
                            </h4>
                            <p><i class="fa-solid fa-location-dot"></i> 135 W, 46nd Street, New York</p>
                         </div>
@@ -461,8 +461,8 @@
                         </div>
                         <div class="event__content">
                            <span>October 19, 2025</span>
-                           <h4><a href="event-details.html">Transforming Lives Charity Golf Tournam
-                                 Entdges Charity Networking Event</a>
+                           <h4><a href="event-details.html">Transforming Lives Contribution Golf Tournam
+                                 Entdges Contribution Networking Event</a>
                            </h4>
                            <p><i class="fa-solid fa-location-dot"></i> 135 W, 46nd Street, New York</p>
                         </div>
@@ -478,7 +478,7 @@
                         <div class="event__content">
                            <span>October 19, 2025</span>
                            <h4><a href="event-details.html">Unity in Giving Community
-                                 Charity Event</a>
+                                 Contribution Event</a>
                            </h4>
                            <p><i class="fa-solid fa-location-dot"></i> 135 W, 46nd Street, New York</p>
                         </div>
@@ -492,7 +492,7 @@
                         <div class="event__content">
                            <span>October 19, 2025</span>
                            <h4><a href="event-details.html">Unity in Giving Community
-                                 Charity Event</a>
+                                 Contribution Event</a>
                            </h4>
                            <p><i class="fa-solid fa-location-dot"></i> 135 W, 46nd Street, New York</p>
                         </div>

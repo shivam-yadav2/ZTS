@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="common-banner__content text-center">
-                    <span class="sub-title"><i class="icon-donation"></i>Start donating poor people</span>
+                    <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor people</span>
                     <h2 class="title-animation">Contact Us</h2>
                 </div>
             </div>
