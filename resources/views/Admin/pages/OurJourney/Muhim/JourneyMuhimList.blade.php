@@ -5,7 +5,7 @@
         <div class="col-span-12 lg:col-span-12">
             <div class="card border-0 overflow-hidden">
                 <div class="card-header">
-                    <h5 class="card-title text-lg mb-0">Muhim Our Journey</h5>
+                    <h5 class="card-title text-lg mb-0"> Our Journey Muhim List</h5>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">

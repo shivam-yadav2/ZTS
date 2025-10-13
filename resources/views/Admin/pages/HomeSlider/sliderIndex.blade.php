@@ -54,8 +54,8 @@
             </td>
                        
             <td>
-             <a href=" {{ url('admin/slider/destroy/'.$value->id) }}"> <i class="fa-solid fa-trash text-red-800"></i></a>
-           <a href="{{ url('admin/slider/edit/'.$value->id) }}" class="ms-3"><i class="fa-solid fa-pen-to-square text-purple-900"></i></a>  
+             <a href=" {{ url('admin/slider/destroy/'.$value->id) }}"> <i class="fa-solid fa-trash "></i></a>
+           <a href="{{ url('admin/slider/edit/'.$value->id) }}" class="ms-3"><i class="fa-solid fa-pen-to-square"></i></a>  
             </td>
                                 </tr>
                                 @endforeach
@@ -63,6 +63,7 @@
                               
                             </tbody>
                         </table>
+
                     </div>
                 </div>
             </div><!-- card end -->

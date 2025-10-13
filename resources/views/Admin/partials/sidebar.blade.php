@@ -90,9 +90,10 @@
 
                 </ul>
             </li>
+<!-- new -->
             <li class="dropdown">
                 <a href="javascript:void(0)">
-                    <iconify-icon icon="mingcute:storage-line" class="menu-icon"></iconify-icon>
+                    <iconify-icon icon="heroicons:document" class="menu-icon"></iconify-icon>
                     <span>Our Journey Human  card </span>
                 </a>
                 <ul class="sidebar-submenu">
@@ -104,12 +105,12 @@
                         <a href="{{ url('admin/ourjourney/humanfirst/index') }}"><i
                                 class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View</a>
                     </li>
+
                 </ul>
             </li>
-
             <li class="dropdown">
                 <a href="javascript:void(0)">
-                    <iconify-icon icon="mingcute:storage-line" class="menu-icon"></iconify-icon>
+                    <iconify-icon icon="heroicons:document" class="menu-icon"></iconify-icon>
                     <span>Our Journey Muhim  card </span>
                 </a>
                 <ul class="sidebar-submenu">
@@ -121,15 +122,13 @@
                         <a href="{{ url('admin/ourjourney/muhim/index') }}"><i
                                 class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View</a>
                     </li>
+
                 </ul>
             </li>
-
-
-
             <li class="dropdown">
                 <a href="javascript:void(0)">
-                    <iconify-icon icon="mingcute:storage-line" class="menu-icon"></iconify-icon>
-                    <span>Our Journey Jagrati  card </span>
+                    <iconify-icon icon="heroicons:document" class="menu-icon"></iconify-icon>
+                    <span>Our Journey Jagrati  card  </span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
@@ -140,13 +139,13 @@
                         <a href="{{ url('admin/ourjourney/jagrati/index') }}"><i
                                 class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View</a>
                     </li>
+
                 </ul>
             </li>
-
             <li class="dropdown">
                 <a href="javascript:void(0)">
-                    <iconify-icon icon="mingcute:storage-line" class="menu-icon"></iconify-icon>
-                    <span>Our Journey Sneh  card </span>
+                    <iconify-icon icon="heroicons:document" class="menu-icon"></iconify-icon>
+                    <span>Our Journey Sneh  card  </span>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
@@ -157,13 +156,12 @@
                         <a href="{{ url('admin/ourjourney/sneh/index') }}"><i
                                 class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View</a>
                     </li>
+
                 </ul>
             </li>
-
-
             <li class="dropdown">
                 <a href="javascript:void(0)">
-                    <iconify-icon icon="mingcute:storage-line" class="menu-icon"></iconify-icon>
+                    <iconify-icon icon="heroicons:document" class="menu-icon"></iconify-icon>
                     <span>Our Journey Muskaan  card </span>
                 </a>
                 <ul class="sidebar-submenu">
@@ -175,8 +173,12 @@
                         <a href="{{ url('admin/ourjourney/muskan/index') }}"><i
                                 class="ri-circle-fill circle-icon text-warning-600 w-auto"></i>View</a>
                     </li>
+
                 </ul>
             </li>
+
+
+
 
 
             <li class="dropdown">
