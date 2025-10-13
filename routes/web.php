@@ -73,7 +73,8 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
 });
 
 //Frontend Pages Routes
-Route::view('/', 'frontend.index');
+Route::view('/', 'frontend.pages.index');
+Route::view('index2', 'frontend.pages.index2');
 Route::view('/contact', 'frontend.contact');
 
 //About Us Page Routes
