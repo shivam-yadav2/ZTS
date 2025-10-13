@@ -33,14 +33,17 @@
                         <input type="text" name="name" value="{{ $data->name }}" class="form-control">
                     </div>
                 
-                    <div class="col-span-12">
-                            <label class="form-label">Description: </label>
-                            <input class="border border-neutral-200 dark:border-neutral-600 w-full rounded-lg text-lg text-black" name="description" value="{{ $data->description }}" type="text">
-                        </div>
+                 
                         <div class="col-span-12">
                         <label class="form-label"> Current Image:</label>
                   <img src="{{ asset('assets/uploads/CoreMember/'.$data->img) }}" alt="" style="width:200px; height:100px;">
                     </div>
+
+                    <div class="lg:col-span-12 col-span-12">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="4" cols="50" name="description" placeholder="Enter a description...">{{ $data->description}}</textarea>
+                        </div>
+
                       <div class="col-span-12">
                       <button type="submit" class="btn bg-primary-100 text-primary-600 hover:bg-primary-700 hover:text-white rounded-lg px-6 py-[14px]">Update</button>
                       </div>

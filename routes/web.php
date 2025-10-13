@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\CardTeamController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CoreMemberController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\GalleryImageController;
 use App\Http\Controllers\GuidingPrincipleController;
+use App\Http\Controllers\HomeSliderController;
 use App\Http\Controllers\OurJourneyController;
+use App\Models\HomeSlider;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryEventController;
@@ -63,13 +66,84 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
 
 
     // Our Journey routes
-    Route::get('ourjourney/OurJourneyForm', [OurJourneyController::class, 'OurJourneyForm']);
-    Route::get('ourjourney/index', [OurJourneyController::class, 'index']);
+    // Human First page card route
+    Route::get('ourjourney/humanfirst/OurJourneyForm', [OurJourneyController::class, 'OurJourneyForm']);
+    Route::get('ourjourney/humanfirst/index', [OurJourneyController::class, 'index']);
     Route::post('ourjourney/store', [OurJourneyController::class, 'store']);
-    Route::get('ourjourney/edit/{id}', [OurJourneyController::class, 'edit']);
-    Route::put('ourjourney/update/{id}', [OurJourneyController::class, 'update']);
-    Route::get('ourjourney/destroy/{id}', [OurJourneyController::class, 'destroy']);
+    Route::get('ourjourney/humanfirst/edit/{id}', [OurJourneyController::class, 'edit']);
+    Route::put('ourjourney/humanfirst/update/{id}', [OurJourneyController::class, 'update']);
+    Route::get('ourjourney/humanfirst/destroy/{id}', [OurJourneyController::class, 'destroy']);
 
+    // MUHIM page card route
+    // store method already made on above 
+    Route::get('ourjourney/muhim/OurJourneyForm', [OurJourneyController::class, 'muhimJourneyForm']);
+    Route::get('ourjourney/muhim/index', [OurJourneyController::class, 'muhimindex']);
+    Route::get('ourjourney/muhim/edit/{id}', [OurJourneyController::class, 'muhimedit']);
+    Route::put('ourjourney/muhim/update/{id}', [OurJourneyController::class, 'muhimupdate']);
+    Route::get('ourjourney/muhim/destroy/{id}', [OurJourneyController::class, 'muhimdestroy']);
+
+
+
+      // Jagrati  page card route
+    // store method already made on above 
+    Route::get('ourjourney/jagrati/OurJourneyForm', [OurJourneyController::class, 'jagratiJourneyForm']);
+    Route::get('ourjourney/jagrati/index', [OurJourneyController::class, 'jagratiindex']);
+    Route::get('ourjourney/jagrati/edit/{id}', [OurJourneyController::class, 'jagratiedit']);
+    Route::put('ourjourney/jagrati/update/{id}', [OurJourneyController::class, 'jagratiupdate']);
+    Route::get('ourjourney/jagrati/destroy/{id}', [OurJourneyController::class, 'jagratidestroy']);
+
+
+
+         // Sneh  page card route
+    // store method already made on above 
+    Route::get('ourjourney/sneh/OurJourneyForm', [OurJourneyController::class, 'snehJourneyForm']);
+    Route::get('ourjourney/sneh/index', [OurJourneyController::class, 'snehindex']);
+    Route::get('ourjourney/sneh/edit/{id}', [OurJourneyController::class, 'snehedit']);
+    Route::put('ourjourney/sneh/update/{id}', [OurJourneyController::class, 'snehupdate']);
+    Route::get('ourjourney/sneh/destroy/{id}', [OurJourneyController::class, 'snehdestroy']);
+
+
+        // Muskan  page card route
+    // store method already made on above 
+    Route::get('ourjourney/muskan/OurJourneyForm', [OurJourneyController::class, 'muskanJourneyForm']);
+    Route::get('ourjourney/muskan/index', [OurJourneyController::class, 'muskanindex']);
+    Route::get('ourjourney/muskan/edit/{id}', [OurJourneyController::class, 'muskanedit']);
+    Route::put('ourjourney/muskan/update/{id}', [OurJourneyController::class, 'muskanupdate']);
+    Route::get('ourjourney/muskan/destroy/{id}', [OurJourneyController::class, 'muskandestroy']);
+
+
+    // store method  route for our team card 
+    Route::post('teamcard/store', [CardTeamController::class, 'store']);
+    // Our Team Card core member routes
+    Route::get('teamcard/teamcardForm', [CardTeamController::class, 'showForm']);
+    Route::get('teamcard/index', [CardTeamController::class, 'index']);
+    Route::get('teamcard/edit/{id}', [CardTeamController::class, 'edit']);
+    Route::put('teamcard/update/{id}', [CardTeamController::class, 'update']);
+    Route::get('teamcard/destroy/{id}', [CardTeamController::class, 'destroy']);
+
+    //Advisory cards routes start here 
+    Route::get('advisory/teamcardForm', [CardTeamController::class, 'advisoryshowForm']);
+    Route::get('advisory/index', [CardTeamController::class, 'advisoryindex']);
+    Route::get('advisory/edit/{id}', [CardTeamController::class, 'advisoryedit']);
+    Route::put('advisory/update/{id}', [CardTeamController::class, 'advisoryupdate']);
+    Route::get('advisory/destroy/{id}', [CardTeamController::class, 'advisorydestroy']);
+
+
+    //Leadership cards routes start here 
+    Route::get('leadership/showForm', [CardTeamController::class, 'leadershipshowForm']);
+    Route::get('leadership/index', [CardTeamController::class, 'leadershipindex']);
+    Route::get('leadership/edit/{id}', [CardTeamController::class, 'leadershipedit']);
+    Route::put('leadership/update/{id}', [CardTeamController::class, 'leadershipupdate']);
+    Route::get('leadership/destroy/{id}', [CardTeamController::class, 'leadershipdestroy']);
+
+    //Home Slider routes start 
+    Route::get('slider/showForm', [HomeSliderController::class, 'showForm']);
+    Route::post('slider/store',[HomeSliderController::class,'sliderstore']);
+    Route::get('slider/index', [HomeSliderController::class, 'sliderindex']);
+    Route::get('slider/edit/{id}', [HomeSliderController::class, 'slideredit']);
+    Route::post('slider/update/{id}', [HomeSliderController::class, 'sliderupdate']);
+    Route::get('slider/destroy/{id}', [HomeSliderController::class, 'sliderdestroy']);
+    Route::post('slider/toggleStatus/{id}', [HomeSliderController::class, 'toggleStatus']);
 });
 
 //Frontend Pages Routes

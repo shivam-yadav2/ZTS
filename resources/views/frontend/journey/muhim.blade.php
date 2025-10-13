@@ -169,6 +169,8 @@
     
         <!-- ==== service section start ==== -->
         <section class="ff-servicce-three pt-120">
+    <!-- ==== service section start ==== -->
+        <section class="ff-servicce-three py-5">
             <div class="container">
                 <div class="row gutter-30 align-items-center">
                     <div class="col-12 col-md-8 col-xl-7">
