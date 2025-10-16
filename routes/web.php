@@ -163,3 +163,9 @@ Route::view('/about/journey/muhim','frontend.journey.muhim');
 Route::view('/about/journey/jagrati','frontend.journey.jagrati');
 Route::view('/about/journey/sneh','frontend.journey.sneh');
 Route::view('/about/journey/muskaan','frontend.journey.muskaan');
+
+        // Campaign Page Routes
+Route::view('/campaign/phone-a-friend','frontend.campaign.phone_a_friend');
+Route::view('/campaign/responsible-india','frontend.campaign.responsible_india');
+Route::view('/campaign/be-a-hero','frontend.campaign.be_a_hero');
+

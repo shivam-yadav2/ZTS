@@ -185,14 +185,14 @@
                                                     class="navbar__dropdown-label dropdown-label-alter">Campaigns</a>
                                                 <ul class="navbar__sub-menu">
                                                     <li>
-                                                        <a href="our-causes.html">Phone A Friend</a>
+                                                        <a href="/campaign/phone-a-friend">Phone A Friend</a>
                                                     </li>
                                                     <li>
-                                                        <a href="cause-details.html">Responsible India Possible
+                                                        <a href="/campaign/responsible-india">Responsible India Possible
                                                             India</a>
                                                     </li>
                                                     <li>
-                                                        <a href="our-causes.html">Be A Hero</a>
+                                                        <a href="/campaign/be-a-hero">Be A Hero</a>
                                                     </li>
                                                 </ul>
                                             </li>
