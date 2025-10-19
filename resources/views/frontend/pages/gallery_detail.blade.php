@@ -363,14 +363,14 @@
                     <!-- === Gallery - detail Page === -->
 <section class="detail-section">
         <div class="container">
-            <a href="#" class="back-link">Back to Gallery</a>
+            <a href="{{ url('/gallery') }}" class="back-link">Back to Gallery</a>
 
             <h1 class="event-title">Children Day Celebration</h1>
             <p class="event-description">
                 A joyful celebration of Children's Day featuring various outdoor activities, games, sports competitions, and creative activities. Children participated enthusiastically in races, drawing competitions, and team-building exercises, creating memorable moments filled with laughter and fun.
             </p>
 
-            <div class="stats-bar">
+            <!-- <div class="stats-bar">
                 <div class="stat-item">
                     <div class="stat-number">18</div>
                     <div class="stat-label">Total Photos</div>
@@ -383,7 +383,7 @@
                     <div class="stat-number">Nov 2024</div>
                     <div class="stat-label">Event Date</div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="photo-grid">
                 <div class="photo-item">

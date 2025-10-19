@@ -203,9 +203,9 @@
                                             <li class="navbar__item nav-fade">
                                                 <a href="/gallery">Gallery</a>
                                             </li>
-                                            <li class="navbar__item nav-fade">
+                                            {{-- <li class="navbar__item nav-fade">
                                                 <a href="contact-us.html">Career</a>
-                                            </li>
+                                            </li> --}}
                                             <li class="navbar__item nav-fade">
                                                 <a href="/contact">Contact Us</a>
                                             </li>

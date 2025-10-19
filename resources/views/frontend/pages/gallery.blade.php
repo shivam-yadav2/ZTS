@@ -259,60 +259,72 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                     <a href="gallery-detail">   <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop" alt="Independence Day" class="gallery-img"></a>
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Celebrate our Independence Day</p>
-                        </div>
+                         <a href="{{ url('/gallery-detail') }}">
+                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop" alt="Independence Day" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Celebrate our Independence Day</p>
+                            </div>
+                        </a>
                         <div class="gallery-location">UP</div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Children Day" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Children Day Celebration</p>
-                        </div>
+                         <a href="{{ url('/gallery-detail') }}">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Children Day" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Children Day Celebration</p>
+                            </div>
+                        </a>
                         <div class="gallery-location">UP</div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Children Day Celebration" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Children Day celebration With Mc D</p>
-                        </div>
+                         <a href="{{ url('/gallery-detail') }}">
+                            <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Children Day Celebration" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Children Day celebration With Mc D</p>
+                            </div>
+                         </a>
                         <div class="gallery-location">UP</div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Dancing Workshop" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Dancing workshop for chetna sansthan</p>
-                        </div>
+                         <a href="{{ url('/gallery-detail') }}">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Dancing Workshop" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Dancing workshop for chetna sansthan</p>
+                            </div>
+                        </a>
                         <div class="gallery-location">UP</div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=400&h=300&fit=crop" alt="Medical Camp Day 1" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Day 1, Medical camp in chetna by ZTS</p>
-                        </div>
+                        <a href="{{ url('/gallery-detail') }}">
+                            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=400&h=300&fit=crop" alt="Medical Camp Day 1" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Day 1, Medical camp in chetna by ZTS</p>
+                            </div>
+                        </a>
                         <div class="gallery-location">UP</div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop" alt="Medical Camp Day 2" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Day 2, Dental health-Medical Camp in chetna by ZTS</p>
-                        </div>
+                        <a href="{{ url('/gallery-detail') }}">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop" alt="Medical Camp Day 2" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Day 2, Dental health-Medical Camp in chetna by ZTS</p>
+                            </div>
+                        </a>
                         <div class="gallery-location">UP</div>
                     </div>
                 </div>
