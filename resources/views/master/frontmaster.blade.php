@@ -38,6 +38,8 @@
     <!-- rtl css -->
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/rtl.css') }}">
 
+    
+
     @yield('css')
 </head>
 
@@ -199,7 +201,7 @@
 
 
                                             <li class="navbar__item nav-fade">
-                                                <a href="contact-us.html">Gallery</a>
+                                                <a href="/gallery">Gallery</a>
                                             </li>
                                             <li class="navbar__item nav-fade">
                                                 <a href="contact-us.html">Career</a>
@@ -494,6 +496,7 @@
     <script src="{{ asset('frontend_assets/js/template-settings.js') }}"></script>
     <!-- main js -->
     <script src="{{ asset('frontend_assets/js/custom.js') }}"></script>
+
 </body>
 
 

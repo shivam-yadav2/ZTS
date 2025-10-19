@@ -169,3 +169,7 @@ Route::view('/campaign/phone-a-friend','frontend.campaign.phone_a_friend');
 Route::view('/campaign/responsible-india','frontend.campaign.responsible_india');
 Route::view('/campaign/be-a-hero','frontend.campaign.be_a_hero');
 
+        //Gallery Page Routes
+ Route::view('/gallery','frontend.pages.gallery');
+ Route::view('/gallery-detail','frontend.pages.gallery_detail');
+
