@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NGO Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
+@extends('master.frontmaster')
+@section('css')
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -502,8 +496,9 @@
             }
         }
     </style>
-</head>
-<body>
+@endsection
+
+@section('content')
     <!-- Animated Background Icons -->
     <div class="bg-icons">
         <i class="fas fa-heart floating-icon"></i>
@@ -516,7 +511,7 @@
     </div>
 
     <!-- Header with Emoji -->
-    <section class="header-section">
+    <section class="header-section help-two " style="margin-top: 100px">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 text-center mb-4 mb-lg-0">
@@ -788,4 +783,30 @@
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="text-content">
                         <h3>Strategic Growth Planning</h3>
-                        <p>Successful NGO scaling requires a well-defined strategy that balances impact with sustainability. Organizations must carefully assess their capacity, resources, and market needs
+                        <p>Successful NGO scaling requires a well-defined strategy that balances impact with sustainability. Organizations must carefully assess their capacity, resources, and market needs to create sustainable growth models that can be replicated across different regions and communities.</p>
+                        
+                        <ul>
+                            <li>Develop clear mission and vision statements</li>
+                            <li>Establish measurable impact indicators</li>
+                            <li>Build strong partnerships and networks</li>
+                            <li>Create sustainable funding strategies</li>
+                            <li>Invest in capacity building and training</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=600&fit=crop" alt="NGO Growth" class="side-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%2373c48f%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2248%22 fill=%22white%22%3ENGO Growth%3C/text%3E%3C/svg%3E'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA Section -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Ready to Make a Difference?</h2>
+            <p>Join our community of changemakers and help us create lasting impact in communities worldwide.</p>
+            <a href="#" class="btn-custom btn-yellow">Get Started Today</a>
+        </div>
+    </section>
+@endsection

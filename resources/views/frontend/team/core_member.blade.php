@@ -169,7 +169,7 @@
 @section('content')
  <!-- ==== team section start ==== -->
     
-     <div class="container">
+     <div class="container" style="margin-top: 200px">
         <h2 class="section-title">Core Team Members</h2>
         
         <div class="row" style="margin-top: 100px;">

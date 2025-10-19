@@ -462,9 +462,7 @@
                                 "Giving is one of the most important of the three categories because you're teaching them to feel the impact of helping others at a young age. That's invaluable."
                             </div>
                             
-                            <p class="principle-text">
-                                As for saving and spending, encourage your child to set aside some of their money to savings and some to spending each time they get paid. Remind them that once their money is gone, it's gone. And yes, your kids will make mistakes, but it's better that they make those mistakes under the safety of your roof.
-                            </p>
+                            
                         </div>
                     </div>
                 </div>
