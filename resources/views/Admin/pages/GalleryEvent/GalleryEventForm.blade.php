@@ -2,7 +2,7 @@
  @section('content')
  
 
-<div class="grid grid-cols-12 gap-5">
+<div class="min-h-screen flex justify-center items-center">
    
     <div class="md:col-span-6 col-span-12">
     @if ($errors->any())

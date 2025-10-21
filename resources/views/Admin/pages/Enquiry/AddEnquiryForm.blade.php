@@ -8,6 +8,15 @@
                 <div class="card-header">
                     <h5 class="text-lg font-semibold mb-0">Enquiry</h5>
                 </div>
+                @if ($errors->any())
+                          <div class="mt-4 text-red-700">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error}}</li>
+                                @endforeach
+                            </ul>
+                          </div>
+                        @endif
                 <div class="card-body">
                     <form class="grid grid-cols-12 gap-4" action="{{ url('admin/enquiry/store') }}" method="post">
                         @csrf

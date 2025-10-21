@@ -6,7 +6,8 @@
 <div class="col-span-12 lg:col-span-6">
         <div class="card border-0 overflow-hidden">
             <div class="card-header">
-  
+            <h6 class="text text-lg   font-semibold mb-0 text-center">Contact List</h6>
+
             </div>
             <div class="card-body">
                 <div class="table-responsive">

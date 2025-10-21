@@ -15,7 +15,7 @@ class CardTeamController extends Controller
     // Show all records
     public function index()
     {
-        $data = TeamCard::where('type','coremember')->get();
+        $data = TeamCard::where('type','coremember')->paginate('5');
         return view('admin.pages.TeamCard.Member.MemberTeamCardList', compact('data'));
     }
 
@@ -114,7 +114,7 @@ class CardTeamController extends Controller
     // store method already made on above
     public function advisoryindex()
     {
-        $advisory_data = TeamCard::where('type', 'advisory')->get();
+        $advisory_data = TeamCard::where('type', 'advisory')->paginate('5');
         return view('admin.pages.TeamCard.Advisory.AdvisoryTeamCardList', compact('advisory_data'));
     }
 

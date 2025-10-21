@@ -4,7 +4,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
         <div class="col-span-12 lg:col-span-12">
             <div class="card border-0 overflow-hidden">
-                <div class="card-header flex flex-row">
+                <div class="card-header flex flex-row justify-between">
                     <h5 class="card-title text-lg mb-0">Enquiry List</h5>
                     <button type="button" class=" ms-3 btn border border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white w-[60px] h-[50px] flex items-center justify-center gap-2">
                 <a href="{{ url('admin/enquiry/enquiryForm') }}">    <i class="fa-solid fa-plus"></i>   </a>

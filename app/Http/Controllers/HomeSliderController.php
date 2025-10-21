@@ -21,7 +21,7 @@ class HomeSliderController extends Controller
         
 
         $validator = Validator::make($request->all(), [
-            'img' => 'required|min:5|max:200|image|mimes:jpeg,jpg,webp,png',
+            'img' => 'required|min:5|max:2048|image|mimes:jpeg,jpg,webp,png',
             'text' => 'required|min:10|max:500',
             'sub_text' => 'required|min:5',
             'btn_text' => 'required',
@@ -34,6 +34,7 @@ class HomeSliderController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
+        dd($request->all());
         $imageName = null;
 
         if ($request->hasFile('img')) {

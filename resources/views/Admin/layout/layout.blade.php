@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+@vite('resources/css/app.css')
     @include('admin.partials.head')
 
 <body class="dark:bg-neutral-800 bg-neutral-100 dark:text-white">
@@ -48,5 +49,6 @@ Swal.fire({
 });
 </script>
 @endif
+
 </body>
 </html>

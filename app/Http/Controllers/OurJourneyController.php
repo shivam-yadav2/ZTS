@@ -13,6 +13,7 @@ use Intervention\Image\Drivers\Gd\Driver;
 
 class OurJourneyController extends Controller
 {
+    // These all methods for human first page
     /**
      * Display a listing of the resource.
      */

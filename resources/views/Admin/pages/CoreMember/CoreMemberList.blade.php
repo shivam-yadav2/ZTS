@@ -5,7 +5,7 @@
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
 <div class="col-span-12 lg:col-span-12">
         <div class="card border-0 overflow-hidden">
-            <div class="card-header flex">
+            <div class="card-header flex justify-between">
                 <h5 class="card-title text-lg mb-0">Core Member</h5>
                 <button type="button" class=" ms-3 btn border border-success-600 text-success-300 hover:bg-success-300 hover:text-white rounded-lg px-5 py-[5px] flex items-center gap-2">
            
