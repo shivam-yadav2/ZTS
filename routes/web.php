@@ -147,7 +147,8 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
 });
 
 //Frontend Pages Routes
-Route::view('/', 'frontend.index');
+Route::view('/', 'frontend.pages.index');
+Route::view('index2', 'frontend.pages.index2');
 Route::view('/contact', 'frontend.contact');
 
 //About Us Page Routes
@@ -162,3 +163,13 @@ Route::view('/about/journey/muhim','frontend.journey.muhim');
 Route::view('/about/journey/jagrati','frontend.journey.jagrati');
 Route::view('/about/journey/sneh','frontend.journey.sneh');
 Route::view('/about/journey/muskaan','frontend.journey.muskaan');
+
+        // Campaign Page Routes
+Route::view('/campaign/phone-a-friend','frontend.campaign.phone_a_friend');
+Route::view('/campaign/responsible-india','frontend.campaign.responsible_india');
+Route::view('/campaign/be-a-hero','frontend.campaign.be_a_hero');
+
+        //Gallery Page Routes
+ Route::view('/gallery','frontend.pages.gallery');
+ Route::view('/gallery-detail','frontend.pages.gallery_detail');
+

@@ -15,7 +15,7 @@
     <!-- #title -->
     <title>Zindagi Tujhe Salaam | Nonprofit NGO </title>
     <!-- #keywords -->
-    <meta name="keywords" content="charity, nonprofit, fundraising, donation, html, bootstrap, scss">
+    <meta name="keywords" content="Contribution, nonprofit, fundraising, donation, html, bootstrap, scss">
     <!-- #description -->
     <meta name="description" content="Nonprofit NGO Fundraising HTML5 Template">
     <!-- google fonts -->
@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/dark-mode.css') }}">
     <!-- rtl css -->
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/rtl.css') }}">
+
+    
 
     @yield('css')
 </head>
@@ -185,25 +187,25 @@
                                                     class="navbar__dropdown-label dropdown-label-alter">Campaigns</a>
                                                 <ul class="navbar__sub-menu">
                                                     <li>
-                                                        <a href="our-causes.html">Phone A Friend</a>
+                                                        <a href="/campaign/phone-a-friend">Phone A Friend</a>
                                                     </li>
                                                     <li>
-                                                        <a href="cause-details.html">Responsible India Possible
+                                                        <a href="/campaign/responsible-india">Responsible India Possible
                                                             India</a>
                                                     </li>
                                                     <li>
-                                                        <a href="our-causes.html">Be A Hero</a>
+                                                        <a href="/campaign/be-a-hero">Be A Hero</a>
                                                     </li>
                                                 </ul>
                                             </li>
 
 
                                             <li class="navbar__item nav-fade">
-                                                <a href="contact-us.html">Gallery</a>
+                                                <a href="/gallery">Gallery</a>
                                             </li>
-                                            <li class="navbar__item nav-fade">
+                                            {{-- <li class="navbar__item nav-fade">
                                                 <a href="contact-us.html">Career</a>
-                                            </li>
+                                            </li> --}}
                                             <li class="navbar__item nav-fade">
                                                 <a href="/contact">Contact Us</a>
                                             </li>
@@ -226,7 +228,7 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                  </button>
                               </div> --}}
-                                        <a href="donate-us.html" class="btn--primary d-none d-md-flex">Donate Now <i
+                                        <a href="Contribute-us.html" class="btn--primary d-none d-md-flex">Contribute Now <i
                                                 class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                     <button class="open-offcanvas-nav d-flex d-xl-none"
@@ -258,7 +260,7 @@
                 </div>
                 <div class="mobile-menu__list"></div>
                 <div class="mobile-menu__cta nav-fade d-block d-md-none">
-                    <a href="donate-us.html" class="btn--primary ">Donate Now <i
+                    <a href="Contribute-us.html" class="btn--primary ">Contribute Now <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="mobile-menu__social social nav-fade">
@@ -494,6 +496,7 @@
     <script src="{{ asset('frontend_assets/js/template-settings.js') }}"></script>
     <!-- main js -->
     <script src="{{ asset('frontend_assets/js/custom.js') }}"></script>
+
 </body>
 
 

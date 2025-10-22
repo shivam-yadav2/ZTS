@@ -27,12 +27,12 @@
                </div>
                <div class="col-12 col-lg-8 col-xxl-7">
                   <div class="difference-two__content">
-                     <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                     <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                         people</span>
-                     <h2 class="title-animation">Donate <span>Support</span> to Make
+                     <h2 class="title-animation">Contribute <span>Support</span> to Make
                         Difference way
                      </h2>
-                     <p>Charity is the voluntary act of giving help,
+                     <p>Contribution is the voluntary act of giving help,
                         typically in the form of money, time, or resources, to those in need. Charitable
                         organizations aim to solve social, environmental, and economic challenges by addressing
                         issues like poverty,
@@ -142,7 +142,7 @@
                                  <i class="icon-donation-card"></i>
                               </div>
                               <div class="content">
-                                 <h6>Donate Now</h6>
+                                 <h6>Contribute Now</h6>
                                  <p>$40,456</p>
                               </div>
                            </div>

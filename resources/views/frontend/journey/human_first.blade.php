@@ -165,7 +165,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -186,7 +186,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9  col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -207,7 +207,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -228,7 +228,7 @@
                         <div class="row">
                            <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
                               <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start donating poor
+                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
                                     people</span>
                                  <h1>Giving help <br>
                                     To Those <span class="bottom-line">peoples</span>
@@ -285,7 +285,7 @@
                                 <h4><span class="odometer fw-7" data-odometer-final="20000"></span><span
                                         class="prefix fw-7">+</span>
                                 </h4>
-                                <p class="text-black">People have donated here</p>
+                                <p class="text-black">People have Contributed here</p>
                             </div>
                             <div class="vertical-text">
                                 <h5>We Give <span>Donations</span> to Poor People </h5>
@@ -312,7 +312,7 @@
                                 </p>
                                 <p class="text-gr-2">Always remember "The one who have this wealth of Humanity...Have the meaning of life.”
                                 </p>
-                                <p class="text-gr-2">Human First is our charity raising wing where we provide the opportunity for privileged class to come along and do whatever they can do for this society. We know that one cannot do everything but whatever can do, should be contributed.
+                                <p class="text-gr-2">Human First is our Contribution raising wing where we provide the opportunity for privileged class to come along and do whatever they can do for this society. We know that one cannot do everything but whatever can do, should be contributed.
                                 </p>
                             </div>
                             <!-- <div class="help-two__inner cta">
@@ -324,7 +324,7 @@
                                             </div>
                                             <div class="content">
                                                 <h6 class="fw-5">Start helping them</h6>
-                                                <p>Raising awareness about the charity's mission and cause.</p>
+                                                <p>Raising awareness about the Contribution's mission and cause.</p>
                                             </div>
                                         </div>
                                         <hr>
@@ -334,7 +334,7 @@
                                             </div>
                                             <div class="content">
                                                 <h6 class="fw-5">Make Donations</h6>
-                                                <p>Raising awareness about the charity's mission and cause.</p>
+                                                <p>Raising awareness about the Contribution's mission and cause.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -519,7 +519,7 @@
                             <i class="fas fa-calendar-days"></i>
                         </div>
                         <h3>Events</h3>
-                        <p>This is a department where we organize different charity raising events. We have decided to celebrate a day as a CHARITY DAY with all the schools and institution.</p>
+                        <p>This is a department where we organize different Contribution raising events. We have decided to celebrate a day as a Contribution DAY with all the schools and institution.</p>
                     </div>
                 </div>
 
