@@ -2,7 +2,7 @@
 @section('style')
 <style>
     .text{
-        color:#000;
+        color:red;
     }
 </style>
 @endsection

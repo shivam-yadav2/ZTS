@@ -27,10 +27,7 @@
                         <label class="form-label">Event name:</label>
                         <input type="text" name="event_name" class="form-control">
                     </div>
-                    <div class="col-span-12">
-                        <label class="form-label">Event description:</label>
-                        <input type="text" name="event_description" class="form-control">
-                    </div>
+                 
                     <div class="col-span-12">
                         <label class="form-label">Event Date: </label>
                         <input type="date" class="form-control grow"  name="event_date">
@@ -39,8 +36,20 @@
 
                     <div class="col-span-12">
                             <label class="form-label">Event Image </label>
-                            <input class="border border-neutral-200 dark:border-neutral-600 w-full rounded-lg text-lg" name="event_img" type="file">
+                            <input class="border border-neutral-200 dark:border-neutral-600 w-full rounded-lg text-lg" name="event_img" id="imgInput" type="file">
                         </div>
+
+                        
+                        <div class="col-span-12">
+                            <label>Uploaded Image:</label>
+                            <img id="imgPreview" class="mt-2" style="width:120px; height:70px; display:none;">
+                        </div>
+                        
+                        <div class="col-span-12">
+                        <label class="form-label">Event description:</label>
+                        <textarea name="event_description" id="editor" class="form-control">{{old('description') }}</textarea>
+                    </div>
+
                       <div class="col-span-12">
                       <button type="submit" class="btn bg-primary-100 text-primary-600 hover:bg-primary-700 hover:text-white rounded-lg px-6 py-[14px]">Submit</button>
                       </div>
@@ -52,4 +61,35 @@
 
     
 </div>
+@endsection
+
+@section('script')
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
+<script>
+ClassicEditor
+    .create(document.querySelector('#editor'))
+    .then(editor => {
+        const root = editor.editing.view.document.getRoot();
+        const isDark = document.documentElement.classList.contains('dark');
+        editor.editing.view.change(writer => {
+            writer.setStyle('background-color', isDark ? '#1f2937' : '#f8f9fa', root);
+            writer.setStyle('color', isDark ? '#fff' : '#000', root);
+            writer.setStyle('min-height', '150px', root);
+            writer.setStyle('padding', '10px', root);
+        });
+    })
+    .catch(console.error);
+</script>
+  <script>
+document.getElementById('imgInput').addEventListener('change', function(e){
+    const [file] = this.files;
+    if(file){
+        const preview = document.getElementById('imgPreview');
+        preview.src = URL.createObjectURL(file);
+        preview.style.display = 'block';
+    }
+});
+  </script>
+
+
 @endsection

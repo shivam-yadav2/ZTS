@@ -3,8 +3,6 @@
     <html lang="en">
 
         @include('admin.partials.head')
-
-
     <body>
 
     <div class="dark:bg-neutral-800 bg-neutral-100 dark:text-white">
@@ -27,6 +25,17 @@
                     </div>
                     <form action="{{ url('loginCheck') }}" method="post">
                         @csrf
+
+                        @if ($errors->any())
+                           <div class="mt-4 text-red-700">
+                            <ul>
+                                @foreach ($errors->all() as $error )
+                                <li class=" text-red-700">{{$error}}</li>
+                                @endforeach
+                            </ul>
+                           </div>
+
+                        @endif
                         <div class="icon-field mb-4 relative">
                             <span class="absolute start-4 top-1/2 -translate-y-1/2 pointer-events-none flex text-xl">
                                 <iconify-icon icon="mage:email"></iconify-icon>
@@ -51,12 +60,11 @@
                         <div class="mt-7">
                             <div class="flex justify-between gap-2">
                                 <div class="flex items-center">
-                                    <input class="form-check-input border border-neutral-300" type="checkbox" value=""
-                                        id="remeber">
+                                    <input class="form-check-input border border-neutral-300" type="checkbox"
+                                        id="remeber" name="check">
                                     <label class="ps-2" for="remeber">Remember me </label>
                                 </div>
-                                <a href="javascript:void(0)" class="text-primary-600 font-medium hover:underline">Forgot
-                                    Password?</a>
+                               
                             </div>
                         </div>
 
