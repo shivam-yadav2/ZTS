@@ -1745,6 +1745,7 @@
             background-clip: text;
             display: block;
             margin-bottom: 10px;
+            padding: 10px 0px;
         }
 
         .stat-label {
@@ -2035,13 +2036,13 @@
                     <div class="help-two__thumb d-none d-lg-block">
                         <div class="help-two__thumb-inner">
                             <div class="thumb-lg" data-aos="fade-up" data-aos-duration="1000">
-                                <img src="{{ asset('frontend_assets/images/help/three.png') }}" alt="Image">
+                                <img src="{{ asset('/frontend_assets/images/about2.jpg') }}" alt="Image">
                             </div>
                             <div class="thumb-sm" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
-                                <img src="{{ asset('frontend_assets/images/help/two.png') }}" alt="Image">
+                                <img src="{{ asset('/frontend_assets/images/help/one.png') }}" alt="Image">
                             </div>
                             <div class="thumb-md" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                                <img src="{{ asset('frontend_assets/images/help/one.png') }}" alt="Image">
+                                <img src="{{ asset('/frontend_assets/images/about1.jpeg') }}" alt="Image">
                             </div>
                             <div class="help-two__thumb-content">
                                 <div class="thumb">
@@ -2105,7 +2106,7 @@
                                                     <div class="help-two-card-wrapper">
                                                        <div class="help-two__card van-tilt">
                                                           <div class="help-card-thumb">
-                                                             <img src="{{ asset('frontend_assets/images/help/author.png') }}" alt="Image">
+                                                             <img src="{{ asset('/frontend_assets/images/about3.jpg') }}" alt="Image">
                                                              <i class="icon-star"></i>
                                                           </div>
                                                           <div class="help-card-content">
@@ -2278,6 +2279,448 @@
         </div>
     </section>
     <!-- ==== Our Journey  section end ==== -->
+    
+        <!-- ==== Core Member start ==== -->
+    {{-- <div class="difference"></div> --}}
+     <section class="team ">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10 col-xl-6">
+                            <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
+                                <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
+                                    people</span>
+                                <h2 class="title-animation">Meet Our
+                                    <span>Core Team</span> members
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gutter-40">
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="team__single van-tilt">
+                                    <div class="team__single-thumb">
+                                        <a href="team-details.html">
+                                            <img src="{{ asset('frontend_assets/images/members/member1.png') }}" alt="Image">
+                                        </a>
+                                        <div class="team__icons">
+                                            <div class="team__single-content__icon">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </div>
+                                            <div class="team__single__thumb-social">
+                                                <ul>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-behance"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__single-content">
+                                        <h6><a href="team-details.html">Pooja Srivastav</a></h6>
+                                        <p>Volunteer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <div class="team__single van-tilt">
+                                    <div class="team__single-thumb">
+                                        <a href="team-details.html">
+                                            <img src="{{ asset('frontend_assets/images/members/member2.png') }}" alt="Image">
+                                        </a>
+                                        <div class="team__icons">
+                                            <div class="team__single-content__icon">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </div>
+                                            <div class="team__single__thumb-social">
+                                                <ul>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-behance"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__single-content">
+                                        <h6><a href="team-details.html">Sanjeev Mishra</a></h6>
+                                        <p>Volunteer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                                <div class="team__single van-tilt">
+                                    <div class="team__single-thumb">
+                                        <a href="team-details.html">
+                                            <img src="{{ asset('frontend_assets/images/members/member3.png') }}" alt="Image">
+                                        </a>
+                                        <div class="team__icons">
+                                            <div class="team__single-content__icon">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </div>
+                                            <div class="team__single__thumb-social">
+                                                <ul>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-behance"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__single-content">
+                                        <h6><a href="team-details.html">Santhosh PP</a></h6>
+                                        <p>Volunteer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                                <div class="team__single van-tilt">
+                                    <div class="team__single-thumb">
+                                        <a href="team-details.html">
+                                            <img src="{{ asset('frontend_assets/images/members/member4.png') }}" alt="Image">
+                                        </a>
+                                        <div class="team__icons">
+                                            <div class="team__single-content__icon">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </div>
+                                            <div class="team__single__thumb-social">
+                                                <ul>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <i class="fa-brands fa-behance"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__single-content">
+                                        <h6><a href="team-details.html">Dr. Priyam Sameer Kamdar</a></h6>
+                                        <p>Volunteer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section__cta cta text-center">
+                                <a href="our-team.html" aria-label="our team" title="our team" class="btn--primary">View All
+                                    <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spade">
+                    <img src="{{ asset('frontend_assets/images/sprade-green.png') }}" alt="Image">
+                </div>
+            </section> 
+    <!-- ==== / team section end ==== -->
+
+
+    <!-- ==== cause slider two section start ==== -->
+    <section class="cause-two">
+        <div class="container-fluid">
+            <!-- 🔹 Add the heading row here -->
+            {{-- <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <span class="sub-title">Our Mission</span>
+                        <h2 class="title-animation mt-0 fw-7">
+                            Empowering lives with <span>hope</span>
+                        </h2>
+                    </div>
+                </div>
+            </div> --}}
+            <!-- 🔹 Heading row ends -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="cause-two__inner">
+                        <div class="slider-navigation">
+                            <button type="button" aria-label="prev slide" title="prev slide"
+                                class="prev-cause-two slider-btn">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button type="button" aria-label="next slide" title="next slide"
+                                class="next-cause-two slider-btn slider-btn-next">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="cause-two__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="cause-two__slider-single">
+                                        <div class="cause-thumb">
+                                            <img src="{{ asset('frontend_assets/images/mission/mission1.jpg') }}"
+                                                alt="Image">
+                                            <a href="cause-details.html">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cause-two__slider-single">
+                                        <div class="cause-thumb">
+                                            <img src="{{ asset('frontend_assets/images/mission/mission2.jpg') }}"
+                                                alt="Image">
+                                            <a href="cause-details.html">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cause-two__slider-single">
+                                        <div class="cause-thumb">
+                                            <img src="{{ asset('frontend_assets/images/mission/mission3.jpg') }}"
+                                                alt="Image">
+                                            <a href="cause-details.html">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cause-two__slider-single">
+                                        <div class="cause-thumb">
+                                            <img src="{{ asset('frontend_assets/images/mission/mission4.jpg') }}"
+                                                alt="Image">
+                                            <a href="cause-details.html">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cause-two__slider-single">
+                                        <div class="cause-thumb">
+                                            <img src="{{ asset('frontend_assets/images/mission/mission1.jpg') }}"
+                                                alt="Image">
+                                            <a href="cause-details.html">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cause-two__slider-single">
+                                        <div class="cause-thumb">
+                                            <img src="{{ asset('frontend_assets/images/mission/mission2.jpg') }}"
+                                                alt="Image">
+                                            <a href="cause-details.html">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cause-two__content-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cause-content">
+                                    <h4>Swasthya</h4>
+                                    <!-- <p>Child & old care</p> -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cause-content">
+                                    <h4>Shisksha</h4>
+                                    <!-- <p>Child & old care</p> -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cause-content">
+                                    <h4>Swarozgar</h4>
+                                    <!-- <p>Child & old care</p> -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cause-content">
+                                    <h4>Soch</h4>
+                                    <!-- <p>Child & old care</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==== / cause slider two section end ==== -->
+
+    <!-- ==== / team section end ==== -->
+    <section class="testimonial-seven-area project-panel-area position-relative z-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-4">
+                    <div class="testimonial-seven-thumb position-relative z-1">
+                        <img src="https://imgs.search.brave.com/-SzudOilDhbmuKs6aatJIOgIcgyinLbAMRvZgTFlnBI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Y3L2I5/L2UyL2Y3YjllMmQ1/NmFkOWJiNTA1MjFl/Yzk3NzIxZjNhMWQ1/LmpwZw"
+                            alt="thumb">
+                        <div class="testimonial-seven-thumb-quate">
+                            <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"
+                                        alt="quate"></span></a>
+                        </div>
+                    </div>
+                    <div class="testimonial-seven-thumb position-relative z-1">
+                        <img src="https://imgs.search.brave.com/96a9n9i9rR1k6k6vY0NZKfNjsNr6BnRRqco6H-eC0Y8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2lraGl3aWtpLm9y/Zy9pbWFnZXMvYi9i/OC9CaGFnYXQtUHVy/YW4tU2luZ2gtYXcu/anBn"
+                            alt="thumb">
+                        <div class="testimonial-seven-thumb-quate">
+                            <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"
+                                        alt="quate"></span></a>
+                        </div>
+                    </div>
+                    <div class="testimonial-seven-thumb position-relative z-1">
+                        <img src="https://imgs.search.brave.com/JeW05RO0LKydV7bTvEJLr6RhRg1yOW8qa3Rs_2yiEXU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZW5k/ZXIuZmluZWFydGFt/ZXJpY2EuY29tL2lt/YWdlcy9pbWFnZXMt/cHJvZmlsZS1mbG93/LzQwMC9pbWFnZXMv/YXJ0d29ya2ltYWdl/cy9tZWRpdW1sYXJn/ZS8xL2dhbmRoaS1p/bmRpYW4tc2Nob29s/LmpwZw"
+                            alt="thumb">
+                        <div class="testimonial-seven-thumb-quate">
+                            <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"
+                                        alt="quate"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-8">
+                    <div class="row">
+                        <div class="col-xl-12 project-panel">
+                            <div class="testimonial-seven-wrapper">
+                                <h4 class="testimonial-seven-title">“Great Services”</h4>
+                                <p class="testimonial-seven-paragraph">Sadhguru is a Yogi, Mystic and Visionary. Named one
+                                    of India’s 50 most influential people, Sadhguru’s work has touched the lives of millions
+                                    worldwide through his transformational programs... </p>
+                                <div class="testimonial-seven-wrap">
+                                    <div class="testimonial-seven-left">
+                                        <div class="testimonial-seven-icon">
+                                            <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"
+                                                    alt="quate"></span>
+                                        </div>
+                                        <h6 class="testimonial-seven-name">Sadhguru
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 project-panel">
+                            <div class="testimonial-seven-wrapper">
+                                <h4 class="testimonial-seven-title">“Great Services”</h4>
+                                <p class="testimonial-seven-paragraph">Bhagat Puran Singh was no ordinary human but
+                                    definitely one of the most loved and admired men in the world. Many people describe him
+                                    as the bearded Mother Teresa of Punjab. </p>
+                                <div class="testimonial-seven-wrap">
+                                    <div class="testimonial-seven-left">
+                                        <div class="testimonial-seven-icon">
+                                            <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"
+                                                    alt="quate"></span>
+                                        </div>
+                                        <h6 class="testimonial-seven-name">Bhagat Puran Singh </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 project-panel">
+                            <div class="testimonial-seven-wrapper">
+                                <h4 class="testimonial-seven-title">“Great Services”</h4>
+                                <p class="testimonial-seven-paragraph">hthere is not a single country in the whole world
+                                    where the name of Mahatma Gandhi is not known. Do you know why Gandhi became so famous?
+                                </p>
+                                <div class="testimonial-seven-wrap">
+                                    <div class="testimonial-seven-left">
+                                        <div class="testimonial-seven-icon">
+                                            <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"
+                                                    alt="quate"></span>
+                                        </div>
+                                        <h6 class="testimonial-seven-name">Mahatma Gandhi </h6>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-seven-shape">
+            <img src="frontend_assets/images/testimonial/testimonail-seven-shape.png" alt="shape">
+        </div>
+    </section>
 
     <!-- ==== Our Vision section start ==== -->
       <section class="vision-section">
@@ -2510,7 +2953,7 @@
     <!-- ==== Core Programs section end ==== -->
 
     <!-- ==== Impact / Why It Matters section start ==== -->
-     <section class="impact-section">
+     {{-- <section class="impact-section">
         <div class="container impact-content">
             <!-- Header -->
             <div class="impact-header">
@@ -2642,7 +3085,9 @@
                 </button>
             </div>
         </div>
-    </section>
+    </section> --}}
+
+    
     <!-- ==== Impact / Why It Matters section end ==== -->
 
     <!-- ==== Get Involved section start ==== -->
@@ -2743,6 +3188,115 @@
                 </div>
             </div>
         </div>
+    </section>
+    
+    <section class="blog ff-blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <span class="sub-title">We are always open for children</span>
+                        <h2 class="title-animation mt-0 fw-7">our latest article news &
+                            blogs you need
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gutter-40">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog__single-wrapper">
+                        <div class="blog__single">
+                            <div class="blog__single-thumb">
+                                <a href="blog-details.html">
+                                    <img src="/frontend_assets/images/tanmay.png" alt="Image">
+                                </a>
+                            </div>
+                            <div class="blog__single-inner">
+
+                                <div class="blog__single-content">
+                                    <h6><a href="blog-details.html">Tamnay</a>
+                                    </h6>
+                                </div>
+                                <div class="blog__single-meta mb-3">
+                                    <p><i class="icon-user"></i>The Runner Up of SRGMA Lil Champs
+                                    </p>
+
+                                </div>
+                                <div class="blog__single-meta">
+                                    <p>
+                                        "I am performing because I support its ideology and expect that every one should
+                                        stand to support Zindagi Tujhe Salaam"
+                                    </p>
+                                </div </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog__single-wrapper">
+                        <div class="blog__single">
+                            <div class="blog__single-thumb">
+                                <a href="blog-details.html">
+                                    <img src="/frontend_assets/images/pankaj.png" alt="Image">
+                                </a>
+                            </div>
+                            <div class="blog__single-inner">
+
+                                <div class="blog__single-content">
+                                    <h6><a href="blog-details.html">Pankaj Bhadouria</a>
+                                    </h6>
+                                </div>
+                                <div class="blog__single-meta mb-3">
+                                    <p><i class="icon-user"></i>The Master Chef Winner</p>
+
+                                </div>
+                                <div class="blog__single-meta">
+                                    <p>
+                                        "Zindagi Tujhe Salaama is acting for a unique cause, they are sensitizing for our
+                                        society, therefore, its our duty also to take out some time from our hectic schedule
+                                        & act for society".
+                                    </p>
+                                </div </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog__single-wrapper">
+                        <div class="blog__single">
+                            <div class="blog__single-thumb">
+                                <a href="blog-details.html">
+                                    <img src="/frontend_assets/images/harsh.png" alt="Image">
+                                </a>
+                            </div>
+                            <div class="blog__single-inner">
+
+                                <div class="blog__single-content">
+                                    <h6><a href="blog-details.html">Harsh</a>
+                                    </h6>
+                                </div>
+                                <div class="blog__single-meta mb-3">
+                                    <p><i class="icon-user"></i>The Vocalist of Band Highway</p>
+
+                                </div>
+                                <div class="blog__single-meta">
+                                    <p>
+                                        "Pleasure of doing the rock night awakening with them, through Zindagi Tujhe Salaam
+                                        people can connect easily & stand for their society".
+                                    </p>
+                                    </div< /div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ff-pagination pagination-one mt-40"></div>
+                        </div>
+                    </div>
+
+                </div>
     </section>
     <!-- ==== Get Involved section end ==== -->
 

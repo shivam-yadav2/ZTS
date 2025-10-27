@@ -12,21 +12,18 @@
         --shadow-lg: 0 15px 50px rgba(0,0,0,0.2);
     }
 
-    * {
-        font-family: 'Inter', sans-serif;
-    }
-
-    body {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    }
+   
 
     /* Hero Section */
     .team-hero {
-        background: linear-gradient(135deg, var(--primary-green) 0%, #5fb383 100%);
-        padding: 120px 0 80px;
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, var(--primary-green) 100%);
+        padding: 150px 0 100px;
         margin-top: 80px;
         position: relative;
         overflow: hidden;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
     }
 
     .team-hero::before {
@@ -36,13 +33,25 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
-        opacity: 0.5;
+        background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="1.5" fill="rgba(255,255,255,0.15)"/></svg>') repeat;
+        animation: movePattern 20s linear infinite;
+    }
+
+    .team-hero::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        border-radius: 50%;
+        animation: pulse 4s ease-in-out infinite;
     }
 
     .team-hero-content {
         position: relative;
-        z-index: 1;
+        z-index: 2;
         text-align: center;
         color: white;
     }
@@ -50,17 +59,81 @@
     .team-hero h1 {
         font-size: 3.5rem;
         font-weight: 800;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        margin-bottom: 25px;
+        background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         animation: fadeInDown 0.8s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    .team-hero h1::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, var(--primary-yellow), transparent);
+        border-radius: 2px;
     }
 
     .team-hero p {
         font-size: 1.3rem;
         max-width: 700px;
         margin: 0 auto;
-        opacity: 0.95;
+        color: rgba(255,255,255,0.95);
+        line-height: 1.8;
         animation: fadeInUp 0.8s ease;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Decorative elements */
+    .team-hero .decoration-circle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.1;
+        animation: float 15s ease-in-out infinite;
+    }
+
+    .decoration-circle-1 {
+        width: 150px;
+        height: 150px;
+        background: var(--primary-yellow);
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .decoration-circle-2 {
+        width: 100px;
+        height: 100px;
+        background: var(--primary-green);
+        bottom: 30%;
+        right: 15%;
+        animation-delay: 2s;
+    }
+
+    .decoration-circle-3 {
+        width: 80px;
+        height: 80px;
+        background: white;
+        top: 60%;
+        left: 15%;
+        animation-delay: 4s;
+    }
+
+    @keyframes movePattern {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(60px, 60px); }
+    }
+
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.5; }
+        50% { transform: scale(1.1); opacity: 0.3; }
     }
 
     /* Member Cards */
@@ -314,7 +387,8 @@
 
     @media (max-width: 768px) {
         .team-hero {
-            padding: 80px 0 60px;
+            padding: 120px 0 80px;
+            min-height: 350px;
         }
 
         .team-hero h1 {
@@ -323,6 +397,11 @@
 
         .team-hero p {
             font-size: 1.1rem;
+            padding: 0 20px;
+        }
+
+        .decoration-circle {
+            display: none;
         }
 
         .member-card-inner {
@@ -352,8 +431,17 @@
     }
 
     @media (max-width: 576px) {
+        .team-hero {
+            min-height: 300px;
+            padding: 100px 0 60px;
+        }
+
         .team-hero h1 {
             font-size: 2rem;
+        }
+
+        .team-hero p {
+            font-size: 1rem;
         }
 
         .member-card-inner {
@@ -423,6 +511,9 @@
 @section('content')
 <!-- Team Hero Section -->
 <section class="team-hero">
+    <div class="decoration-circle decoration-circle-1"></div>
+    <div class="decoration-circle decoration-circle-2"></div>
+    <div class="decoration-circle decoration-circle-3"></div>
     <div class="container">
         <div class="team-hero-content">
             <h1>Core Team Members</h1>
