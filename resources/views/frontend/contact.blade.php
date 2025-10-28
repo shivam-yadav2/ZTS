@@ -1,24 +1,13 @@
 @extends('master.frontmaster')
+
 @section('content')
-    <section class="common-banner">
-        <div class="container">
-            <div class="row">
-                <div class="common-banner__content text-center">
-                    <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor people</span>
-                    <h2 class="title-animation">Contact Us</h2>
-                </div>
-            </div>
-        </div>
-        <div class="banner-bg">
-            <img src="/frontend_assets/images/banner/banner-bg.png" alt="Image">
-        </div>
-        <div class="shape">
-            <img src="/frontend_assets/images/shape.png" alt="Image">
-        </div>
-        <div class="sprade" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="/frontend_assets/images/sprade-base.png" alt="Image" class="base-img">
-        </div>
-    </section>
+   @include('frontend.pages.component.banner', [
+    'title' => 'Contact Us',
+    'description' => 'We’d love to hear from you — let’s build something meaningful together.',
+    'background' => 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop'
+])
+
+
 
     <section class="contact-main volunteer">
         <div class="container">

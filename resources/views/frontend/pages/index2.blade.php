@@ -124,7 +124,7 @@
             width: 40px;
             height: 40px;
             background: white;
-            border: 4px solid rgb(0, 113, 93);
+            /* border: 4px solid rgb(0, 113, 93); */
             border-radius: 50%;
             transform: translateX(-50%);
             z-index: 10;

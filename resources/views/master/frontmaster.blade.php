@@ -38,6 +38,8 @@
     <!-- rtl css -->
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/rtl.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/banner.css') }}">
+
     
 
     @yield('css')

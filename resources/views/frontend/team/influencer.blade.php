@@ -297,6 +297,12 @@
 @section('content')
  
 <!-- Hero Section -->
+ @section('content')
+   @include('frontend.pages.component.banner', [
+    'title' => 'Influential People',
+    'description' => 'Discover the stories of remarkable individuals who have shaped our world through their wisdom, dedication, and transformative impact on society.',
+    'background' => 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop'
+])
     <section class="hero-section">
         <div class="decoration-pattern pattern-1"></div>
         <div class="decoration-pattern pattern-2"></div>
