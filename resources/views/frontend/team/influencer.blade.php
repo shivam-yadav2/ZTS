@@ -303,17 +303,8 @@
     'description' => 'Discover the stories of remarkable individuals who have shaped our world through their wisdom, dedication, and transformative impact on society.',
     'background' => 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop'
 ])
-    <section class="hero-section">
-        <div class="decoration-pattern pattern-1"></div>
-        <div class="decoration-pattern pattern-2"></div>
-        <div class="decoration-pattern pattern-3"></div>
-        <div class="container">
-            <h1><i class="fas fa-users me-3"></i>Influential People</h1>
-            <p>Discover the stories of remarkable individuals who have shaped our world through their wisdom, dedication, and transformative impact on society.</p>
-        </div>
-    </section>
+  
 
-    
 
     <!-- Profiles Section -->
     <section class="py-5">

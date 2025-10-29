@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding: 120px 0;
+  padding: 40px 0;
   overflow: hidden;
   margin-top: 150px;
 }
@@ -27,7 +27,7 @@
   /* background: rgba(255, 193, 7, 0.5); */
 
   /* OR green tone */
-  background: rgba(113, 196, 142, 0.5);
+  background: #0b221380;
 
   /* OR dark tone */
   /* background: rgba(9, 31, 27, 0.6); */

@@ -123,7 +123,6 @@
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
             background: var(--color-green);
-            color: white;
         }
 
         .question-icon {
@@ -161,7 +160,7 @@
         }
 
         .question-card:hover .question-text {
-            color: white;
+            color: var(--color-dark-green);
         }
 
         /* CTA Section */
@@ -211,6 +210,7 @@
 
         .cta-badge:hover {
             background: white;
+            color: var(--color-dark-green);
             transform: scale(1.1);
         }
 
@@ -302,6 +302,11 @@
             transform: translateY(-10px);
             background: var(--color-green);
         }
+        
+        .campaign-card:hover .campaign-title,
+        .campaign-card:hover .campaign-text {
+            color: var(--color-dark-green);
+        }
 
         .campaign-icon {
             width: 100px;
@@ -322,10 +327,6 @@
             transition: color 0.4s ease;
         }
 
-        .campaign-card:hover .campaign-title,
-        .campaign-card:hover .campaign-text {
-            color: white;
-        }
 
         .campaign-text {
             color: #666;
@@ -445,28 +446,36 @@
             background: var(--color-yellow);
             transform: translateY(-10px);
         }
+        
+        .challenge-item:hover .challenge-title,
+        .challenge-item:hover .challenge-text {
+            color: var(--color-dark-green);
+        }
 
         .challenge-item i {
             font-size: 3rem;
             color: var(--color-dark-green);
             margin-bottom: 20px;
-            transition: transform 0.4s ease;
+            transition: all 0.4s ease;
         }
 
         .challenge-item:hover i {
             transform: scale(1.3) rotate(360deg);
+            color: var(--color-dark-green);
         }
 
         .challenge-title {
             color: var(--color-dark-green);
             font-weight: 700;
             margin-bottom: 10px;
+            transition: color 0.4s ease;
         }
 
         .challenge-text {
             color: #666;
             font-size: 0.9rem;
             line-height: 1.6;
+            transition: color 0.4s ease;
         }
 
         /* Team Section */
@@ -585,6 +594,7 @@
 
         .hero-cta-btn:hover {
             background: white;
+            color: var(--color-dark-green);
             transform: scale(1.1);
             box-shadow: 0 15px 40px rgba(255, 193, 7, 0.6);
         }
@@ -601,6 +611,16 @@
             align-items: center;
             gap: 40px;
             margin-bottom: 60px;
+        }
+        
+        .facilitating-content.flex-row-reverse {
+            flex-direction: row-reverse;
+        }
+        
+        @media (max-width: 768px) {
+            .facilitating-content.flex-row-reverse {
+                flex-direction: column;
+            }
         }
 
         .facilitating-img {
@@ -709,118 +729,11 @@
 @section('content')
 
 <!-- === Banner Section start === -->
-    <section class="banner-two">
-         <div class="banner-two__slider swiper">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide1.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide2.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9  col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide3.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide4.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="slider-navigation d-none d-md-flex">
-            <button type="button" aria-label="prev slide" title="prev slide" class="prev-banner slider-btn">
-               <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button type="button" aria-label="next slide" title="next slide"
-               class="next-banner slider-btn slider-btn-next">
-               <i class="fa-solid fa-arrow-right"></i>
-            </button>
-         </div>
-         <div class="shape">
-            <img src="{{asset('frontend_assets/images/shape.png')}}" alt="Image">
-         </div>
-         <div class="shape-left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-            <img src="{{asset('frontend_assets/images/banner/banner-two-shape.png')}}" alt="Image">
-         </div>
-         <div class="sprade-shape">
-            <img src="{{asset('frontend_assets/images/sprade-base.png')}}" alt="Image" class="base-img" data-aos="zoom-in"
-               data-aos-duration="1000">
-         </div>
-         <div class="unity">
-            <img src="{{asset('frontend_assets/images/unity.png')}}" alt="Image">
-         </div>
-    </section>
+   @include('frontend.pages.component.banner', [
+      'title' => 'Responsible India, Possible India',
+      'description' => 'We are creating a movement where education becomes accessible to all children, breaking barriers and building futures. Together, we can transform lives through knowledge, compassion, and collective action.',
+      'background' => asset('frontend_assets/images/slide1.jpg')
+   ])
       <!-- ===  Banner Section End === -->
     <!-- Header Section -->
     <section class="header-section">
@@ -911,7 +824,7 @@
         </div>
         <div class="container position-relative text-center">
             <h2 class="cta-title">Do YOU Think It Is Possible?</h2>
-            <div class="yes-text">YES</div>
+            <div class="yes-text my-5">YES</div>
             <p class="cta-description">We build the possible by providing education that breaks barriers and creates opportunities</p>
             <div>
                 <span class="cta-badge">RESPONSIBLE INDIA, POSSIBLE INDIA</span>
@@ -1122,55 +1035,9 @@
         </div>
     </section>
 
-    <!-- Team/Testimonial Section -->
-    <section class="team-section">
-        <div class="floating-icons">
-            <i class="fas fa-handshake" style="left: 10%; font-size: 40px; animation-delay: 2s; color: var(--color-green);"></i>
-            <i class="fas fa-award" style="left: 90%; font-size: 45px; animation-delay: 4s; color: var(--color-yellow);"></i>
-        </div>
-        <div class="container position-relative">
-            <h2 class="section-heading">How You Can Make A Difference</h2>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="team-card">
-                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800" alt="Donate" class="team-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%2373c48f%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2248%22 fill=%22white%22%3EDonate Today%3C/text%3E%3C/svg%3E'">
-                        <div class="team-content">
-                            <h3 class="team-title">Become A Patron</h3>
-                            <p class="team-text">
-                                Your financial contribution directly impacts children's lives. Every donation helps provide books, uniforms, meals, and educational resources to students in need. Transform lives through your generosity.
-                            </p>
-                            <button class="team-btn">DONATE NOW</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="team-card">
-                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800" alt="Volunteer" class="team-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23ffc107%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2248%22 fill=%22%2300715d%22%3EVolunteer With Us%3C/text%3E%3C/svg%3E'">
-                        <div class="team-content">
-                            <h3 class="team-title">Become A Partner</h3>
-                            <p class="team-text">
-                                Share your time, skills, and expertise with us. Whether teaching, mentoring, or supporting our operations, your involvement creates lasting impact in children's educational journeys.
-                            </p>
-                            <button class="team-btn">JOIN US</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Hero CTA -->
-    <section class="hero-cta">
-        <div class="floating-icons">
-            <i class="fas fa-heart" style="left: 15%; font-size: 60px; animation-delay: 0s; color: var(--color-yellow);"></i>
-            <i class="fas fa-hands-helping" style="left: 85%; font-size: 55px; animation-delay: 2s; color: var(--color-green);"></i>
-            <i class="fas fa-child" style="left: 50%; font-size: 50px; animation-delay: 4s; color: var(--color-yellow);"></i>
-        </div>
-        <div class="container position-relative">
-            <h2 class="hero-cta-title">Be A Hero Campaign</h2>
-            <button class="hero-cta-btn">START NOW</button>
-        </div>
-    </section>
+
+
 
     <!-- Who's Handling Section -->
     <section class="facilitating-section">

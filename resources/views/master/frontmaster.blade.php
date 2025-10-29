@@ -163,21 +163,21 @@
                                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Our
                                                             Journey</a>
                                                         <ul class="navbar__sub-menu navbar__sub-menu__nested">
-                                                            <li>
+                                                            {{-- <li>
                                                                 <a href="/about/journey/human_first">Human First</a>
-                                                            </li>
-                                                            <li>
+                                                            </li> --}}
+                                                            {{-- <li>
                                                                 <a href="/about/journey/muhim">Muhim</a>
-                                                            </li>
+                                                            </li> --}}
                                                             <li>
                                                                 <a href="/about/journey/jagrati">Jagrati</a>
                                                             </li>
-                                                            <li>
+                                                            {{-- <li>
                                                                 <a href="/about/journey/sneh">Sneh</a>
                                                             </li>
                                                             <li>
                                                                 <a href="/about/journey/muskaan">Muskaan</a>
-                                                            </li>
+                                                            </li> --}}
                                                         </ul>
                                                     </li>
 
@@ -230,7 +230,7 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                  </button>
                               </div> --}}
-                                        <a href="Contribute-us.html" class="btn--primary d-none d-md-flex">Contribute Now <i
+                                        <a href="/contact" class="btn--primary d-none d-md-flex">Contribute Now <i
                                                 class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                     <button class="open-offcanvas-nav d-flex d-xl-none"
