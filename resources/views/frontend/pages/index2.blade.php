@@ -2039,7 +2039,7 @@
                                 <img src="{{ asset('/frontend_assets/images/about2.jpg') }}" alt="Image">
                             </div>
                             <div class="thumb-sm" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
-                                <img src="{{ asset('/frontend_assets/images/help/one.png') }}" alt="Image">
+                                <img class="" style="width:250px" src="{{ asset('/frontend_assets/images/help/image.png') }}" alt="Image">
                             </div>
                             <div class="thumb-md" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                                 <img src="{{ asset('/frontend_assets/images/about1.jpeg') }}" alt="Image">
