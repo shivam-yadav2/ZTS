@@ -155,15 +155,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="contact-btn">
-                                        <div class="contact-icon">
-                                            <i class="icon-support"></i>
-                                        </div>
-                                        <div class="contact-content">
-                                            <p>Call Us Now</p>
-                                            <a href="tel:522 4105853">(+91)522 4105853 </a>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="navbar__options">
                                     <div class="navbar__mobile-options ">
