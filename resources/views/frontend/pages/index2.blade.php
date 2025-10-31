@@ -125,6 +125,7 @@
             height: 40px;
             background: white;
             /* border: 4px solid rgb(0, 113, 93); */
+            /* border: 4px solid rgb(0, 113, 93); */
             border-radius: 50%;
             transform: translateX(-50%);
             z-index: 10;
@@ -1746,6 +1747,7 @@
             display: block;
             margin-bottom: 10px;
             padding: 10px 0px;
+            padding: 10px 0px;
         }
 
         .stat-label {
@@ -2017,11 +2019,14 @@
                         <div class="help-two__thumb-inner">
                             <div class="thumb-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img src="{{ asset('/frontend_assets/images/about2.jpg') }}" alt="Image">
+                                <img src="{{ asset('/frontend_assets/images/about2.jpg') }}" alt="Image">
                             </div>
                             <div class="thumb-sm" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                                 <img class="" style="width:250px" src="{{ asset('/frontend_assets/images/help/image.png') }}" alt="Image">
+                                <img class="" style="width:250px" src="{{ asset('/frontend_assets/images/help/image.png') }}" alt="Image">
                             </div>
                             <div class="thumb-md" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                                <img src="{{ asset('/frontend_assets/images/about1.jpeg') }}" alt="Image">
                                 <img src="{{ asset('/frontend_assets/images/about1.jpeg') }}" alt="Image">
                             </div>
                             <div class="help-two__thumb-content">
@@ -2086,6 +2091,7 @@
                                                     <div class="help-two-card-wrapper">
                                                        <div class="help-two__card van-tilt">
                                                           <div class="help-card-thumb">
+                                                             <img src="{{ asset('/frontend_assets/images/about3.jpg') }}" alt="Image">
                                                              <img src="{{ asset('/frontend_assets/images/about3.jpg') }}" alt="Image">
                                                              <i class="icon-star"></i>
                                                           </div>
@@ -2922,6 +2928,7 @@
 
     <!-- ==== Impact / Why It Matters section start ==== -->
      {{-- <section class="impact-section">
+     {{-- <section class="impact-section">
         <div class="container impact-content">
             <!-- Header -->
             <div class="impact-header">
@@ -3053,6 +3060,9 @@
                 </button>
             </div>
         </div>
+    </section> --}}
+
+    
     </section> --}}
 
     

@@ -104,6 +104,7 @@
   --black: #000000;
   --primary-color: #046a58;
   --secondary-color: #122f2a;
+  --secondary-color: #122f2a;
   --secondary-color2: #122f2a;
   --tertiary-color: #046a58;
   --quaternary-color: #00715d;
@@ -7809,6 +7810,7 @@ padding: 0px 30px;
   z-index: 1;
 }
 /* .team .team__single-thumb::before {
+/* .team .team__single-thumb::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -7826,6 +7828,7 @@ padding: 0px 30px;
   pointer-events: none;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+} */
 } */
 .team .team__single-thumb a {
   width: 100%;
