@@ -38,6 +38,8 @@
     <!-- rtl css -->
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/rtl.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/banner.css') }}">
+
     
 
     @yield('css')
@@ -51,65 +53,7 @@
             <i class="icon-donation"></i>
             <p>Zindagi Tujhe Salaam</p>
         </div>
-        <!-- ==== / preloader end ==== -->
-        <!-- ==== topbar start ==== -->
-        <div class="topbar topbar--secondary d-none d-lg-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topbar__inner">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-6 col-xxl-4">
-                                    <div class="topbar__list-wrapper">
-                                        <ul class="topbar__list">
-                                            <li><a href="mailto:zindagitujhesalaam@gmail.com"><i
-                                                        class="fa-regular fa-envelope"></i>zindagitujhesalaam@gmail.com</a>
-                                            </li>
-                                            <li><a href="tel:522 4105853"><i class="fa-solid fa-phone"></i>+91 522
-                                                    4105853</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xxl-4 d-none d-xxl-block">
-                                    <div class="topbar__extra text-center">
-                                        <p><i class="icon-heart-hand"></i> Are you ready to help them? Let's become a
-                                            volunteer!
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6 col-xxl-4">
-                                    <div class="topbar__items justify-content-end">
-
-
-                                        <div class="social">
-                                            <a href="https://www.facebook.com/ZindagiTujheSaalam" target="_blank"
-                                                aria-label="share us on facebook" title="facebook">
-                                                <i class="fa-brands fa-facebook-f"></i>
-                                            </a>
-                                            <a href="https://x.com/ZtSalaam/" target="_blank"
-                                                aria-label="share us on twitter" title="twitter">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                            <a href="https://www.linkedin.com/" target="_blank"
-                                                aria-label="share us on linkedin" title="linkedin">
-                                                <i class="fa-brands fa-linkedin-in"></i>
-                                            </a>
-                                            <a href="https://www.instagram.com/zindagitujhesalam/" target="_blank"
-                                                aria-label="share us on instagram" title="instagram">
-                                                <i class="fa-brands fa-instagram"></i>
-                                                
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ==== / topbar end ==== -->
+        
         <!-- ==== header start ==== -->
         <header class="header header-secondary">
             <div class="container">
@@ -161,21 +105,21 @@
                                                             class="navbar__dropdown-label navbar__dropdown-label-sub">Our
                                                             Journey</a>
                                                         <ul class="navbar__sub-menu navbar__sub-menu__nested">
-                                                            <li>
+                                                            {{-- <li>
                                                                 <a href="/about/journey/human_first">Human First</a>
-                                                            </li>
-                                                            <li>
+                                                            </li> --}}
+                                                            {{-- <li>
                                                                 <a href="/about/journey/muhim">Muhim</a>
-                                                            </li>
+                                                            </li> --}}
                                                             <li>
                                                                 <a href="/about/journey/jagrati">Jagrati</a>
                                                             </li>
-                                                            <li>
+                                                            {{-- <li>
                                                                 <a href="/about/journey/sneh">Sneh</a>
                                                             </li>
                                                             <li>
                                                                 <a href="/about/journey/muskaan">Muskaan</a>
-                                                            </li>
+                                                            </li> --}}
                                                         </ul>
                                                     </li>
 
@@ -193,9 +137,9 @@
                                                         <a href="/campaign/responsible-india">Responsible India Possible
                                                             India</a>
                                                     </li>
-                                                    <li>
+                                                    {{-- <li>
                                                         <a href="/campaign/be-a-hero">Be A Hero</a>
-                                                    </li>
+                                                    </li> --}}
                                                 </ul>
                                             </li>
 
@@ -228,7 +172,7 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                  </button>
                               </div> --}}
-                                        <a href="Contribute-us.html" class="btn--primary d-none d-md-flex">Contribute Now <i
+                                        <a href="/contact" class="btn--primary d-none d-md-flex">Contribute Now <i
                                                 class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                     <button class="open-offcanvas-nav d-flex d-xl-none"

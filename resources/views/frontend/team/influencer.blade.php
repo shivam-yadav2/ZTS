@@ -13,23 +13,182 @@
         }
         
         .hero-section {
-            background: var(--primary-green);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, var(--primary-green) 100%);
             color: white;
-            padding: 60px 0;
+            padding: 150px 0 100px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><polygon points="40,10 50,35 25,35" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: movePattern 25s linear infinite;
+            opacity: 0.3;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: -40%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section .decoration-pattern {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            opacity: 0.1;
+            animation: float 12s ease-in-out infinite;
+        }
+
+        .pattern-1 {
+            top: 15%;
+            left: 10%;
+            background: var(--primary-yellow);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+
+        .pattern-2 {
+            bottom: 25%;
+            right: 12%;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .pattern-3 {
+            top: 60%;
+            left: 15%;
+            background: var(--primary-yellow);
+            border-radius: 50%;
+            animation-delay: 3s;
         }
         
         .hero-section h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            display: inline-block;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero-section h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--primary-yellow), transparent);
+            border-radius: 2px;
         }
         
         .hero-section p {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             max-width: 800px;
             margin: 0 auto;
-            opacity: 0.95;
+            color: rgba(255,255,255,0.95);
+            line-height: 1.8;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes movePattern {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(80px, 80px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.4; }
+            50% { transform: scale(1.1); opacity: 0.2; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 120px 0 80px;
+                min-height: 350px;
+            }
+            
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section p {
+                font-size: 1.1rem;
+                padding: 0 20px;
+            }
+
+            .decoration-pattern {
+                display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-section {
+                min-height: 300px;
+                padding: 100px 0 60px;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+            }
         }
         
         .profile-card {
@@ -136,140 +295,16 @@
     </style>
 @endsection
 @section('content')
- <!-- === Banner Section start === -->
-    <section class="banner-two">
-         <div class="banner-two__slider swiper">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide1.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide2.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9  col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide3.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide4.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="slider-navigation d-none d-md-flex">
-            <button type="button" aria-label="prev slide" title="prev slide" class="prev-banner slider-btn">
-               <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button type="button" aria-label="next slide" title="next slide"
-               class="next-banner slider-btn slider-btn-next">
-               <i class="fa-solid fa-arrow-right"></i>
-            </button>
-         </div>
-         <div class="shape">
-            <img src="{{asset('frontend_assets/images/shape.png')}}" alt="Image">
-         </div>
-         <div class="shape-left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-            <img src="{{asset('frontend_assets/images/banner/banner-two-shape.png')}}" alt="Image">
-         </div>
-         <div class="sprade-shape">
-            <img src="{{asset('frontend_assets/images/sprade-base.png')}}" alt="Image" class="base-img" data-aos="zoom-in"
-               data-aos-duration="1000">
-         </div>
-         <div class="unity">
-            <img src="{{asset('frontend_assets/images/unity.png')}}" alt="Image">
-         </div>
-      </section>
-      <!-- ===  Banner Section End === -->
+ 
 <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <h1><i class="fas fa-users me-3"></i>Influential People</h1>
-            <p>Discover the stories of remarkable individuals who have shaped our world through their wisdom, dedication, and transformative impact on society.</p>
-        </div>
-    </section>
+ @section('content')
+   @include('frontend.pages.component.banner', [
+    'title' => 'Influential People',
+    'description' => 'Discover the stories of remarkable individuals who have shaped our world through their wisdom, dedication, and transformative impact on society.',
+    'background' => 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop'
+])
+  
 
-    <!-- Introduction Section -->
-    <section class="intro-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="intro-text1">
-                        Being an influencer means you've discovered how to impact others. It means you help lead people to new frontiers, shape their way of thinking, and foster meaningful change in their lives. There are many books, articles and blogs that will tell you what a influencer is and what they do, some are genuinely helpful, but the art of influencing others to truly make a deeper connection and more powerful impact is really not so complicated.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Profiles Section -->
     <section class="py-5">

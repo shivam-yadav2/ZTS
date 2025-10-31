@@ -19,56 +19,7 @@
         background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
     }
 
-    /* Header Section */
-    .team-header {
-        text-align: center;
-        padding: 100px 0 60px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .team-header::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -50%;
-        width: 200%;
-        height: 100%;
-        background: radial-gradient(ellipse at center, rgba(115,196,143,0.1) 0%, transparent 70%);
-        animation: rotate 20s linear infinite;
-    }
-
-    @keyframes rotate {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-
-    .section-title {
-        position: relative;
-        z-index: 1;
-        color: var(--text-dark);
-        font-weight: 800;
-        font-size: 3rem;
-        margin-bottom: 20px;
-        display: inline-block;
-    }
-
-    .section-title span {
-        background: linear-gradient(135deg, var(--primary-green), var(--primary-yellow));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .section-subtitle {
-        color: var(--text-light);
-        font-size: 1.2rem;
-        max-width: 600px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
-    }
-
+   
     /* Grid Layout */
     .team-grid {
         padding: 60px 0;
@@ -321,27 +272,15 @@
 
     /* Responsive Design */
     @media (max-width: 992px) {
-        .section-title {
-            font-size: 2.5rem;
-        }
+
 
         .member-image-wrapper {
             height: 250px;
         }
     }
 
-    @media (max-width: 768px) {
-        .team-header {
-            padding: 80px 0 40px;
-        }
 
-        .section-title {
-            font-size: 2rem;
-        }
-
-        .section-subtitle {
-            font-size: 1rem;
-        }
+    @media (max-width: 576px) {
 
         .member-image-wrapper {
             height: 300px;
@@ -443,26 +382,19 @@
 
 @section('content')
 <!-- Team Header -->
-<section class="team-header">
-    <div class="container" style="margin-top: 200px">
-        <h2 class="section-title">
-            Meet Our <span>Team Members</span>
-        </h2>
-        <p class="section-subtitle">
-            Passionate individuals dedicated to making a positive impact in our community
-        </p>
-    </div>
-    <i class="fas fa-heart floating-icon icon-1"></i>
-    <i class="fas fa-users floating-icon icon-2"></i>
-    <i class="fas fa-star floating-icon icon-3"></i>
-</section>
+ @section('content')
+   @include('frontend.pages.component.banner', [
+    'title' => 'Team Members',
+    'description' => 'Passionate individuals dedicated to making a positive impact in our community',
+    'background' => 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop'
+])
 
 <!-- Team Grid -->
 <section class="team-grid">
     <div class="container">
         <div class="row">
             <!-- Member 1 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600">
+            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600">
                 <div class="member-card">
                     <div class="member-image-wrapper">
                         <img src="{{asset('frontend_assets/images/members/member1.png')}}" alt="Pooja Srivastav" class="member-photo">
@@ -489,7 +421,7 @@
             </div>
 
             <!-- Member 2 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="member-card">
                     <div class="member-image-wrapper">
                         <img src="{{asset('frontend_assets/images/members/member2.png')}}" alt="Sanjeev Mishra" class="member-photo">
@@ -516,7 +448,7 @@
             </div>
 
             <!-- Member 3 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <div class="member-card">
                     <div class="member-image-wrapper">
                         <img src="{{asset('frontend_assets/images/members/member3.png')}}" alt="Santhosh P.P" class="member-photo">
@@ -543,7 +475,7 @@
             </div>
 
             <!-- Member 4 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                 <div class="member-card">
                     <div class="member-image-wrapper">
                         <img src="{{asset('frontend_assets/images/members/member4.png')}}" alt="Dr. Priyam Sameer Kamdar" class="member-photo">
@@ -570,7 +502,7 @@
             </div>
 
             <!-- Member 5 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                 <div class="member-card">
                     <div class="member-image-wrapper">
                         <img src="{{asset('frontend_assets/images/members/member5.png')}}" alt="Chandra Shekhar Shukla" class="member-photo">
@@ -597,7 +529,7 @@
             </div>
 
             <!-- Member 6 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
                 <div class="member-card">
                     <div class="member-image-wrapper">
                         <img src="{{asset('frontend_assets/images/members/member6.png')}}" alt="Seema Yadav" class="member-photo">
@@ -626,35 +558,4 @@
     </div>
 </section>
 
-<!-- Stats Section -->
-<section class="stats-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-6 mb-4 mb-md-0">
-                <div class="stat-item" data-aos="fade-up" data-aos-duration="600">
-                    <span class="stat-number">6+</span>
-                    <span class="stat-label">Team Members</span>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 mb-4 mb-md-0">
-                <div class="stat-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                    <span class="stat-number">100+</span>
-                    <span class="stat-label">Lives Touched</span>
-                </div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="stat-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Projects</span>
-                </div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="stat-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Dedicated Support</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 @endsection

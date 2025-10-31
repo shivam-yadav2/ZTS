@@ -103,7 +103,7 @@
   --white: #ffffff;
   --black: #000000;
   --primary-color: #046a58;
-  --secondary-color: #73c48f;
+  --secondary-color: #122f2a;
   --secondary-color2: #122f2a;
   --tertiary-color: #046a58;
   --quaternary-color: #00715d;
@@ -3122,7 +3122,7 @@ div {
           transform: rotate(0deg);
 }
 .header-secondary .navbar__menu-wrapper {
-  background-color: var(--base-color);
+  /* background-color: var(--base-color); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3784,7 +3784,7 @@ div {
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
   .header-secondary .navbar__menu-wrapper {
     /* background-color: transparent; */
-  background-color: var(--base-color);
+  /* background-color: var(--base-color); */
 padding: 0px 30px;
   }
   .header-secondary .main-header__menu-box {
@@ -3993,7 +3993,7 @@ padding: 0px 30px;
 }
 
 .banner-two {
-  margin-top: 90px;
+  margin-top: 60px;
   position: relative;
   overflow: hidden;
 }
@@ -5001,19 +5001,11 @@ padding: 0px 30px;
 
 .footer-two {
   padding-top: 100px;
-  background-color: var(--secondary-color);
+  background-color: #091f1b;
   position: relative;
   z-index: 1;
 }
-.footer-two::after {
-  content: "";
-  position: absolute;
-  inset: 0px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(-104deg, rgba(12, 26, 23, 0) 1.9%, rgba(9, 31, 27, 0.08) 37.31%, rgba(9, 31, 27, 0.17) 40.18%, rgba(9, 31, 27, 0.37) 47.05%, rgba(9, 31, 27, 0.67) 56.36%, #091f1b 73.4%, #091f1b 95.2%, rgba(9, 31, 27, 0.91) 103.44%);
-  z-index: -2;
-}
+
 .footer-two .footer-two__newsletter-content h3 {
   font-weight: 800;
   color: var(--white);
@@ -6550,7 +6542,7 @@ padding: 0px 30px;
 }
 
 .help-two {
-  padding: 100px 0px;
+  padding: 40px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -7816,7 +7808,7 @@ padding: 0px 30px;
   position: relative;
   z-index: 1;
 }
-.team .team__single-thumb::before {
+/* .team .team__single-thumb::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -7834,7 +7826,7 @@ padding: 0px 30px;
   pointer-events: none;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-}
+} */
 .team .team__single-thumb a {
   width: 100%;
   border-radius: 10px 10px 0px 0px;

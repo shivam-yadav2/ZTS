@@ -12,55 +12,41 @@
         --shadow-lg: 0 15px 50px rgba(0,0,0,0.2);
     }
 
-    * {
-        font-family: 'Inter', sans-serif;
+    .decoration-circle-1 {
+        width: 150px;
+        height: 150px;
+        background: var(--primary-yellow);
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
     }
 
-    body {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    .decoration-circle-2 {
+        width: 100px;
+        height: 100px;
+        background: var(--primary-green);
+        bottom: 30%;
+        right: 15%;
+        animation-delay: 2s;
     }
 
-    /* Hero Section */
-    .team-hero {
-        background: linear-gradient(135deg, var(--primary-green) 0%, #5fb383 100%);
-        padding: 120px 0 80px;
-        margin-top: 80px;
-        position: relative;
-        overflow: hidden;
+    .decoration-circle-3 {
+        width: 80px;
+        height: 80px;
+        background: white;
+        top: 60%;
+        left: 15%;
+        animation-delay: 4s;
     }
 
-    .team-hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
-        opacity: 0.5;
+    @keyframes movePattern {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(60px, 60px); }
     }
 
-    .team-hero-content {
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        color: white;
-    }
-
-    .team-hero h1 {
-        font-size: 3.5rem;
-        font-weight: 800;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        animation: fadeInDown 0.8s ease;
-    }
-
-    .team-hero p {
-        font-size: 1.3rem;
-        max-width: 700px;
-        margin: 0 auto;
-        opacity: 0.95;
-        animation: fadeInUp 0.8s ease;
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.5; }
+        50% { transform: scale(1.1); opacity: 0.3; }
     }
 
     /* Member Cards */
@@ -207,7 +193,7 @@
 
     .member-role {
         display: inline-block;
-        background: linear-gradient(135deg, var(--primary-green), #5fb383);
+        background: #123b34;
         color: white;
         padding: 6px 18px;
         border-radius: 20px;
@@ -313,17 +299,6 @@
     }
 
     @media (max-width: 768px) {
-        .team-hero {
-            padding: 80px 0 60px;
-        }
-
-        .team-hero h1 {
-            font-size: 2.5rem;
-        }
-
-        .team-hero p {
-            font-size: 1.1rem;
-        }
 
         .member-card-inner {
             flex-direction: column;
@@ -352,10 +327,6 @@
     }
 
     @media (max-width: 576px) {
-        .team-hero h1 {
-            font-size: 2rem;
-        }
-
         .member-card-inner {
             padding: 25px 15px;
         }
@@ -422,14 +393,13 @@
 
 @section('content')
 <!-- Team Hero Section -->
-<section class="team-hero">
-    <div class="container">
-        <div class="team-hero-content">
-            <h1>Core Team Members</h1>
-            <p>Meet the passionate individuals driving our mission forward with dedication, innovation, and unwavering commitment to making a difference.</p>
-        </div>
-    </div>
-</section>
+
+@section('content')
+   @include('frontend.pages.component.banner', [
+    'title' => 'Core Team Members',
+    'description' => 'Meet the passionate individuals driving our mission forward with dedication, innovation, and unwavering commitment to making a difference.',
+    'background' => 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop'
+])
 
 <!-- Members Section -->
 <section class="members-container">

@@ -4,10 +4,10 @@
  <!-- Fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 <style>
-        body {
+        /* body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f9fa;
-        }
+        } */
 
         .detail-section {
             padding: 60px 0;
@@ -392,7 +392,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -404,7 +404,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -416,7 +416,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -428,7 +428,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -440,7 +440,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -452,7 +452,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -464,7 +464,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -476,7 +476,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -488,7 +488,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -500,7 +500,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -512,7 +512,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -524,7 +524,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -536,7 +536,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -548,7 +548,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -560,7 +560,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -572,7 +572,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -584,7 +584,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
@@ -596,7 +596,7 @@
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <div class="view-text">View</div>
+                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>

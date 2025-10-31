@@ -1,19 +1,19 @@
 @extends('master.frontmaster')
+
 @section('content')
+<!-- Hero Board Section -->
+ @section('content')
+   @include('frontend.pages.component.banner', [
+    'title' => 'Advisory Board',
+    'description' => 'Meet our esteemed Standards Advisory Panel who review, inform and guide ZTS through the development of our standards',
+    'background' => 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop'
+])
+
+<!-- Team Section -->
     <!-- === Advisory Board Start ===-->
     <div class="difference-two container mt-5">
         <section class="team ff-team pb-0">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-8">
-                        <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
-                            <span class="sub-title">Meet our esteemed Standards Advisory Panel who review, inform and guide
-                                ZTS through the development of our standards.</span>
-                            <h2 class=" mt-0 fw-7"> Advisory <span>Board</span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
                 <div class="row gutter-40">
                     <div class="col-12 col-sm-6 col-xl-3">
                         <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000">
