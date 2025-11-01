@@ -213,10 +213,10 @@
     line-height: 34px;
   }
   .sub-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .cta {
-    margin-top: 55px;
+    margin-top: 40px;
   }
   .main-pagination {
     margin-top: 60px;
@@ -262,7 +262,7 @@
             padding-inline-end: 0px !important;
   }
   .common-banner .sub-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .banner-two .banner-two__slider-content h1 {
     max-width: 100%;
@@ -454,7 +454,7 @@
     margin-top: 60px;
   }
   .banner-two .banner-two__slider-single {
-    padding: 200px 0px;
+    padding: 150px 0px;
   }
   .banner-two .slider-navigation {
     inset-inline-end: 130px;
@@ -596,7 +596,7 @@
     padding: 280px 0px;
   }
   .banner-two .banner-two__slider-single {
-    padding: 240px 0px;
+    padding: 150px 0px;
   }
   .banner-two .banner-two__slider-single .banner-two__slider-content h1 span {
     font-size: 90px;

@@ -140,7 +140,7 @@
    @include('frontend.pages.component.banner', [
       'title' => 'Gallery',
       'description' => 'Explore our journey through moments that capture the impact of our educational initiatives, community events, and transformative programs across India.',
-      'background' => asset('frontend_assets/images/slide1.jpg')
+      'background' => asset('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop')
    ])
       <!-- ===  Banner Section End === -->
 
@@ -152,7 +152,7 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                         <a href="{{ url('/gallery-detail') }}">
+                         <a href="#">
                             <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop" alt="Independence Day" class="gallery-img">
                             <div class="gallery-overlay">
                                 <p class="gallery-caption">Celebrate our Independence Day</p>
@@ -164,7 +164,7 @@
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                         <a href="{{ url('/gallery-detail') }}">
+                         <a href="#">
                             <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Children Day" class="gallery-img">
                             <div class="gallery-overlay">
                                 <p class="gallery-caption">Children Day Celebration</p>
@@ -176,7 +176,7 @@
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                         <a href="{{ url('/gallery-detail') }}">
+                         <a href="#">
                             <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Children Day Celebration" class="gallery-img">
                             <div class="gallery-overlay">
                                 <p class="gallery-caption">Children Day celebration With Mc D</p>
@@ -188,7 +188,7 @@
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                         <a href="{{ url('/gallery-detail') }}">
+                         <a href="#">
                             <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Dancing Workshop" class="gallery-img">
                             <div class="gallery-overlay">
                                 <p class="gallery-caption">Dancing workshop for chetna sansthan</p>
@@ -200,7 +200,7 @@
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                        <a href="{{ url('/gallery-detail') }}">
+                        <a href="#">
                             <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=400&h=300&fit=crop" alt="Medical Camp Day 1" class="gallery-img">
                             <div class="gallery-overlay">
                                 <p class="gallery-caption">Day 1, Medical camp in chetna by ZTS</p>
@@ -212,7 +212,7 @@
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                        <a href="{{ url('/gallery-detail') }}">
+                        <a href="#">
                             <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop" alt="Medical Camp Day 2" class="gallery-img">
                             <div class="gallery-overlay">
                                 <p class="gallery-caption">Day 2, Dental health-Medical Camp in chetna by ZTS</p>
@@ -232,15 +232,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1551601651-09926051ea34?w=400&h=300&fit=crop" alt="Eye Checkup Camp" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Day 4, Free Eye Checkup Camp</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
+                
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
@@ -252,115 +244,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=300&fit=crop" alt="Kya Aapne Bharat Ko Dekha Hai" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Kya Aapne Bharat Ko Dekha Hai</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop" alt="Lucky & Unlucky" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Lucky & Unlucky in RNS Public School</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=300&fit=crop" alt="Member's Meet" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Member's Meet</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Muskaan with Mc-D" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Muskaan(ZTS) with Mc-D</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=300&fit=crop" alt="Shiksha Ki Shurwat" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Shiksha Ki Shurwat</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=300&fit=crop" alt="Udaan" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Udaan</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=300&fit=crop" alt="Women Day" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Women day with Mc D & Chetna</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?w=400&h=300&fit=crop" alt="नगरीय शिक्षा अभियान" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">नगरीय शिक्षा अभियान में राँची में काम करते कार्यकर्ता</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1497375587960-2b3e3e2b1a67?w=400&h=300&fit=crop" alt="प्री शूका शिक्षा केंद्र" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">प्री शूका शिक्षा केंद्र -नगरीय शिक्षा अभियान</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1544717684-17f9aaa4b09f?w=400&h=300&fit=crop" alt="स्वास्थ्य शिविर" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">स्वास्थ्य शिविर का आयोजन,क्वाड़ाटोली</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop" alt="स्वास्थ्य शिविर का आयोजन" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">स्वास्थ्य शिविर(सेवा) का आयोजन,पहरोली गोलपुर</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>

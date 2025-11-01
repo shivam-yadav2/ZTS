@@ -22,35 +22,35 @@
                                     <a href="team-details.html">
                                         <img src="/frontend_assets/images/board/1.png" alt="Image">
                                     </a>
-                                    <div class="team__icons">
-                                        <div class="team__single-content__icon">
-                                            <i class="icon-share"></i>
-                                        </div>
-                                        <div class="team__single__thumb-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-behance"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <!--<div class="team__icons">-->
+                                    <!--    <div class="team__single-content__icon">-->
+                                    <!--        <i class="icon-share"></i>-->
+                                    <!--    </div>-->
+                                    <!--    <div class="team__single__thumb-social">-->
+                                    <!--        <ul>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-facebook-f"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-twitter"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-instagram"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-behance"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--        </ul>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
                                 </div>
                                 <div class="team__single-content">
                                     <h6><a href="team-details.html">Dr. Rajeev Mishra</a></h6>
@@ -66,35 +66,35 @@
                                     <a href="team-details.html">
                                         <img src="/frontend_assets/images/board/2.png" alt="Image">
                                     </a>
-                                    <div class="team__icons">
-                                        <div class="team__single-content__icon">
-                                            <i class="icon-share"></i>
-                                        </div>
-                                        <div class="team__single__thumb-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-behance"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <!--<div class="team__icons">-->
+                                    <!--    <div class="team__single-content__icon">-->
+                                    <!--        <i class="icon-share"></i>-->
+                                    <!--    </div>-->
+                                    <!--    <div class="team__single__thumb-social">-->
+                                    <!--        <ul>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-facebook-f"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-twitter"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-instagram"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-behance"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--        </ul>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
                                 </div>
                                 <div class="team__single-content">
                                     <h6><a href="team-details.html">Mr. Ashvin Deshpande</a></h6>
@@ -110,35 +110,35 @@
                                     <a href="team-details.html">
                                         <img src="/frontend_assets/images/board/3.png" alt="Image">
                                     </a>
-                                    <div class="team__icons">
-                                        <div class="team__single-content__icon">
-                                            <i class="icon-share"></i>
-                                        </div>
-                                        <div class="team__single__thumb-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-behance"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <!--<div class="team__icons">-->
+                                    <!--    <div class="team__single-content__icon">-->
+                                    <!--        <i class="icon-share"></i>-->
+                                    <!--    </div>-->
+                                    <!--    <div class="team__single__thumb-social">-->
+                                    <!--        <ul>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-facebook-f"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-twitter"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-instagram"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-behance"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--        </ul>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
                                 </div>
                                 <div class="team__single-content">
                                     <h6><a href="team-details.html">Mr. Anshuman Prasad</a></h6>
@@ -154,35 +154,35 @@
                                     <a href="team-details.html">
                                         <img src="/frontend_assets/images/board/4.png" alt="Image">
                                     </a>
-                                    <div class="team__icons">
-                                        <div class="team__single-content__icon">
-                                            <i class="icon-share"></i>
-                                        </div>
-                                        <div class="team__single__thumb-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <i class="fa-brands fa-behance"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <!--<div class="team__icons">-->
+                                    <!--    <div class="team__single-content__icon">-->
+                                    <!--        <i class="icon-share"></i>-->
+                                    <!--    </div>-->
+                                    <!--    <div class="team__single__thumb-social">-->
+                                    <!--        <ul>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-facebook-f"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-twitter"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-instagram"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--            <li>-->
+                                    <!--                <a href="index.html">-->
+                                    <!--                    <i class="fa-brands fa-behance"></i>-->
+                                    <!--                </a>-->
+                                    <!--            </li>-->
+                                    <!--        </ul>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
                                 </div>
                                 <div class="team__single-content">
                                     <h6><a href="team-details.html">Mr. Siddhant Kumar</a></h6>
@@ -192,17 +192,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section__cta cta text-center">
-                            <a href="our-team.html" aria-label="our team" title="our team" class="btn--primary"> View
-                                All Team
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="row">-->
+                <!--    <div class="col-12">-->
+                <!--        <div class="section__cta cta text-center">-->
+                <!--            <a href="our-team.html" aria-label="our team" title="our team" class="btn--primary"> View-->
+                <!--                All Team-->
+                <!--            </a>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
             </div>
-            <div class="shp"></div>
+            <!--<div class="shp"></div>-->
         </section>
     </div>
     <!-- === Advisory Board End ===-->

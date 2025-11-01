@@ -732,8 +732,9 @@
    @include('frontend.pages.component.banner', [
       'title' => 'Responsible India, Possible India',
       'description' => 'We are creating a movement where education becomes accessible to all children, breaking barriers and building futures. Together, we can transform lives through knowledge, compassion, and collective action.',
-      'background' => asset('frontend_assets/images/slide1.jpg')
+      'background' => 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop'
    ])
+
       <!-- ===  Banner Section End === -->
     <!-- Header Section -->
     <section class="header-section">

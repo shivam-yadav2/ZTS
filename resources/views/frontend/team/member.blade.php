@@ -402,7 +402,7 @@
                         <div class="member-number">01</div>
                     </div>
                     <div class="member-content">
-                        <h3 class="member-name">Pooja Srivastav</h3>
+                        <h3 class="member-name">Pooja Srivastava</h3>
                         <div class="member-divider"></div>
                         <p class="member-bio">
                             The situation and transforming it powerfully. Positive & negative both are part of our life and we cannot have one alone, but we can have the ability to handle both with a POWERFUL MINDSET. Spreading this energy to people I meet every day.

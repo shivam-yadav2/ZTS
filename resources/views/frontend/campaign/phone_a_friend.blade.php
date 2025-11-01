@@ -536,135 +536,135 @@
     </section>
 
     <!-- Our Founders Section -->
-    <section class="founder-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Founder's Team</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>Sarah Mitchell</h4>
-                            <p><strong>Founder & CEO</strong></p>
-                            <p>Leading with vision and compassion for 15 years</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>Michael Rodriguez</h4>
-                            <p><strong>Co-Founder</strong></p>
-                            <p>Operations Director driving impact worldwide</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>Priya Sharma</h4>
-                            <p><strong>Program Director</strong></p>
-                            <p>Managing global initiatives and partnerships</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>David Chen</h4>
-                            <p><strong>Finance Head</strong></p>
-                            <p>Ensuring transparency and accountability</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>Emily Thompson</h4>
-                            <p><strong>Outreach Coordinator</strong></p>
-                            <p>Building community connections daily</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>James Wilson</h4>
-                            <p><strong>Technology Lead</strong></p>
-                            <p>Innovating digital solutions for impact</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>Aisha Patel</h4>
-                            <p><strong>Communications</strong></p>
-                            <p>Sharing stories that inspire change</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>Robert Kim</h4>
-                            <p><strong>Legal Advisor</strong></p>
-                            <p>Protecting rights and ensuring compliance</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>Maria Garcia</h4>
-                            <p><strong>Volunteer Manager</strong></p>
-                            <p>Empowering volunteers to make impact</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="founder-card">
-                        <div class="founder-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" alt="Founder">
-                        </div>
-                        <div class="founder-info">
-                            <h4>Thomas Anderson</h4>
-                            <p><strong>Research Director</strong></p>
-                            <p>Data-driven insights for better outcomes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--<section class="founder-section">-->
+    <!--    <div class="container">-->
+    <!--        <div class="section-title">-->
+    <!--            <h2>Our Founder's Team</h2>-->
+    <!--        </div>-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>Sarah Mitchell</h4>-->
+    <!--                        <p><strong>Founder & CEO</strong></p>-->
+    <!--                        <p>Leading with vision and compassion for 15 years</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>Michael Rodriguez</h4>-->
+    <!--                        <p><strong>Co-Founder</strong></p>-->
+    <!--                        <p>Operations Director driving impact worldwide</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>Priya Sharma</h4>-->
+    <!--                        <p><strong>Program Director</strong></p>-->
+    <!--                        <p>Managing global initiatives and partnerships</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>David Chen</h4>-->
+    <!--                        <p><strong>Finance Head</strong></p>-->
+    <!--                        <p>Ensuring transparency and accountability</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>Emily Thompson</h4>-->
+    <!--                        <p><strong>Outreach Coordinator</strong></p>-->
+    <!--                        <p>Building community connections daily</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>James Wilson</h4>-->
+    <!--                        <p><strong>Technology Lead</strong></p>-->
+    <!--                        <p>Innovating digital solutions for impact</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>Aisha Patel</h4>-->
+    <!--                        <p><strong>Communications</strong></p>-->
+    <!--                        <p>Sharing stories that inspire change</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>Robert Kim</h4>-->
+    <!--                        <p><strong>Legal Advisor</strong></p>-->
+    <!--                        <p>Protecting rights and ensuring compliance</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>Maria Garcia</h4>-->
+    <!--                        <p><strong>Volunteer Manager</strong></p>-->
+    <!--                        <p>Empowering volunteers to make impact</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">-->
+    <!--                <div class="founder-card">-->
+    <!--                    <div class="founder-img-wrapper">-->
+    <!--                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" alt="Founder">-->
+    <!--                    </div>-->
+    <!--                    <div class="founder-info">-->
+    <!--                        <h4>Thomas Anderson</h4>-->
+    <!--                        <p><strong>Research Director</strong></p>-->
+    <!--                        <p>Data-driven insights for better outcomes</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
 
     <!-- Photos Section -->
     <section class="photos-section">
@@ -674,47 +674,79 @@
             </div>
             <div class="photo-grid">
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=400&fit=crop" alt="Activity">
+                    <img src="/frontend_assets/images/1.jpg" alt="Activity">
                     <div class="photo-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop" alt="Activity">
+                    <img src="/frontend_assets/images/12.jpg" alt="Activity">
                     <div class="photo-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=400&fit=crop" alt="Activity">
+                    <img src="/frontend_assets/images/14.jpg" alt="Activity">
                     <div class="photo-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop" alt="Activity">
+                    <img src="/frontend_assets/images/18.jpg" alt="Activity">
                     <div class="photo-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=600&h=400&fit=crop" alt="Activity">
+                    <img src="/frontend_assets/images/3.jpg" alt="Activity">
                     <div class="photo-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=600&h=400&fit=crop" alt="Activity">
+                    <img src="/frontend_assets/images/6.jpg" alt="Activity">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="/frontend_assets/images/20.jpg" alt="Activity">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="/frontend_assets/images/21.jpg" alt="Activity">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="/frontend_assets/images/23.jpg" alt="Activity">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="/frontend_assets/images/24.jpg" alt="Activity">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="/frontend_assets/images/25.jpg" alt="Activity">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="/frontend_assets/images/21.jpg" alt="Activity">
                     <div class="photo-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
             </div>
-            <div class="pagination-dots">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
-            </div>
+            
         </div>
     </section>
 

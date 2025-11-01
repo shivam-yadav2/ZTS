@@ -322,7 +322,7 @@
         }
         /* Main Section */
         .programs-section {
-            padding: 100px 0;
+            padding: 70px 0;
             background-color: #ffffff;
             position: relative;
         }
@@ -1310,9 +1310,10 @@
          .get-involved-section {
             background: linear-gradient(#091f1b, rgba(0, 113, 93, 0.95)), 
                         url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&h=900&fit=crop') center/cover;
-            padding: 80px 0;
+            padding: 50px 0;
             position: relative;
             overflow: hidden;
+            margin-top: 40px;
         }
 
         .section-title {
@@ -1650,7 +1651,7 @@
         }
 
         .achievement-item:nth-child(1) .achievement-icon-wrapper {
-            background: var(--color-yellow);
+            background: #00715d;
             color: white;
         }
 
@@ -1690,24 +1691,25 @@
         }
 
         .stats-section {
-            background: white;
+            background: #00715d;
             border-radius: 25px;
+            border: 8px solid #ffc107;
             padding: 60px 40px;
             margin: 80px 0;
             box-shadow: 0 15px 50px rgba(0,0,0,0.08);
             position: relative;
         }
 
-        .stats-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 8px;
-            background: linear-gradient(90deg, var(--color-yellow) 0%, var(--color-green-light) 50%, var(--color-green-dark) 100%);
-            border-radius: 25px 25px 0 0;
-        }
+        /*.stats-section::before {*/
+        /*    content: '';*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    width: 100%;*/
+        /*    height: 8px;*/
+        /*    background: #ffc107;*/
+        /*    border-radius: 25px 25px 0 0;*/
+        /*}*/
 
         .stat-box {
             text-align: center;
@@ -1722,7 +1724,7 @@
         }
 
         .stat-box:nth-child(1) {
-            background: rgba(255, 193, 7, 0.1);
+            background: #fff;
         }
 
         .stat-box:nth-child(2) {
@@ -1985,15 +1987,15 @@
                
             </div>
          </div>
-         <div class="slider-navigation d-none d-md-flex">
-            <button type="button" aria-label="prev slide" title="prev slide" class="prev-banner slider-btn">
-               <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button type="button" aria-label="next slide" title="next slide"
-               class="next-banner slider-btn slider-btn-next">
-               <i class="fa-solid fa-arrow-right"></i>
-            </button>
-         </div>
+         <!--<div class="slider-navigation d-none d-md-flex">-->
+         <!--   <button type="button" aria-label="prev slide" title="prev slide" class="prev-banner slider-btn">-->
+         <!--      <i class="fa-solid fa-arrow-left"></i>-->
+         <!--   </button>-->
+         <!--   <button type="button" aria-label="next slide" title="next slide"-->
+         <!--      class="next-banner slider-btn slider-btn-next">-->
+         <!--      <i class="fa-solid fa-arrow-right"></i>-->
+         <!--   </button>-->
+         <!--</div>-->
          <div class="shape">
             <img src="{{asset('frontend_assets/images/shape.png')}}" alt="Image">
          </div>
@@ -2019,15 +2021,15 @@
                         <div class="help-two__thumb-inner">
                             <div class="thumb-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img src="{{ asset('/frontend_assets/images/about2.jpg') }}" alt="Image">
-                                <img src="{{ asset('/frontend_assets/images/about2.jpg') }}" alt="Image">
+                                <!--<img src="{{ asset('/frontend_assets/images/about2.jpg') }}" alt="Image">-->
                             </div>
                             <div class="thumb-sm" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                                 <img class="" style="width:250px" src="{{ asset('/frontend_assets/images/help/image.png') }}" alt="Image">
-                                <img class="" style="width:250px" src="{{ asset('/frontend_assets/images/help/image.png') }}" alt="Image">
+                                <!--<img class="" style="width:250px" src="{{ asset('/frontend_assets/images/help/image.png') }}" alt="Image">-->
                             </div>
                             <div class="thumb-md" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                                 <img src="{{ asset('/frontend_assets/images/about1.jpeg') }}" alt="Image">
-                                <img src="{{ asset('/frontend_assets/images/about1.jpeg') }}" alt="Image">
+                                <!--<img src="{{ asset('/frontend_assets/images/about1.jpeg') }}" alt="Image">-->
                             </div>
                             <div class="help-two__thumb-content">
                                 <div class="thumb">
@@ -2092,7 +2094,7 @@
                                                        <div class="help-two__card van-tilt">
                                                           <div class="help-card-thumb">
                                                              <img src="{{ asset('/frontend_assets/images/about3.jpg') }}" alt="Image">
-                                                             <img src="{{ asset('/frontend_assets/images/about3.jpg') }}" alt="Image">
+                                                             <!--<img src="{{ asset('/frontend_assets/images/about3.jpg') }}" alt="Image">-->
                                                              <i class="icon-star"></i>
                                                           </div>
                                                           <div class="help-card-content">
@@ -2277,35 +2279,35 @@
                                         <a href="team-details.html">
                                             <img src="{{ asset('frontend_assets/images/members/member1.png') }}" alt="Image">
                                         </a>
-                                        <div class="team__icons">
-                                            <div class="team__single-content__icon">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </div>
-                                            <div class="team__single__thumb-social">
-                                                <ul>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-facebook-f"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-instagram"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-behance"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <!--<div class="team__icons">-->
+                                        <!--    <div class="team__single-content__icon">-->
+                                        <!--        <i class="fa-solid fa-plus"></i>-->
+                                        <!--    </div>-->
+                                        <!--    <div class="team__single__thumb-social">-->
+                                        <!--        <ul>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-facebook-f"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-twitter"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-instagram"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-behance"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--        </ul>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
                                     </div>
                                     <div class="team__single-content">
                                         <h6><a href="team-details.html">Pooja Srivastav</a></h6>
@@ -2321,35 +2323,35 @@
                                         <a href="team-details.html">
                                             <img src="{{ asset('frontend_assets/images/members/member2.png') }}" alt="Image">
                                         </a>
-                                        <div class="team__icons">
-                                            <div class="team__single-content__icon">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </div>
-                                            <div class="team__single__thumb-social">
-                                                <ul>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-facebook-f"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-instagram"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-behance"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <!--<div class="team__icons">-->
+                                        <!--    <div class="team__single-content__icon">-->
+                                        <!--        <i class="fa-solid fa-plus"></i>-->
+                                        <!--    </div>-->
+                                        <!--    <div class="team__single__thumb-social">-->
+                                        <!--        <ul>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-facebook-f"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-twitter"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-instagram"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-behance"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--        </ul>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
                                     </div>
                                     <div class="team__single-content">
                                         <h6><a href="team-details.html">Sanjeev Mishra</a></h6>
@@ -2365,35 +2367,35 @@
                                         <a href="team-details.html">
                                             <img src="{{ asset('frontend_assets/images/members/member3.png') }}" alt="Image">
                                         </a>
-                                        <div class="team__icons">
-                                            <div class="team__single-content__icon">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </div>
-                                            <div class="team__single__thumb-social">
-                                                <ul>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-facebook-f"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-instagram"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-behance"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <!--<div class="team__icons">-->
+                                        <!--    <div class="team__single-content__icon">-->
+                                        <!--        <i class="fa-solid fa-plus"></i>-->
+                                        <!--    </div>-->
+                                        <!--    <div class="team__single__thumb-social">-->
+                                        <!--        <ul>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-facebook-f"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-twitter"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-instagram"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-behance"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--        </ul>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
                                     </div>
                                     <div class="team__single-content">
                                         <h6><a href="team-details.html">Santhosh PP</a></h6>
@@ -2409,38 +2411,38 @@
                                         <a href="team-details.html">
                                             <img src="{{ asset('frontend_assets/images/members/member4.png') }}" alt="Image">
                                         </a>
-                                        <div class="team__icons">
-                                            <div class="team__single-content__icon">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </div>
-                                            <div class="team__single__thumb-social">
-                                                <ul>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-facebook-f"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-instagram"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="index.html">
-                                                            <i class="fa-brands fa-behance"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <!--<div class="team__icons">-->
+                                        <!--    <div class="team__single-content__icon">-->
+                                        <!--        <i class="fa-solid fa-plus"></i>-->
+                                        <!--    </div>-->
+                                        <!--    <div class="team__single__thumb-social">-->
+                                        <!--        <ul>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-facebook-f"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-twitter"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-instagram"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--            <li>-->
+                                        <!--                <a href="index.html">-->
+                                        <!--                    <i class="fa-brands fa-behance"></i>-->
+                                        <!--                </a>-->
+                                        <!--            </li>-->
+                                        <!--        </ul>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
                                     </div>
                                     <div class="team__single-content">
-                                        <h6><a href="team-details.html">Dr. Priyam Sameer Kamdar</a></h6>
+                                        <h6><a href="team-details.html">Dr. Priyam Sameer..</a></h6>
                                         <p>Volunteer</p>
                                     </div>
                                 </div>
@@ -2463,333 +2465,301 @@
     <!-- ==== / team section end ==== -->
 
 
-    <!-- ==== cause slider two section start ==== -->
-    <section class="cause-two">
-        <div class="container-fluid">
-            <!-- 🔹 Add the heading row here -->
-            {{-- <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">
-                        <span class="sub-title">Our Mission</span>
-                        <h2 class="title-animation mt-0 fw-7">
-                            Empowering lives with <span>hope</span>
-                        </h2>
-                    </div>
-                </div>
-            </div> --}}
-            <!-- 🔹 Heading row ends -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="cause-two__inner">
-                        <div class="slider-navigation">
-                            <button type="button" aria-label="prev slide" title="prev slide"
-                                class="prev-cause-two slider-btn">
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </button>
-                            <button type="button" aria-label="next slide" title="next slide"
-                                class="next-cause-two slider-btn slider-btn-next">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-
-                        <div class="cause-two__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="cause-two__slider-single">
-                                        <div class="cause-thumb">
-                                            <img src="{{ asset('frontend_assets/images/mission/mission1.jpg') }}"
-                                                alt="Image">
-                                            <a href="cause-details.html">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cause-two__slider-single">
-                                        <div class="cause-thumb">
-                                            <img src="{{ asset('frontend_assets/images/mission/mission2.jpg') }}"
-                                                alt="Image">
-                                            <a href="cause-details.html">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cause-two__slider-single">
-                                        <div class="cause-thumb">
-                                            <img src="{{ asset('frontend_assets/images/mission/mission3.jpg') }}"
-                                                alt="Image">
-                                            <a href="cause-details.html">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cause-two__slider-single">
-                                        <div class="cause-thumb">
-                                            <img src="{{ asset('frontend_assets/images/mission/mission4.jpg') }}"
-                                                alt="Image">
-                                            <a href="cause-details.html">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cause-two__slider-single">
-                                        <div class="cause-thumb">
-                                            <img src="{{ asset('frontend_assets/images/mission/mission1.jpg') }}"
-                                                alt="Image">
-                                            <a href="cause-details.html">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cause-two__slider-single">
-                                        <div class="cause-thumb">
-                                            <img src="{{ asset('frontend_assets/images/mission/mission2.jpg') }}"
-                                                alt="Image">
-                                            <a href="cause-details.html">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cause-two__content-slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="cause-content">
-                                    <h4>Swasthya</h4>
-                                    <!-- <p>Child & old care</p> -->
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cause-content">
-                                    <h4>Shisksha</h4>
-                                    <!-- <p>Child & old care</p> -->
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cause-content">
-                                    <h4>Swarozgar</h4>
-                                    <!-- <p>Child & old care</p> -->
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cause-content">
-                                    <h4>Soch</h4>
-                                    <!-- <p>Child & old care</p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==== / cause slider two section end ==== -->
+    
 
     <!-- ==== / team section end ==== -->
-    <section class="testimonial-seven-area project-panel-area position-relative z-1 d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-4">
-                    <div class="testimonial-seven-thumb position-relative z-1">
-                        <img src="https://imgs.search.brave.com/-SzudOilDhbmuKs6aatJIOgIcgyinLbAMRvZgTFlnBI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Y3L2I5/L2UyL2Y3YjllMmQ1/NmFkOWJiNTA1MjFl/Yzk3NzIxZjNhMWQ1/LmpwZw"
-                            alt="thumb">
-                        <div class="testimonial-seven-thumb-quate">
-                            <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"
-                                        alt="quate"></span></a>
-                        </div>
-                    </div>
-                    <div class="testimonial-seven-thumb position-relative z-1">
-                        <img src="https://imgs.search.brave.com/96a9n9i9rR1k6k6vY0NZKfNjsNr6BnRRqco6H-eC0Y8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2lraGl3aWtpLm9y/Zy9pbWFnZXMvYi9i/OC9CaGFnYXQtUHVy/YW4tU2luZ2gtYXcu/anBn"
-                            alt="thumb">
-                        <div class="testimonial-seven-thumb-quate">
-                            <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"
-                                        alt="quate"></span></a>
-                        </div>
-                    </div>
-                    <div class="testimonial-seven-thumb position-relative z-1">
-                        <img src="https://imgs.search.brave.com/JeW05RO0LKydV7bTvEJLr6RhRg1yOW8qa3Rs_2yiEXU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZW5k/ZXIuZmluZWFydGFt/ZXJpY2EuY29tL2lt/YWdlcy9pbWFnZXMt/cHJvZmlsZS1mbG93/LzQwMC9pbWFnZXMv/YXJ0d29ya2ltYWdl/cy9tZWRpdW1sYXJn/ZS8xL2dhbmRoaS1p/bmRpYW4tc2Nob29s/LmpwZw"
-                            alt="thumb">
-                        <div class="testimonial-seven-thumb-quate">
-                            <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"
-                                        alt="quate"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-lg-8">
-                    <div class="row">
-                        <div class="col-xl-12 project-panel">
-                            <div class="testimonial-seven-wrapper">
-                                <h4 class="testimonial-seven-title">“Great Services”</h4>
-                                <p class="testimonial-seven-paragraph">Sadhguru is a Yogi, Mystic and Visionary. Named one
-                                    of India’s 50 most influential people, Sadhguru’s work has touched the lives of millions
-                                    worldwide through his transformational programs... </p>
-                                <div class="testimonial-seven-wrap">
-                                    <div class="testimonial-seven-left">
-                                        <div class="testimonial-seven-icon">
-                                            <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"
-                                                    alt="quate"></span>
-                                        </div>
-                                        <h6 class="testimonial-seven-name">Sadhguru
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-12 project-panel">
-                            <div class="testimonial-seven-wrapper">
-                                <h4 class="testimonial-seven-title">“Great Services”</h4>
-                                <p class="testimonial-seven-paragraph">Bhagat Puran Singh was no ordinary human but
-                                    definitely one of the most loved and admired men in the world. Many people describe him
-                                    as the bearded Mother Teresa of Punjab. </p>
-                                <div class="testimonial-seven-wrap">
-                                    <div class="testimonial-seven-left">
-                                        <div class="testimonial-seven-icon">
-                                            <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"
-                                                    alt="quate"></span>
-                                        </div>
-                                        <h6 class="testimonial-seven-name">Bhagat Puran Singh </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-12 project-panel">
-                            <div class="testimonial-seven-wrapper">
-                                <h4 class="testimonial-seven-title">“Great Services”</h4>
-                                <p class="testimonial-seven-paragraph">hthere is not a single country in the whole world
-                                    where the name of Mahatma Gandhi is not known. Do you know why Gandhi became so famous?
-                                </p>
-                                <div class="testimonial-seven-wrap">
-                                    <div class="testimonial-seven-left">
-                                        <div class="testimonial-seven-icon">
-                                            <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"
-                                                    alt="quate"></span>
-                                        </div>
-                                        <h6 class="testimonial-seven-name">Mahatma Gandhi </h6>
+    <!--<section class="testimonial-seven-area project-panel-area position-relative z-1 d-none d-lg-block">-->
+    <!--    <div class="container">-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-xl-5 col-lg-4">-->
+    <!--                <div class="testimonial-seven-thumb position-relative z-1">-->
+    <!--                    <img src="https://imgs.search.brave.com/-SzudOilDhbmuKs6aatJIOgIcgyinLbAMRvZgTFlnBI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Y3L2I5/L2UyL2Y3YjllMmQ1/NmFkOWJiNTA1MjFl/Yzk3NzIxZjNhMWQ1/LmpwZw"-->
+    <!--                        alt="thumb">-->
+    <!--                    <div class="testimonial-seven-thumb-quate">-->
+    <!--                        <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"-->
+    <!--                                    alt="quate"></span></a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="testimonial-seven-thumb position-relative z-1">-->
+    <!--                    <img src="https://imgs.search.brave.com/96a9n9i9rR1k6k6vY0NZKfNjsNr6BnRRqco6H-eC0Y8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2lraGl3aWtpLm9y/Zy9pbWFnZXMvYi9i/OC9CaGFnYXQtUHVy/YW4tU2luZ2gtYXcu/anBn"-->
+    <!--                        alt="thumb">-->
+    <!--                    <div class="testimonial-seven-thumb-quate">-->
+    <!--                        <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"-->
+    <!--                                    alt="quate"></span></a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="testimonial-seven-thumb position-relative z-1">-->
+    <!--                    <img src="https://imgs.search.brave.com/JeW05RO0LKydV7bTvEJLr6RhRg1yOW8qa3Rs_2yiEXU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZW5k/ZXIuZmluZWFydGFt/ZXJpY2EuY29tL2lt/YWdlcy9pbWFnZXMt/cHJvZmlsZS1mbG93/LzQwMC9pbWFnZXMv/YXJ0d29ya2ltYWdl/cy9tZWRpdW1sYXJn/ZS8xL2dhbmRoaS1p/bmRpYW4tc2Nob29s/LmpwZw"-->
+    <!--                        alt="thumb">-->
+    <!--                    <div class="testimonial-seven-thumb-quate">-->
+    <!--                        <a href="#"><span><img src="frontend_assets/images/icon/testimonial-seven-quate.svg"-->
+    <!--                                    alt="quate"></span></a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-xl-7 col-lg-8">-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-xl-12 project-panel">-->
+    <!--                        <div class="testimonial-seven-wrapper">-->
+    <!--                            <h4 class="testimonial-seven-title">“Great Services”</h4>-->
+    <!--                            <p class="testimonial-seven-paragraph">Sadhguru is a Yogi, Mystic and Visionary. Named one-->
+    <!--                                of India’s 50 most influential people, Sadhguru’s work has touched the lives of millions-->
+    <!--                                worldwide through his transformational programs... </p>-->
+    <!--                            <div class="testimonial-seven-wrap">-->
+    <!--                                <div class="testimonial-seven-left">-->
+    <!--                                    <div class="testimonial-seven-icon">-->
+    <!--                                        <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"-->
+    <!--                                                alt="quate"></span>-->
+    <!--                                    </div>-->
+    <!--                                    <h6 class="testimonial-seven-name">Sadhguru-->
+    <!--                                    </h6>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-xl-12 project-panel">-->
+    <!--                        <div class="testimonial-seven-wrapper">-->
+    <!--                            <h4 class="testimonial-seven-title">“Great Services”</h4>-->
+    <!--                            <p class="testimonial-seven-paragraph">Bhagat Puran Singh was no ordinary human but-->
+    <!--                                definitely one of the most loved and admired men in the world. Many people describe him-->
+    <!--                                as the bearded Mother Teresa of Punjab. </p>-->
+    <!--                            <div class="testimonial-seven-wrap">-->
+    <!--                                <div class="testimonial-seven-left">-->
+    <!--                                    <div class="testimonial-seven-icon">-->
+    <!--                                        <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"-->
+    <!--                                                alt="quate"></span>-->
+    <!--                                    </div>-->
+    <!--                                    <h6 class="testimonial-seven-name">Bhagat Puran Singh </h6>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-xl-12 project-panel">-->
+    <!--                        <div class="testimonial-seven-wrapper">-->
+    <!--                            <h4 class="testimonial-seven-title">“Great Services”</h4>-->
+    <!--                            <p class="testimonial-seven-paragraph">hthere is not a single country in the whole world-->
+    <!--                                where the name of Mahatma Gandhi is not known. Do you know why Gandhi became so famous?-->
+    <!--                            </p>-->
+    <!--                            <div class="testimonial-seven-wrap">-->
+    <!--                                <div class="testimonial-seven-left">-->
+    <!--                                    <div class="testimonial-seven-icon">-->
+    <!--                                        <span><img src="frontend_assets/images/icon/testimonial-seven-quate-yellow.svg"-->
+    <!--                                                alt="quate"></span>-->
+    <!--                                    </div>-->
+    <!--                                    <h6 class="testimonial-seven-name">Mahatma Gandhi </h6>-->
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-seven-shape">
-            <img src="frontend_assets/images/testimonial/testimonail-seven-shape.png" alt="shape">
-        </div>
-    </section>
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="testimonial-seven-shape">-->
+    <!--        <img src="frontend_assets/images/testimonial/testimonail-seven-shape.png" alt="shape">-->
+    <!--    </div>-->
+    <!--</section>-->
 
     <!-- ==== Our Vision section start ==== -->
-      <section class="vision-section">
-        <div class="container vision-content">
+    <!--  <section class="vision-section">-->
+    <!--    <div class="container vision-content">-->
             <!-- Header -->
-            <div class="vision-header">
-                <h1>What We Are Planning</h1>
-                <div class="accent-line"></div>
-                <p class="subtitle">Join us on our journey to transform mental health support and create lasting positive change in our communities</p>
-            </div>
+    <!--        <div class="vision-header">-->
+    <!--            <h1>What We Are Planning</h1>-->
+    <!--            <div class="accent-line"></div>-->
+    <!--            <p class="subtitle">Join us on our journey to transform mental health support and create lasting positive change in our communities</p>-->
+    <!--        </div>-->
 
             <!-- Roadmap Timeline -->
-            <div class="roadmap-container">
+    <!--        <div class="roadmap-container">-->
                 <!-- Item 1 -->
-                <div class="roadmap-item">
-                    <div class="roadmap-dot"></div>
-                    <div class="roadmap-content">
-                        <div class="roadmap-card">
-                            <div class="roadmap-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3>Upgraded Helpline & App</h3>
-                            <p>Access counseling, self-assessment, and guided meditation anywhere, anytime. Professional support at your fingertips.</p>
-                        </div>
-                    </div>
-                </div>
+    <!--            <div class="roadmap-item">-->
+    <!--                <div class="roadmap-dot"></div>-->
+    <!--                <div class="roadmap-content">-->
+    <!--                    <div class="roadmap-card">-->
+    <!--                        <div class="roadmap-icon">-->
+    <!--                            <i class="fas fa-mobile-alt"></i>-->
+    <!--                        </div>-->
+    <!--                        <h3>Upgraded Helpline & App</h3>-->
+    <!--                        <p>Access counseling, self-assessment, and guided meditation anywhere, anytime. Professional support at your fingertips.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
                 <!-- Item 2 -->
-                <div class="roadmap-item">
-                    <div class="roadmap-dot"></div>
-                    <div class="roadmap-content">
-                        <div class="roadmap-card">
-                            <div class="roadmap-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h3>Mental Health in Schools</h3>
-                            <p>Expand programs for students nationwide, creating safe spaces and fostering emotional well-being in educational institutions.</p>
-                        </div>
-                    </div>
-                </div>
+    <!--            <div class="roadmap-item">-->
+    <!--                <div class="roadmap-dot"></div>-->
+    <!--                <div class="roadmap-content">-->
+    <!--                    <div class="roadmap-card">-->
+    <!--                        <div class="roadmap-icon">-->
+    <!--                            <i class="fas fa-graduation-cap"></i>-->
+    <!--                        </div>-->
+    <!--                        <h3>Mental Health in Schools</h3>-->
+    <!--                        <p>Expand programs for students nationwide, creating safe spaces and fostering emotional well-being in educational institutions.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
                 <!-- Item 3 -->
-                <div class="roadmap-item">
-                    <div class="roadmap-dot"></div>
-                    <div class="roadmap-content">
-                        <div class="roadmap-card">
-                            <div class="roadmap-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h3>Community Hubs</h3>
-                            <p>Local centers for ongoing counseling and workshops, bringing mental health support directly to your neighborhood.</p>
-                        </div>
-                    </div>
-                </div>
+    <!--            <div class="roadmap-item">-->
+    <!--                <div class="roadmap-dot"></div>-->
+    <!--                <div class="roadmap-content">-->
+    <!--                    <div class="roadmap-card">-->
+    <!--                        <div class="roadmap-icon">-->
+    <!--                            <i class="fas fa-users"></i>-->
+    <!--                        </div>-->
+    <!--                        <h3>Community Hubs</h3>-->
+    <!--                        <p>Local centers for ongoing counseling and workshops, bringing mental health support directly to your neighborhood.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
                 <!-- Item 4 -->
-                <div class="roadmap-item">
-                    <div class="roadmap-dot"></div>
-                    <div class="roadmap-content">
-                        <div class="roadmap-card">
-                            <div class="roadmap-icon">
-                                <i class="fas fa-megaphone"></i>
-                            </div>
-                            <h3>Awareness Campaigns</h3>
-                            <p>Large-scale public campaigns to reduce stigma and normalize conversations around mental health and well-being.</p>
+    <!--            <div class="roadmap-item">-->
+    <!--                <div class="roadmap-dot"></div>-->
+    <!--                <div class="roadmap-content">-->
+    <!--                    <div class="roadmap-card">-->
+    <!--                        <div class="roadmap-icon">-->
+    <!--                            <i class="fas fa-megaphone"></i>-->
+    <!--                        </div>-->
+    <!--                        <h3>Awareness Campaigns</h3>-->
+    <!--                        <p>Large-scale public campaigns to reduce stigma and normalize conversations around mental health and well-being.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+                <!-- Item 5 -->
+    <!--            <div class="roadmap-item">-->
+    <!--                <div class="roadmap-dot"></div>-->
+    <!--                <div class="roadmap-content">-->
+    <!--                    <div class="roadmap-card">-->
+    <!--                        <div class="roadmap-icon">-->
+    <!--                            <i class="fas fa-handshake"></i>-->
+    <!--                        </div>-->
+    <!--                        <h3>Strategic Partnerships</h3>-->
+    <!--                        <p>Collaborations with hospitals, NGOs, and government bodies to create a comprehensive support ecosystem.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+            <!-- CTA Section -->
+    <!--        <div class="vision-cta">-->
+    <!--            <button class="btn-vision">-->
+    <!--                <i class="fas fa-heart me-2"></i>Support Our Vision-->
+    <!--            </button>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!-- ==== Our Vision section end ==== -->
+
+   
+    
+         <section class="get-involved-section">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="section-title">Take Action with ZTS</h1>
+                <p class="section-subtitle">Join us in making a difference in mental health care</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card action-card card-volunteer">
+                        <div class="card-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3 class="card-title text-center">Volunteer</h3>
+                        <p class="card-text text-center">
+                            Help run workshops, support groups, and outreach programs. Your time and expertise can transform lives in your community.
+                        </p>
+                        <div class="text-center">
+                            <button class="btn action-btn btn-volunteer">Volunteer</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Item 5 -->
-                <div class="roadmap-item">
-                    <div class="roadmap-dot"></div>
-                    <div class="roadmap-content">
-                        <div class="roadmap-card">
-                            <div class="roadmap-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h3>Strategic Partnerships</h3>
-                            <p>Collaborations with hospitals, NGOs, and government bodies to create a comprehensive support ecosystem.</p>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card action-card card-partner">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="card-title text-center">Partner With Us</h3>
+                        <p class="card-text text-center">
+                            Collaborate to expand mental health programs and reach more communities. Together, we can create lasting impact.
+                        </p>
+                        <div class="text-center">
+                            <button class="btn action-btn btn-partner">Partner</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card action-card card-contribute">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="card-title text-center">Contribute</h3>
+                        <p class="card-text text-center">
+                            Support initiatives that provide counseling and resources where needed most. Every contribution makes a difference.
+                        </p>
+                        <div class="text-center">
+                            <button class="btn action-btn btn-contribute">Contribute</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- CTA Section -->
-            <div class="vision-cta">
-                <button class="btn-vision">
-                    <i class="fas fa-heart me-2"></i>Support Our Vision
-                </button>
+            <div class="visual-banner">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="banner-image-container">
+                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=600&fit=crop" 
+                                 alt="Volunteers interacting with communities" 
+                                 class="banner-image">
+                            <div class="banner-overlay">
+                                <span class="overlay-text">Join Our Mission</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4" style="color: var(--color-green-dark); font-weight: 700; font-size: 2rem;">
+                            Making a Real Impact Together
+                        </h2>
+                        <p class="mb-3" style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+                            <i class="fas fa-check-circle me-2" style="color: var(--color-green-light);"></i>
+                            <strong>Direct Community Engagement:</strong> Work face-to-face with those who need support
+                        </p>
+                        <p class="mb-3" style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+                            <i class="fas fa-check-circle me-2" style="color: var(--color-green-light);"></i>
+                            <strong>Professional Development:</strong> Gain valuable experience in mental health advocacy
+                        </p>
+                        <p class="mb-4" style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+                            <i class="fas fa-check-circle me-2" style="color: var(--color-green-light);"></i>
+                            <strong>Lasting Change:</strong> Be part of sustainable mental health solutions
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <span class="badge px-4 py-2" style="background-color: var(--color-yellow); font-size: 1rem;">
+                                <i class="fas fa-users me-2"></i>500+ Volunteers
+                            </span>
+                            <span class="badge px-4 py-2" style="background-color: var(--color-green-light); font-size: 1rem;">
+                                <i class="fas fa-building me-2"></i>50+ Partners
+                            </span>
+                            <span class="badge px-4 py-2" style="background-color: var(--color-green-dark); font-size: 1rem;">
+                                <i class="fas fa-map-marker-alt me-2"></i>20+ Cities
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- ==== Our Vision section end ==== -->
-
-    <!-- ==== Core Programs section start ==== -->
+    
+     <!-- ==== Core Programs section start ==== -->
       <section class="programs-section">
         <div class="container">
             <!-- Header -->
@@ -3069,105 +3039,142 @@
     <!-- ==== Impact / Why It Matters section end ==== -->
 
     <!-- ==== Get Involved section start ==== -->
-       <section class="get-involved-section">
-        <div class="container">
-            <div class="text-center">
-                <h1 class="section-title">Take Action with ZTS</h1>
-                <p class="section-subtitle">Join us in making a difference in mental health care</p>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card action-card card-volunteer">
-                        <div class="card-icon">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
-                        <h3 class="card-title text-center">Volunteer</h3>
-                        <p class="card-text text-center">
-                            Help run workshops, support groups, and outreach programs. Your time and expertise can transform lives in your community.
-                        </p>
-                        <div class="text-center">
-                            <button class="btn action-btn btn-volunteer">Volunteer</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card action-card card-partner">
-                        <div class="card-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3 class="card-title text-center">Partner With Us</h3>
-                        <p class="card-text text-center">
-                            Collaborate to expand mental health programs and reach more communities. Together, we can create lasting impact.
-                        </p>
-                        <div class="text-center">
-                            <button class="btn action-btn btn-partner">Partner</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card action-card card-contribute">
-                        <div class="card-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <h3 class="card-title text-center">Contribute</h3>
-                        <p class="card-text text-center">
-                            Support initiatives that provide counseling and resources where needed most. Every contribution makes a difference.
-                        </p>
-                        <div class="text-center">
-                            <button class="btn action-btn btn-contribute">Contribute</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visual-banner">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <div class="banner-image-container">
-                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=600&fit=crop" 
-                                 alt="Volunteers interacting with communities" 
-                                 class="banner-image">
-                            <div class="banner-overlay">
-                                <span class="overlay-text">Join Our Mission</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="mb-4" style="color: var(--color-green-dark); font-weight: 700; font-size: 2rem;">
-                            Making a Real Impact Together
-                        </h2>
-                        <p class="mb-3" style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-                            <i class="fas fa-check-circle me-2" style="color: var(--color-green-light);"></i>
-                            <strong>Direct Community Engagement:</strong> Work face-to-face with those who need support
-                        </p>
-                        <p class="mb-3" style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-                            <i class="fas fa-check-circle me-2" style="color: var(--color-green-light);"></i>
-                            <strong>Professional Development:</strong> Gain valuable experience in mental health advocacy
-                        </p>
-                        <p class="mb-4" style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-                            <i class="fas fa-check-circle me-2" style="color: var(--color-green-light);"></i>
-                            <strong>Lasting Change:</strong> Be part of sustainable mental health solutions
-                        </p>
-                        <div class="d-flex gap-3 flex-wrap">
-                            <span class="badge px-4 py-2" style="background-color: var(--color-yellow); font-size: 1rem;">
-                                <i class="fas fa-users me-2"></i>500+ Volunteers
-                            </span>
-                            <span class="badge px-4 py-2" style="background-color: var(--color-green-light); font-size: 1rem;">
-                                <i class="fas fa-building me-2"></i>50+ Partners
-                            </span>
-                            <span class="badge px-4 py-2" style="background-color: var(--color-green-dark); font-size: 1rem;">
-                                <i class="fas fa-map-marker-alt me-2"></i>20+ Cities
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  
     
+    <!-- ==== cause slider two section start ==== -->
+    <!--<section class="cause-two">-->
+    <!--    <div class="container-fluid">-->
+            <!-- 🔹 Add the heading row here -->
+    <!--        {{-- <div class="row justify-content-center">-->
+    <!--            <div class="col-12 col-md-8">-->
+    <!--                <div class="section__header text-center" data-aos="fade-up" data-aos-duration="1000">-->
+    <!--                    <span class="sub-title">Our Mission</span>-->
+    <!--                    <h2 class="title-animation mt-0 fw-7">-->
+    <!--                        Empowering lives with <span>hope</span>-->
+    <!--                    </h2>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div> --}}-->
+            <!-- 🔹 Heading row ends -->
+    <!--        <div class="row">-->
+    <!--            <div class="col-12">-->
+    <!--                <div class="cause-two__inner">-->
+    <!--                    <div class="slider-navigation">-->
+    <!--                        <button type="button" aria-label="prev slide" title="prev slide"-->
+    <!--                            class="prev-cause-two slider-btn">-->
+    <!--                            <i class="fa-solid fa-arrow-left"></i>-->
+    <!--                        </button>-->
+    <!--                        <button type="button" aria-label="next slide" title="next slide"-->
+    <!--                            class="next-cause-two slider-btn slider-btn-next">-->
+    <!--                            <i class="fa-solid fa-arrow-right"></i>-->
+    <!--                        </button>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="cause-two__slider swiper">-->
+    <!--                        <div class="swiper-wrapper">-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="cause-two__slider-single">-->
+    <!--                                    <div class="cause-thumb">-->
+    <!--                                        <img src="{{ asset('frontend_assets/images/mission/mission1.jpg') }}"-->
+    <!--                                            alt="Image">-->
+    <!--                                        <a href="cause-details.html">-->
+    <!--                                            <i class="fa-solid fa-arrow-right"></i>-->
+    <!--                                        </a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="cause-two__slider-single">-->
+    <!--                                    <div class="cause-thumb">-->
+    <!--                                        <img src="{{ asset('frontend_assets/images/mission/mission2.jpg') }}"-->
+    <!--                                            alt="Image">-->
+    <!--                                        <a href="cause-details.html">-->
+    <!--                                            <i class="fa-solid fa-arrow-right"></i>-->
+    <!--                                        </a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="cause-two__slider-single">-->
+    <!--                                    <div class="cause-thumb">-->
+    <!--                                        <img src="{{ asset('frontend_assets/images/mission/mission3.jpg') }}"-->
+    <!--                                            alt="Image">-->
+    <!--                                        <a href="cause-details.html">-->
+    <!--                                            <i class="fa-solid fa-arrow-right"></i>-->
+    <!--                                        </a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="cause-two__slider-single">-->
+    <!--                                    <div class="cause-thumb">-->
+    <!--                                        <img src="{{ asset('frontend_assets/images/mission/mission4.jpg') }}"-->
+    <!--                                            alt="Image">-->
+    <!--                                        <a href="cause-details.html">-->
+    <!--                                            <i class="fa-solid fa-arrow-right"></i>-->
+    <!--                                        </a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="cause-two__slider-single">-->
+    <!--                                    <div class="cause-thumb">-->
+    <!--                                        <img src="{{ asset('frontend_assets/images/mission/mission1.jpg') }}"-->
+    <!--                                            alt="Image">-->
+    <!--                                        <a href="cause-details.html">-->
+    <!--                                            <i class="fa-solid fa-arrow-right"></i>-->
+    <!--                                        </a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="swiper-slide">-->
+    <!--                                <div class="cause-two__slider-single">-->
+    <!--                                    <div class="cause-thumb">-->
+    <!--                                        <img src="{{ asset('frontend_assets/images/mission/mission2.jpg') }}"-->
+    <!--                                            alt="Image">-->
+    <!--                                        <a href="cause-details.html">-->
+    <!--                                            <i class="fa-solid fa-arrow-right"></i>-->
+    <!--                                        </a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="cause-two__content-slider swiper">-->
+    <!--                    <div class="swiper-wrapper">-->
+    <!--                        <div class="swiper-slide">-->
+    <!--                            <div class="cause-content">-->
+    <!--                                <h4>Swasthya</h4>-->
+                                    <!-- <p>Child & old care</p> -->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        <div class="swiper-slide">-->
+    <!--                            <div class="cause-content">-->
+    <!--                                <h4>Shisksha</h4>-->
+                                    <!-- <p>Child & old care</p> -->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        <div class="swiper-slide">-->
+    <!--                            <div class="cause-content">-->
+    <!--                                <h4>Swarozgar</h4>-->
+                                    <!-- <p>Child & old care</p> -->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        <div class="swiper-slide">-->
+    <!--                            <div class="cause-content">-->
+    <!--                                <h4>Soch</h4>-->
+                                    <!-- <p>Child & old care</p> -->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!-- ==== / cause slider two section end ==== -->
   
     <!-- ==== Get Involved section end ==== -->
 

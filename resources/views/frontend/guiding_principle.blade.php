@@ -15,19 +15,19 @@
                   <div class="difference-two__thumb-wrapper">
                      <div class="difference-two__thumb">
                         <div class="thumb-lg" data-aos="fade-right" data-aos-duration="1000">
-                           <img src="{{asset('frontend_assets/images/difference/thumb-sm.png')}}" alt="Image">
+                           <img src="{{asset('frontend_assets/images/help/image2.png')}}" alt="Image">
                            <div class="grid-line">
                               <img src="{{asset('frontend_assets/images/help/grid.png')}}" alt="Image" class="base-img">
                            </div>
-                           <div class="video-btn-wrapper">
-                              <a href="https://www.youtube.com/watch?v=RvreULjnzFo" target="_blank" title="video Player"
-                                 class="open-video-popup">
-                                 <i class="icon-play"></i>
-                              </a>
-                           </div>
+                           <!--<div class="video-btn-wrapper">-->
+                           <!--   <a href="https://www.youtube.com/watch?v=RvreULjnzFo" target="_blank" title="video Player"-->
+                           <!--      class="open-video-popup">-->
+                           <!--      <i class="icon-play"></i>-->
+                           <!--   </a>-->
+                           <!--</div>-->
                         </div>
                         <div class="thumb-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                           <img src="{{asset('frontend_assets/images/difference/thumb-lg.png')}}" alt="Image">
+                           <img src="{{asset('frontend_assets/images/about1.jpeg')}}" alt="Image">
                         </div>
                      </div>
                   </div>
