@@ -409,22 +409,23 @@
     
     <div class="container">
         <!-- Member 1 -->
+         @foreach ($info as  $value)
         <div class="member-card-new" data-aos="fade-up" data-aos-duration="600">
             <div class="member-card-inner">
                 <div class="member-image-wrapper">
                     <div class="member-image-container">
-                        <img src="{{asset('frontend_assets/images/members/member1.png')}}" alt="Pooja Srivastav" class="member-photo-new">
+                        <img src="{{asset('assets/uploads/teamcard/'.$value->img)}}" alt="Pooja Srivastav" class="member-photo-new">
                     </div>
                     <div class="member-badge">1</div>
                 </div>
                 <div class="member-content-new">
                     <div class="d-flex justify-content-between">
-                        <h3 class="member-name-new">Pooja Srivastava</h3>
+                        <h3 class="member-name-new">{{ $value->name }}</h3>
                     <span class="d-lg-block d-none member-role">Core Team Member</span>
                     </div>
                     
                     <p class="member-bio-new">
-                        The situation and transforming it powerfully. Positive & negative both are part of our life and we cannot have one alone, but we can have the ability to handle both with a POWERFUL MINDSET. Spreading this energy to people I meet every day. Life is about embracing challenges and turning them into opportunities for growth and transformation.
+{{ $value->description }}
                     </p>
                     <div class="member-stats">
                         <div class="stat-item">
@@ -443,6 +444,7 @@
                 </div>
             </div>
         </div>
+        @endforeach
 
         <!-- Member 2 -->
         <div class="member-card-new" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">

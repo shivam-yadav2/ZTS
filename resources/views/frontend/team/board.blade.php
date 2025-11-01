@@ -15,12 +15,14 @@
         <section class="team ff-team pb-0">
             <div class="container">
                 <div class="row gutter-40">
+                    @foreach ($info as  $value)
+                           
                     <div class="col-12 col-sm-6 col-xl-3">
                         <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000">
                             <div class="team__single van-tilt">
                                 <div class="team__single-thumb">
                                     <a href="team-details.html">
-                                        <img src="/frontend_assets/images/board/1.png" alt="Image">
+                                        <img src="{{ asset('assets/uploads/teamcard/'.$value->img) }}" alt="Image">
                                     </a>
                                     <!--<div class="team__icons">-->
                                     <!--    <div class="team__single-content__icon">-->
@@ -53,12 +55,15 @@
                                     <!--</div>-->
                                 </div>
                                 <div class="team__single-content">
-                                    <h6><a href="team-details.html">Dr. Rajeev Mishra</a></h6>
+                                    <h6><a href="team-details.html">{{ $value->name}}</a></h6>
                                     <p>Volunteer</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    @endforeach
+
                     <div class="col-12 col-sm-6 col-xl-3">
                         <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             <div class="team__single van-tilt">

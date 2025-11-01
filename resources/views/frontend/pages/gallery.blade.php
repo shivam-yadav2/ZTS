@@ -150,18 +150,21 @@
             <h2 class="gallery-title">Gallery</h2>
             
             <div class="row g-4">
+                @foreach ($data as $value )
+                
+               
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
                          <a href="#">
-                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop" alt="Independence Day" class="gallery-img">
+                            <img src="{{ asset('assets/uploads/events/'.$value->event_img) }}" alt="Independence Day" class="gallery-img">
                             <div class="gallery-overlay">
-                                <p class="gallery-caption">Celebrate our Independence Day</p>
+                                <p class="gallery-caption">{{$value->event_name }}</p>
                             </div>
                         </a>
                         <div class="gallery-location">UP</div>
                     </div>
                 </div>
-
+                @endforeach
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
                          <a href="#">

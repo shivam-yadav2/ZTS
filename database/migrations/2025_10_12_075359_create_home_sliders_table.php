@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('img');
             $table->text( 'text');
             $table->string( 'sub_text');
-            $table->string('btn_text');
-            $table->string('btn_url');
-            $table->string('mobile_img');
+            $table->string('btn_text')->nullable();
+            $table->string('btn_url')->nullable();
+            $table->string('mobile_img')->nullable();
             $table->tinyInteger('is_active')->default(0)->comment('0 = inactive, 1 = active');
             $table->timestamps();
         });

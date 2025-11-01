@@ -24,6 +24,7 @@
                                     <th scope="col" class="text-center" colspan="2">Action</th>
                                 </tr>
                             </thead>
+    
                             <tbody>
                                 @foreach ($data as  $value)
                                 <tr>
