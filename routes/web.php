@@ -172,7 +172,7 @@ Route::view('/campaign/be-a-hero','frontend.campaign.be_a_hero');
 
         //Gallery Page Routes
 //  Route::view('/gallery','frontend.pages.gallery');
- Route::view('/gallery-detail','frontend.pages.gallery_detail');
+//  Route::view('/gallery-detail','frontend.pages.gallery_detail');
 
 
 
@@ -180,6 +180,7 @@ Route::view('/campaign/be-a-hero','frontend.campaign.be_a_hero');
 //  Frontend get data routes
 Route::get('/',[FrontendController::class,'GetHomeSlider']);
 Route::get('/gallery',[FrontendController::class,'GetGalleryData']);
+Route::get('/gallery-detail/{id}',[FrontendController::class,'GetGalleryDetail']);
 Route::get('/about/team/core_member',[FrontendController::class,'GetCoreMember']);
 Route::get('/about/team/board',[FrontendController::class,'GetAdvisoryData']);
 Route::get('/about/team/member',[FrontendController::class,'GetMemberData']);

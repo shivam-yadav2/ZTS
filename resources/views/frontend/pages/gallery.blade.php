@@ -155,7 +155,7 @@
                
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                         <a href="#">
+                         <a href="{{ url('/gallery-detail/'.$value->event_id) }}">
                             <img src="{{ asset('assets/uploads/events/'.$value->event_img) }}" alt="Independence Day" class="gallery-img">
                             <div class="gallery-overlay">
                                 <p class="gallery-caption">{{$value->event_name }}</p>
@@ -165,88 +165,6 @@
                     </div>
                 </div>
                 @endforeach
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Children Day" class="gallery-img">
-                            <div class="gallery-overlay">
-                                <p class="gallery-caption">Children Day Celebration</p>
-                            </div>
-                        </a>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Children Day Celebration" class="gallery-img">
-                            <div class="gallery-overlay">
-                                <p class="gallery-caption">Children Day celebration With Mc D</p>
-                            </div>
-                         </a>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Dancing Workshop" class="gallery-img">
-                            <div class="gallery-overlay">
-                                <p class="gallery-caption">Dancing workshop for chetna sansthan</p>
-                            </div>
-                        </a>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <a href="#">
-                            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=400&h=300&fit=crop" alt="Medical Camp Day 1" class="gallery-img">
-                            <div class="gallery-overlay">
-                                <p class="gallery-caption">Day 1, Medical camp in chetna by ZTS</p>
-                            </div>
-                        </a>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <a href="#">
-                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop" alt="Medical Camp Day 2" class="gallery-img">
-                            <div class="gallery-overlay">
-                                <p class="gallery-caption">Day 2, Dental health-Medical Camp in chetna by ZTS</p>
-                            </div>
-                        </a>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=300&fit=crop" alt="Medical Health Counseling" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Day 3, Free Medical Health Counseling Camp(Girl)</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
-                
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop" alt="Chetna ke Sang Holi" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <p class="gallery-caption">Day 5, Chetna ke Sang Holi ke Rang</p>
-                        </div>
-                        <div class="gallery-location">UP</div>
-                    </div>
-                </div>
-
                 
             </div>
         </div>

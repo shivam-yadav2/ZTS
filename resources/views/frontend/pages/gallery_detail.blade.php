@@ -271,11 +271,13 @@
                     <div class="stat-label">Event Date</div>
                 </div>
             </div> -->
+@foreach ($images as $value)
+
 
             <div class="photo-grid">
                 <div class="photo-item">
                     <a href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Children Day Celebration - Outdoor Activities">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Children Day Event 1">
+                        <img src="{{ asset('assets/uploads/galleryimg/'.$value->img) }}" alt="Children Day Event 1">
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
@@ -489,7 +491,7 @@
                     </a>
                 </div>
             </div>
-
+            @endforeach
             <div class="pagination-custom">
                 <button class="page-btn" disabled>‹</button>
                 <button class="page-btn active">1</button>
