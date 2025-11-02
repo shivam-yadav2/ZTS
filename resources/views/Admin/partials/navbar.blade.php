@@ -16,7 +16,7 @@
                     </button>
                 </div>
 
-                <button type="button" id="theme-toggle"
+                {{-- <button type="button" id="theme-toggle"
                     class="w-10 h-10 bg-neutral-200 dark:bg-neutral-700 dark:text-white rounded-full flex justify-center items-center">
                     <span id="theme-toggle-dark-icon" class="hidden">
                         <i class="ri-sun-line"></i>
@@ -24,7 +24,7 @@
                     <span id="theme-toggle-light-icon" class="">
                         <i class="ri-moon-line"></i>
                     </span>
-                </button>
+                </button> --}}
             </div>
         </div>
     </div>

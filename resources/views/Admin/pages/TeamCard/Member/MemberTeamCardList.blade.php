@@ -25,7 +25,7 @@
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-700">
-                    @foreach ($data as $value)
+                    @forelse ($data as $value)
                     <tr class="hover:bg-gray-800 transition-all duration-200">
                         <!-- Name -->
                         <td class="px-6 py-4 text-gray-100 font-medium">{{ $value->name }}</td>
@@ -60,17 +60,25 @@
                             </div>
                         </td>
                     </tr>
-                    @endforeach
+                    @empty
+                    <tr>
+                        <td colspan="5" class="px-6 py-8 text-center text-gray-400">
+                            No team members found. <a href="{{ url('admin/teamcard/teamcardForm') }}" class="text-blue-500 hover:underline">Add one now</a>
+                        </td>
+                    </tr>
+                    @endforelse
                 </tbody>
             </table>
         </div>
 
         <!-- Pagination -->
-        <div class=" border-t border-gray-700 px-6 py-4 bg-white">
+        @if($data->hasPages())
+        <div class=" border-t border-gray-700 px-6 py-4 bg-gray-900">
             <div class="flex justify-center">
                 {{ $data->links('pagination::tailwind') }}
             </div>
         </div>
+        @endif
     </div>
 </div>
 

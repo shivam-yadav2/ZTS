@@ -13,5 +13,9 @@ class GalleryEvent extends Model
         'event_date',
         'event_img',
     ];
-    
+
+    public function images()
+    {
+        return $this->hasMany(GalleryImage::class, 'event_id');
+    }
 }

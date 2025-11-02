@@ -393,8 +393,6 @@
 
 @section('content')
 <!-- Team Hero Section -->
-
-@section('content')
    @include('frontend.pages.component.banner', [
     'title' => 'Core Team Members',
     'description' => 'Meet the passionate individuals driving our mission forward with dedication, innovation, and unwavering commitment to making a difference.',
@@ -408,223 +406,42 @@
     <div class="floating-shape shape-3"></div>
     
     <div class="container">
-        <!-- Member 1 -->
-         @foreach ($info as  $value)
-        <div class="member-card-new" data-aos="fade-up" data-aos-duration="600">
+        @foreach ($info as $index => $value)
+        <div class="member-card-new" data-aos="fade-up" data-aos-duration="600" data-aos-delay="{{ $index * 100 }}">
             <div class="member-card-inner">
                 <div class="member-image-wrapper">
                     <div class="member-image-container">
-                        <img src="{{asset('assets/uploads/teamcard/'.$value->img)}}" alt="Pooja Srivastav" class="member-photo-new">
+                        <img src="{{asset('assets/uploads/CoreMember/'.$value->img)}}" alt="{{ $value->name }}" class="member-photo-new">
                     </div>
-                    <div class="member-badge">1</div>
+                    <div class="member-badge">{{ $index + 1 }}</div>
                 </div>
                 <div class="member-content-new">
                     <div class="d-flex justify-content-between">
                         <h3 class="member-name-new">{{ $value->name }}</h3>
-                    <span class="d-lg-block d-none member-role">Core Team Member</span>
+                        <span class="d-lg-block d-none member-role">Core Team Member</span>
                     </div>
                     
                     <p class="member-bio-new">
-{{ $value->description }}
+                        {{ $value->description }}
                     </p>
                     <div class="member-stats">
                         <div class="stat-item">
                             <div class="stat-icon">
                                 <i class="fas fa-lightbulb"></i>
                             </div>
-                            <span>Mindset Coach</span>
+                            <span>Team Member</span>
                         </div>
                         <div class="stat-item">
                             <div class="stat-icon">
                                 <i class="fas fa-users"></i>
                             </div>
-                            <span>People Connector</span>
+                            <span>Community Leader</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         @endforeach
-
-        <!-- Member 2 -->
-        <div class="member-card-new" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="member-card-inner">
-                <div class="member-image-wrapper">
-                    <div class="member-image-container">
-                        <img src="{{asset('frontend_assets/images/members/member2.png')}}" alt="Sanjeev Mishra" class="member-photo-new">
-                    </div>
-                    <div class="member-badge">2</div>
-                </div>
-                <div class="member-content-new">
-                    
-                    <div class="d-flex justify-content-between">
-                        <h3 class="member-name-new">Sanjeev Mishra</h3>
-                    <span class="d-lg-block d-none member-role">Core Team Member</span>
-                    </div>
-                    <p class="member-bio-new">
-                        Lots of privileged society who got ALFA, when times came to defend their society these ALFA never stood against wrong. This system runs for thousands of years and the habit of taking responsibility puts human civilization on top of the food chain. True leadership means standing up for what's right, even when it's difficult, and taking responsibility for the betterment of society.
-                    </p>
-                    <div class="member-stats">
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <span>Social Advocate</span>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <span>Justice Seeker</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Member 3 -->
-        <div class="member-card-new" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-            <div class="member-card-inner">
-                <div class="member-image-wrapper">
-                    <div class="member-image-container">
-                        <img src="{{asset('frontend_assets/images/members/member3.png')}}" alt="Santhosh P.P" class="member-photo-new">
-                    </div>
-                    <div class="member-badge">3</div>
-                </div>
-                <div class="member-content-new">
-                    <div class="d-flex justify-content-between">
-                         <h3 class="member-name-new">Santhosh P.P</h3>
-                    <span class="d-lg-block d-none member-role">Core Team Member</span>
-                    </div>
-                   
-                    <p class="member-bio-new">
-                        Togetherness is a beautiful word and emotionally connected is the best form of mind. It's not only children but adults who need emotional attachment. They need attention, care like siblings. Let us share love and beauty of life equally. Building strong emotional connections and fostering a sense of belonging creates a more compassionate and understanding world.
-                    </p>
-                    <div class="member-stats">
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <span>Community Builder</span>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-hands-helping"></i>
-                            </div>
-                            <span>Care Advocate</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Member 4 -->
-        <div class="member-card-new" data-aos="fade-up" data-aos-duration="600">
-            <div class="member-card-inner">
-                <div class="member-image-wrapper">
-                    <div class="member-image-container">
-                        <img src="{{asset('frontend_assets/images/members/member4.png')}}" alt="Dr. Priyam Sameer Kamdar" class="member-photo-new">
-                    </div>
-                    <div class="member-badge">4</div>
-                </div>
-                <div class="member-content-new">
-                    <div class="d-flex justify-content-between">
-                         <h3 class="member-name-new">Dr. Priyam Sameer Kamdar</h3>
-                    <span class="d-lg-block d-none member-role">Core Team Member</span>
-                    </div>
-                   
-                    <p class="member-bio-new">
-                        आदत रता है तैयारी, बदलो अपनी रोप... Change is inevitable, one who adapts it positively, wins the world. Having a positive attitude, thoughtfulness and mindset can really make a difference in life. Embracing change with optimism and maintaining a growth mindset enables us to overcome any challenge and achieve extraordinary success.
-                    </p>
-                    <div class="member-stats">
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <span>Change Advocate</span>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span>Positive Thinker</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Member 5 -->
-        <div class="member-card-new" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="member-card-inner">
-                <div class="member-image-wrapper">
-                    <div class="member-image-container">
-                        <img src="{{asset('frontend_assets/images/members/member5.png')}}" alt="Chandra Shekhar Shukla" class="member-photo-new">
-                    </div>
-                    <div class="member-badge">5</div>
-                </div>
-                <div class="member-content-new">
-                    <div class="d-flex justify-content-between">
-                        <h3 class="member-name-new">Chandra Shekhar Shukla</h3>
-                    <span class="d-lg-block d-none member-role">Core Team Member</span>
-                    </div>
-                    
-                    <p class="member-bio-new">
-                        कताल करता जीवे कर सहारा बनता है, बमता है खुशी या और सीमा है। जीवन पर काम हर किसी को करम, जिंदगी पूर्ण प्रवास। Life is about creating meaningful connections and spreading joy to everyone we meet. Every interaction is an opportunity to make someone's day better and contribute to a more harmonious society.
-                    </p>
-                    <div class="member-stats">
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-smile"></i>
-                            </div>
-                            <span>Joy Spreader</span>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-link"></i>
-                            </div>
-                            <span>Connection Maker</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Member 6 -->
-        <div class="member-card-new" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-            <div class="member-card-inner">
-                <div class="member-image-wrapper">
-                    <div class="member-image-container">
-                        <img src="{{asset('frontend_assets/images/members/member6.png')}}" alt="Seema Yadav" class="member-photo-new">
-                    </div>
-                    <div class="member-badge">6</div>
-                </div>
-                <div class="member-content-new">
-                    <div class="d-flex justify-content-between">
-<h3 class="member-name-new">Seema Yadav</h3>
-                    <span class="d-lg-block d-none member-role">Core Team Member</span>
-                    </div>
-                    
-                    <p class="member-bio-new">
-                        सब के दिलदार जब आती है, कार को की उदारता है। जिंदगी को जैसे प्रभावै है, छोटे में तकदीर बनते है। When we approach life with kindness and generosity, we create beautiful relationships and meaningful impacts. Small acts of kindness can transform lives and build bridges of understanding and compassion in our communities.
-                    </p>
-                    <div class="member-stats">
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-hand-holding-heart"></i>
-                            </div>
-                            <span>Kindness Ambassador</span>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-seedling"></i>
-                            </div>
-                            <span>Impact Creator</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 @endsection

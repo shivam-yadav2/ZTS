@@ -337,17 +337,39 @@
                             </div>
                             <div class="footer-two__widget-content footer-two__widget-content--contact">
                                 <ul>
-                                    <li><a href="https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8" target="_blank"><i
-                                                class="fa-solid fa-location-dot"></i>20/ 143 Indira Nagar 
-Near Ujala Apartment 
-Lucknow 226016</a>
-                                    </li>
-                                    <li><a href="tel:5224105853"><i class="fa-solid fa-phone"></i>+91 5224105853</a>
-                                    </li>
-                                    <li><a href="mailto:zindagitujhesalaam@gmail.com
-"><i
-                                                class="fa-regular fa-envelope"></i>zindagitujhesalaam@gmail.com
-</a></li>
+                                    @if($globalContactInfo && $globalContactInfo->location)
+                                        @foreach($globalContactInfo->location as $location)
+                                            <li><a href="https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8" target="_blank">
+                                                <i class="fa-solid fa-location-dot"></i>{{ $location }}
+                                            </a></li>
+                                        @endforeach
+                                    @else
+                                        <li><a href="https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8" target="_blank">
+                                            <i class="fa-solid fa-location-dot"></i>20/ 143 Indira Nagar, Near Ujala Apartment, Lucknow 226016
+                                        </a></li>
+                                    @endif
+                                    
+                                    @if($globalContactInfo && $globalContactInfo->phone)
+                                        @foreach(array_slice($globalContactInfo->phone, 0, 2) as $phone)
+                                            <li><a href="tel:{{ preg_replace('/[^0-9]/', '', $phone) }}">
+                                                <i class="fa-solid fa-phone"></i>{{ $phone }}
+                                            </a></li>
+                                        @endforeach
+                                    @else
+                                        <li><a href="tel:5224105853"><i class="fa-solid fa-phone"></i>+91 5224105853</a></li>
+                                    @endif
+                                    
+                                    @if($globalContactInfo && $globalContactInfo->email)
+                                        @foreach(array_slice($globalContactInfo->email, 0, 1) as $email)
+                                            <li><a href="mailto:{{ $email }}">
+                                                <i class="fa-regular fa-envelope"></i>{{ $email }}
+                                            </a></li>
+                                        @endforeach
+                                    @else
+                                        <li><a href="mailto:zindagitujhesalaam@gmail.com">
+                                            <i class="fa-regular fa-envelope"></i>zindagitujhesalaam@gmail.com
+                                        </a></li>
+                                    @endif
                                 </ul>
                             </div>
                         </div>
@@ -433,6 +455,8 @@ Lucknow 226016</a>
     <script src="{{ asset('frontend_assets/js/template-settings.js') }}"></script>
     <!-- main js -->
     <script src="{{ asset('frontend_assets/js/custom.js') }}"></script>
+
+    @yield('script')
 
 </body>
 

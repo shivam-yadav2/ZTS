@@ -146,34 +146,42 @@ public function slideredit($id){
     }
 
     $imageName = $info->img;          // default to existing image
-$imageName2 = $info->mobile_img;  // default to existing mobile image
+    $imageName2 = $info->mobile_img;  // default to existing mobile image
 
-   
+    // Delete old images if new ones are uploaded
+    if ($request->hasFile('img')) {
+        $image = $request->file('img');
+        $imageName = uniqid('main_') . '.webp';
+        $destinationPath = public_path('assets/uploads/homeslider');
 
-if ($request->hasFile('img')) {
-    $image = $request->file('img');
-    $imageName = uniqid('main_') . '.webp';
-    $destinationPath = public_path('assets/uploads/homeslider');
+        $manager = new ImageManager(new Driver());
+        $manager->read($image)
+            ->scale(width: 800)
+            ->toWebp(90)
+            ->save($destinationPath . '/' . $imageName);
 
-    $manager = new ImageManager(new Driver());
-    $manager->read($image)
-        ->scale(width: 800)
-        ->toWebp(90)
-        ->save($destinationPath . '/' . $imageName);
-}
+        // Delete old image if it exists
+        if ($info->img && file_exists(public_path('assets/uploads/homeslider/'.$info->img))) {
+            unlink(public_path('assets/uploads/homeslider/'.$info->img));
+        }
+    }
 
-if ($request->hasFile('m_img')) {
-    $image = $request->file('m_img');
-    $imageName2 = uniqid('mobile_') . '.webp';
-    $destinationPath = public_path('assets/uploads/homeslider');
+    if ($request->hasFile('m_img')) {
+        $image = $request->file('m_img');
+        $imageName2 = uniqid('mobile_') . '.webp';
+        $destinationPath = public_path('assets/uploads/homeslider');
 
-    $manager = new ImageManager(new Driver());
-    $manager->read($image)
-        ->scale(width: 800)
-        ->toWebp(90)
-        ->save($destinationPath . '/' . $imageName2);
-}
+        $manager = new ImageManager(new Driver());
+        $manager->read($image)
+            ->scale(width: 800)
+            ->toWebp(90)
+            ->save($destinationPath . '/' . $imageName2);
 
+        // Delete old mobile image if it exists
+        if ($info->mobile_img && file_exists(public_path('assets/uploads/homeslider/'.$info->mobile_img))) {
+            unlink(public_path('assets/uploads/homeslider/'.$info->mobile_img));
+        }
+    }
 
     // Save records in DATABASE
     $info->update([

@@ -10,6 +10,12 @@ use App\Http\Controllers\GuidingPrincipleController;
 use App\Http\Controllers\HomeSliderController;
 use App\Http\Controllers\OurJourneyController;
 use App\Models\HomeSlider;
+use App\Models\GalleryEvent;
+use App\Models\GalleryImage;
+use App\Models\CoreMember;
+use App\Models\TeamCard;
+use App\Models\Enquiry;
+use App\Models\ContactUs;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryEventController;
@@ -23,7 +29,22 @@ Route::post('loginCheck', [AdminController::class, 'loginCheck']);
 
 Route::prefix('admin')->middleware('AdminLogin')->group(function () {
     Route::get('dashboard', function () {
-        return view('admin.pages.index');
+        $stats = [
+            'slider_total'      => HomeSlider::count(),
+            'slider_active'     => HomeSlider::where('is_active', 1)->count(),
+            'gallery_events'    => GalleryEvent::count(),
+            'gallery_images'    => GalleryImage::count(),
+            'core_members'      => CoreMember::count(),
+            'team_members'      => TeamCard::count(),
+            'enquiries_total'   => Enquiry::count(),
+            'contact_messages'  => ContactUs::count(),
+        ];
+
+        $recentEvents    = GalleryEvent::latest()->take(4)->get(['id','event_name','event_date','event_img','created_at']);
+        $recentEnquiries = Enquiry::latest()->take(5)->get(['name','email','mobile','created_at']);
+        $recentContacts  = collect(); // ContactUs table stores site info, not form submissions
+
+        return view('admin.pages.index', compact('stats', 'recentEvents', 'recentEnquiries', 'recentContacts'));
     });
     Route::get('logout', [AdminController::class, 'logout']);
     Route::resource('events', GalleryEventController::class);
@@ -150,7 +171,7 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
 //Frontend Pages Routes
 Route::view('/index2', 'frontend.pages.index');
 // Route::view('/', 'frontend.pages.index2');
-Route::view('/contact', 'frontend.contact');
+Route::get('/contact', [FrontendController::class, 'contact']);
 
 //About Us Page Routes
 Route::view('/about/guiding_principle', 'frontend.guiding_principle');

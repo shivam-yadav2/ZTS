@@ -1,8 +1,7 @@
 @extends('master.frontmaster')
 @section('css')
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
  <!-- Fancybox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 <style>
         /* body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,6 +10,7 @@
 
         .detail-section {
             padding: 60px 0;
+            background-color: #f8f9fa;
         }
 
         .back-link {
@@ -21,80 +21,72 @@
             display: inline-flex;
             align-items: center;
             margin-bottom: 30px;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
 
         .back-link:hover {
-            color: rgb(255,193,7);
-        }
-
-        .back-link::before {
-            content: '←';
-            margin-right: 8px;
-            font-size: 1.3rem;
-        }
-
-        .event-title {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: rgb(2,114,94);
-            margin-bottom: 15px;
-        }
-
-        .event-description {
-            color: #6c757d;
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-            line-height: 1.6;
+            color: white;
+            background: rgb(2,114,94);
+            transform: translateX(-5px);
         }
 
         .stats-bar {
-            background-color: white;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            background: linear-gradient(135deg, rgb(2,114,94) 0%, rgb(115,196,143) 100%);
+            border-radius: 15px;
+            padding: 35px 25px;
+            margin: 30px 0 40px;
+            box-shadow: 0 8px 30px rgba(2,114,94,0.2);
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
         }
 
         .stat-item {
             text-align: center;
+            color: white;
         }
 
         .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: rgb(2,114,94);
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            line-height: 1;
+            margin-bottom: 8px;
         }
 
         .stat-label {
-            color: #6c757d;
-            font-size: 0.95rem;
-            margin-top: 5px;
+            color: rgba(255,255,255,0.95);
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            gap: 30px;
             margin-bottom: 50px;
         }
 
         .photo-item {
             position: relative;
             overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             background-color: white;
         }
 
         .photo-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(2,114,94,0.25);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(2,114,94,0.3);
         }
 
         .photo-item a {
@@ -104,15 +96,15 @@
 
         .photo-item img {
             width: 100%;
-            height: 300px;
+            height: 320px;
             object-fit: cover;
             display: block;
-            transition: transform 0.5s ease, filter 0.3s ease;
+            transition: transform 0.6s ease, filter 0.3s ease;
         }
 
         .photo-item:hover img {
-            transform: scale(1.1);
-            filter: brightness(0.9);
+            transform: scale(1.15);
+            filter: brightness(0.85);
         }
 
         .photo-overlay {
@@ -121,7 +113,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(2,114,94,0.75);
+            background: linear-gradient(135deg, rgba(255,193,7,0.9) 0%, rgba(2,114,94,0.9) 100%);
             opacity: 0;
             transition: opacity 0.4s ease;
             display: flex;
@@ -136,17 +128,8 @@
 
         .view-icon {
             color: white;
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 300;
-        }
-
-        .view-text {
-            color: white;
-            font-size: 1.2rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 10px;
         }
 
         .overlay-content {
@@ -245,268 +228,52 @@
 @endsection
 @section('content')
 
+<!-- === Banner Section start === -->
+@include('frontend.pages.component.banner', [
+    'title' => $event->event_name,
+    'description' => Str::limit($event->event_description, 150) ?? 'Event Gallery',
+    'background' => asset('assets/uploads/events/'.$event->event_img)
+])
+<!-- ===  Banner Section End === -->
 
-
-                    <!-- === Gallery - detail Page === -->
+<!-- === Gallery Detail Page === -->
 <section class="detail-section">
         <div class="container">
-            <a href="{{ url('/gallery') }}" class="back-link">Back to Gallery</a>
+            <a href="{{ url('/gallery') }}" class="back-link">← Back to Gallery</a>
 
-            <h1 class="event-title">Children Day Celebration</h1>
-            <p class="event-description">
-                A joyful celebration of Children's Day featuring various outdoor activities, games, sports competitions, and creative activities. Children participated enthusiastically in races, drawing competitions, and team-building exercises, creating memorable moments filled with laughter and fun.
-            </p>
+            
 
-            <!-- <div class="stats-bar">
-                <div class="stat-item">
-                    <div class="stat-number">18</div>
-                    <div class="stat-label">Total Photos</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">150+</div>
-                    <div class="stat-label">Children Participated</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">Nov 2024</div>
-                    <div class="stat-label">Event Date</div>
-                </div>
-            </div> -->
-@foreach ($images as $value)
-
-
+            @if($images->count() > 0)
             <div class="photo-grid">
+                @foreach ($images as $value)
                 <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Children Day Celebration - Outdoor Activities">
-                        <img src="{{ asset('assets/uploads/galleryimg/'.$value->img) }}" alt="Children Day Event 1">
+                    <a href="{{ asset('assets/uploads/galleryimg/'.$value->img) }}" data-fancybox="gallery" data-caption="{{ $event->event_name }}">
+                        <img src="{{ asset('assets/uploads/galleryimg/'.$value->img) }}" alt="{{ $event->event_name }}">
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Students in Classroom Activities">
-                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Children Day Event 2">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Prize Distribution Ceremony">
-                        <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop" alt="Children Day Event 3">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Children Drawing and Art Activities">
-                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=300&fit=crop" alt="Children Drawing Activity">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Running Race Competition">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Children Running Race">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Winners Receiving Awards">
-                        <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop" alt="Prize Distribution">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Group Games and Team Activities">
-                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Children Playing Games">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Dance Performance by Students">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Group Dance Performance">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Sports and Athletic Events">
-                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=300&fit=crop" alt="Sports Competition">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Team Building Exercises">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Team Building Activity">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Volunteers with Children">
-                        <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop" alt="Children with Volunteers">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Creative Arts and Crafts Session">
-                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Creative Art Session">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Musical Chairs Game">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Musical Chairs">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Relay Race Event">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Relay Race">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Group Photo with All Participants">
-                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=300&fit=crop" alt="Group Photo Session">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Victory Celebration of Winners">
-                        <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop" alt="Winners Celebration">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Fun Activities and Entertainment">
-                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Fun Activities">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="photo-item">
-                    <a href="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Closing Ceremony and Farewell">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Closing Ceremony">
-                        <div class="photo-overlay">
-                            <div class="overlay-content">
-                                <div class="view-icon">+</div>
-                                <!-- <div class="view-text">View</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                @endforeach
             </div>
-            @endforeach
-            <div class="pagination-custom">
-                <button class="page-btn" disabled>‹</button>
-                <button class="page-btn active">1</button>
-                <button class="page-btn">2</button>
-                <button class="page-btn">3</button>
-                <button class="page-btn">›</button>
+            @else
+            <div class="text-center py-12">
+                <div class="inline-block p-4 bg-gray-100 rounded-full mb-4">
+                    <i class="fa-solid fa-images text-4xl text-gray-400"></i>
+                </div>
+                <h6 class="text-lg font-semibold mb-2">No images yet</h6>
+                <p class="text-gray-600">Images for this event will be added soon</p>
             </div>
+            @endif
         </div>
     </section>
-@endscetion
+@endsection
 
 @section('script')
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-     <!-- Fancybox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script>
         // Initialize Fancybox
         Fancybox.bind("[data-fancybox='gallery']", {

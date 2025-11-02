@@ -155,13 +155,15 @@
                
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="gallery-item">
-                         <a href="{{ url('/gallery-detail/'.$value->event_id) }}">
-                            <img src="{{ asset('assets/uploads/events/'.$value->event_img) }}" alt="Independence Day" class="gallery-img">
+                         <a href="{{ url('/gallery-detail/'.$value->id) }}">
+                            <img src="{{ asset('assets/uploads/events/'.$value->event_img) }}" alt="{{ $value->event_name }}" class="gallery-img">
                             <div class="gallery-overlay">
-                                <p class="gallery-caption">{{$value->event_name }}</p>
+                                <p class="gallery-caption">{{ $value->event_name }}</p>
                             </div>
                         </a>
-                        <div class="gallery-location">UP</div>
+                        @if($value->event_date)
+                        <div class="gallery-location">{{ date('M Y', strtotime($value->event_date)) }}</div>
+                        @endif
                     </div>
                 </div>
                 @endforeach

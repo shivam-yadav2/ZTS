@@ -7,22 +7,24 @@ use App\Models\GalleryEvent;
 use App\Models\HomeSlider;
 use App\Models\TeamCard;
 use App\Models\GalleryImage;
+use App\Models\ContactUs;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
     public function GetHomeSlider(){
         $data=HomeSlider::where('is_active',1)->get();
-        return view('frontend.pages.index2',compact('data'));
+        $coreMembers=CoreMember::limit(4)->get();
+        return view('frontend.pages.index2',compact('data', 'coreMembers'));
     }
 
     public function GetGalleryData(){
-        $data =GalleryEvent::select('event_name','event_img')->get();
+        $data = GalleryEvent::select('id','event_name','event_img','event_description','event_date')->get();
         return view('frontend.pages.gallery',compact('data'));
     }
 
     public function GetCoreMember(){
-        $info=TeamCard::where('type','coremember')->get();
+        $info=CoreMember::all();
         return view('frontend.team.core_member',compact('info'));
     }
 
@@ -38,8 +40,15 @@ class FrontendController extends Controller
 
     public function GetGalleryDetail($eventId)
     {
+        $event = GalleryEvent::findOrFail($eventId);
         $images = GalleryImage::where('event_id', $eventId)->get();
-        return view('frontend.pages.gallery_detail', compact('images'));
+        return view('frontend.pages.gallery_detail', compact('images', 'event'));
+    }
+
+    public function contact()
+    {
+        $contactInfo = ContactUs::first(); // Get first contact record
+        return view('frontend.contact', compact('contactInfo'));
     }
 
 }

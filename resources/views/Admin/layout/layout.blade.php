@@ -2,6 +2,8 @@
 <html lang="en" data-theme="light">
 @vite('resources/css/app.css')
     @include('admin.partials.head')
+    @yield('css')
+
 
 <body class="dark:bg-neutral-800 bg-neutral-100 dark:text-white">
 

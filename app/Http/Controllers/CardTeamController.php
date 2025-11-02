@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\TeamCard;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Validator;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
 
 class CardTeamController extends Controller
 {
@@ -41,12 +44,22 @@ class CardTeamController extends Controller
         $team->description = $request->msg;
         $team->type=$request->type;
 
-        // Handle image upload
+        // Handle image upload with Intervention Image
         if ($request->hasFile('img')) {
-            $file = $request->file('img');
-            $filename = time() . '.' . $file->getClientOriginalExtension();
-            $file->move(public_path('assets/uploads/teamcard'), $filename);
-            $team->img = $filename;
+            $image = $request->file('img');
+            $imageName = time() . '.webp';
+            $destinationPath = public_path('assets/uploads/teamcard');
+
+            // Create ImageManager with GD driver
+            $manager = new ImageManager(new Driver());
+
+            // Read, resize, encode, and save as WebP
+            $manager->read($image)
+                ->scale(width: 800) // maintain aspect ratio
+                ->toWebp(90)
+                ->save($destinationPath . '/' . $imageName);
+            
+            $team->img = $imageName;
         }
 
         $team->save();
@@ -74,7 +87,8 @@ class CardTeamController extends Controller
         $team->name = $request->name;
         $team->description = $request->msg;
         $team->type=$request->type;
-        // Handle image update
+        
+        // Handle image update with Intervention Image
         if ($request->hasFile('img')) {
             // Delete old image if exists
             $oldPath = public_path('assets/uploads/teamcard/' . $team->img);
@@ -82,10 +96,20 @@ class CardTeamController extends Controller
                 File::delete($oldPath);
             }
 
-            $file = $request->file('img');
-            $filename = time() . '.' . $file->getClientOriginalExtension();
-            $file->move(public_path('assets/uploads/teamcard'), $filename);
-            $team->img = $filename;
+            $image = $request->file('img');
+            $imageName = time() . '.webp';
+            $destinationPath = public_path('assets/uploads/teamcard');
+
+            // Create ImageManager with GD driver
+            $manager = new ImageManager(new Driver());
+
+            // Read, resize, encode, and save as WebP
+            $manager->read($image)
+                ->scale(width: 800) // maintain aspect ratio
+                ->toWebp(90)
+                ->save($destinationPath . '/' . $imageName);
+            
+            $team->img = $imageName;
         }
 
         $team->save();
@@ -159,7 +183,8 @@ class CardTeamController extends Controller
          $team->name = $request->name;
          $team->description = $request->msg;
          $team->type=$request->type;
-         // Handle image update
+         
+         // Handle image update with Intervention Image
          if ($request->hasFile('img')) {
              // Delete old image if exists
              $oldPath = public_path('assets/uploads/teamcard/' .$team->img);
@@ -167,10 +192,20 @@ class CardTeamController extends Controller
                  File::delete($oldPath);
              }
  
-             $file = $request->file('img');
-             $filename = time() . '.' . $file->getClientOriginalExtension();
-             $file->move(public_path('assets/uploads/teamcard'), $filename);
-             $team->img = $filename;
+             $image = $request->file('img');
+             $imageName = time() . '.webp';
+             $destinationPath = public_path('assets/uploads/teamcard');
+
+             // Create ImageManager with GD driver
+             $manager = new ImageManager(new Driver());
+
+             // Read, resize, encode, and save as WebP
+             $manager->read($image)
+                 ->scale(width: 800) // maintain aspect ratio
+                 ->toWebp(90)
+                 ->save($destinationPath . '/' . $imageName);
+             
+             $team->img = $imageName;
          }
  
          $team->save();
@@ -229,7 +264,8 @@ class CardTeamController extends Controller
          $team->name = $request->name;
          $team->description = $request->msg;
          $team->type=$request->type;
-         // Handle image update
+         
+         // Handle image update with Intervention Image
          if ($request->hasFile('img')) {
              // Delete old image if exists
              $oldPath = public_path('assets/uploads/teamcard/' .$team->img);
@@ -237,10 +273,20 @@ class CardTeamController extends Controller
                  File::delete($oldPath);
              }
  
-             $file = $request->file('img');
-             $filename = time() . '.' . $file->getClientOriginalExtension();
-             $file->move(public_path('assets/uploads/teamcard'), $filename);
-             $team->img = $filename;
+             $image = $request->file('img');
+             $imageName = time() . '.webp';
+             $destinationPath = public_path('assets/uploads/teamcard');
+
+             // Create ImageManager with GD driver
+             $manager = new ImageManager(new Driver());
+
+             // Read, resize, encode, and save as WebP
+             $manager->read($image)
+                 ->scale(width: 800) // maintain aspect ratio
+                 ->toWebp(90)
+                 ->save($destinationPath . '/' . $imageName);
+             
+             $team->img = $imageName;
          }
  
          $team->save();

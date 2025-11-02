@@ -15,29 +15,20 @@
                             <input type="text" name="event_name" class="form-control" value="{{ $data->event_name}}" required>
                         </div>
                         <div class="md:col-span-6 col-span-12">
-                            <label class="form-label">Event Image </label>
+                            <label class="form-label">Event Date</label>
+                            <input type="date" name="event_date" value="{{ $data->event_date }}" class="form-control">
+                        </div>
+                        <div class="md:col-span-12 col-span-12">
+                            <label class="form-label">Event Image</label>
                             <input class="border border-neutral-200 dark:border-neutral-600 w-full rounded-lg" type="file" name="event_img">
                         </div>
                         <div class="md:col-span-6 col-span-12">
+                            <label class="form-label">Current Image</label>
+                            <img src="{{ asset('assets/uploads/events/'.$data->event_img) }}" alt="Current Image" style="width:200px; height:100px; object-fit:cover;">
+                        </div>
+                        <div class="md:col-span-12 col-span-12">
                             <label class="form-label">Event description</label>
-                            <input type="text" name="event_description" class="form-control"  value="{{ $data->event_description }}"placeholder="" required>
-                        </div>
-
-                    
-                      
-                      
-                        <div class="md:col-span-6 col-span-12">
-                            <label class="form-label">Event date</label>
-                            <div class="flex">
-                                <input type="date" name="event_date" value="{{ $data->event_date }}" class="form-control grow rounded-se-none rounded-ee-none" placeholder="">
-                               
-                            </div>
-                        </div>
-
-                        <div class="md:col-span-6 col-span-12">
-                            <label class="form-label">Current Image </label>
-                            <img src="{{ asset('assets/uploads/events/'.$data->event_img) }}" alt="image" style="width:700px;height:100px;">
-
+                            <textarea name="event_description" class="form-control" rows="4" placeholder="Enter event description">{{ $data->event_description }}</textarea>
                         </div>
                         <div class="col-span-12">
                             <button class="btn btn-primary-600" type="submit">Update</button>

@@ -382,7 +382,6 @@
 
 @section('content')
 <!-- Team Header -->
- @section('content')
    @include('frontend.pages.component.banner', [
     'title' => 'Team Members',
     'description' => 'Passionate individuals dedicated to making a positive impact in our community',
@@ -393,21 +392,19 @@
 <section class="team-grid">
     <div class="container">
         <div class="row">
-            <!-- Member 1 -->
-             @foreach ($info as $value )
-            
-            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600">
+            @foreach ($info as $index => $value)
+            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="{{ $index * 50 }}">
                 <div class="member-card">
                     <div class="member-image-wrapper">
-                        <img src="{{asset('assets/uploads/teamcard/'.$value->img)}}" alt="Pooja Srivastav" class="member-photo">
+                        <img src="{{asset('assets/uploads/teamcard/'.$value->img)}}" alt="{{ $value->name }}" class="member-photo">
                         <div class="member-overlay"></div>
-                        <div class="member-number">01</div>
+                        <div class="member-number">{{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }}</div>
                     </div>
                     <div class="member-content">
                         <h3 class="member-name">{{ $value->name }}</h3>
                         <div class="member-divider"></div>
                         <p class="member-bio">
-{{ $value->description }}
+                            {{ $value->description }}
                         </p>
                     </div>
                     <div class="member-footer">
@@ -422,140 +419,6 @@
                 </div>
             </div>
             @endforeach
-            <!-- Member 2 -->
-            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                <div class="member-card">
-                    <div class="member-image-wrapper">
-                        <img src="{{asset('frontend_assets/images/members/member2.png')}}" alt="Sanjeev Mishra" class="member-photo">
-                        <div class="member-overlay"></div>
-                        <div class="member-number">02</div>
-                    </div>
-                    <div class="member-content">
-                        <h3 class="member-name">Sanjeev Mishra</h3>
-                        <div class="member-divider"></div>
-                        <p class="member-bio">
-                            Lots of privileged society who got ALFA, when times came to defend their society these ALFA never stood against wrong. This system runs for thousands of years and the habit of taking responsibility puts human civilization on top of the food chain.
-                        </p>
-                    </div>
-                    <div class="member-footer">
-                        <span class="member-tag">
-                            <i class="fas fa-briefcase"></i>
-                            Team Member
-                        </span>
-                        <a href="#" class="member-link">
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 3 -->
-            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                <div class="member-card">
-                    <div class="member-image-wrapper">
-                        <img src="{{asset('frontend_assets/images/members/member3.png')}}" alt="Santhosh P.P" class="member-photo">
-                        <div class="member-overlay"></div>
-                        <div class="member-number">03</div>
-                    </div>
-                    <div class="member-content">
-                        <h3 class="member-name">Santhosh P.P</h3>
-                        <div class="member-divider"></div>
-                        <p class="member-bio">
-                            Togetherness is a beautiful word and emotionally connected is the best form of mind. It's not only children but adults who need emotional attachment. They need attention, care like siblings. Let us share love and beauty of life equally.
-                        </p>
-                    </div>
-                    <div class="member-footer">
-                        <span class="member-tag">
-                            <i class="fas fa-briefcase"></i>
-                            Team Member
-                        </span>
-                        <a href="#" class="member-link">
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 4 -->
-            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-                <div class="member-card">
-                    <div class="member-image-wrapper">
-                        <img src="{{asset('frontend_assets/images/members/member4.png')}}" alt="Dr. Priyam Sameer Kamdar" class="member-photo">
-                        <div class="member-overlay"></div>
-                        <div class="member-number">04</div>
-                    </div>
-                    <div class="member-content">
-                        <h3 class="member-name">Dr. Priyam Sameer Kamdar</h3>
-                        <div class="member-divider"></div>
-                        <p class="member-bio">
-                            आदत रता है तैयारी, बदलो अपनी रोप... Change is inevitable, one who adapts it positively, wins the world. Having a positive attitude, thoughtfulness and mindset can really make a difference in life.
-                        </p>
-                    </div>
-                    <div class="member-footer">
-                        <span class="member-tag">
-                            <i class="fas fa-briefcase"></i>
-                            Team Member
-                        </span>
-                        <a href="#" class="member-link">
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 5 -->
-            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-                <div class="member-card">
-                    <div class="member-image-wrapper">
-                        <img src="{{asset('frontend_assets/images/members/member5.png')}}" alt="Chandra Shekhar Shukla" class="member-photo">
-                        <div class="member-overlay"></div>
-                        <div class="member-number">05</div>
-                    </div>
-                    <div class="member-content">
-                        <h3 class="member-name">Chandra Shekhar Shukla</h3>
-                        <div class="member-divider"></div>
-                        <p class="member-bio">
-                            कताल करता जीवे कर सहारा बनता है, बमता है खुशी या और सीमा है। जीवन पर काम हर किसी को करम, जिंदगी पूर्ण प्रवास। Life is about creating meaningful connections and spreading joy to everyone we meet.
-                        </p>
-                    </div>
-                    <div class="member-footer">
-                        <span class="member-tag">
-                            <i class="fas fa-briefcase"></i>
-                            Team Member
-                        </span>
-                        <a href="#" class="member-link">
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 6 -->
-            <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
-                <div class="member-card">
-                    <div class="member-image-wrapper">
-                        <img src="{{asset('frontend_assets/images/members/member6.png')}}" alt="Seema Yadav" class="member-photo">
-                        <div class="member-overlay"></div>
-                        <div class="member-number">06</div>
-                    </div>
-                    <div class="member-content">
-                        <h3 class="member-name">Seema Yadav</h3>
-                        <div class="member-divider"></div>
-                        <p class="member-bio">
-                            सब के दिलदार जब आती है, कार को की उदारता है। जिंदगी को जैसे प्रभावै है, छोटे में तकदीर बनते है। When we approach life with kindness and generosity, we create beautiful relationships and meaningful impacts.
-                        </p>
-                    </div>
-                    <div class="member-footer">
-                        <span class="member-tag">
-                            <i class="fas fa-briefcase"></i>
-                            Team Member
-                        </span>
-                        <a href="#" class="member-link">
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>

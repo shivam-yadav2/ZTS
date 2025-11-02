@@ -115,6 +115,11 @@ class CoreMemberController extends Controller
                 ->scale(width: 800) // maintain aspect ratio
                 ->toWebp(90)
                 ->save($destinationPath . '/' . $imageName);
+
+            // Delete old image if it exists
+            if ($data->img && file_exists(public_path('assets/uploads/CoreMember/'.$data->img))) {
+                unlink(public_path('assets/uploads/CoreMember/'.$data->img));
+            }
         }
 
         // Save records in DATABASE

@@ -14,11 +14,20 @@
                     <!-- Event Select -->
                     <div class="col-span-12">
                         <label class="block text-sm font-medium text-white mb-2">Event</label>
+                        @if($events->count() > 0)
                         <select name="event_id" class="w-full rounded-lg  focus:border-white focus:ring focus:ring-blue-200 text-gray-700 bg-transparent">
                             @foreach ($events as $value)
                                 <option value="{{ $value->id }}">{{ $value->event_name }}</option>
                             @endforeach
                         </select>
+                        @else
+                        <div class="text-center py-8">
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">No events found. Please create an event first.</p>
+                            <a href="{{ url('admin/events/create') }}" class="inline-flex items-center gap-2 btn bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-6 py-3">
+                                <i class="fa-solid fa-plus"></i> Create Event
+                            </a>
+                        </div>
+                        @endif
                     </div>
 
                     <!-- Event Image Upload -->
@@ -30,11 +39,13 @@
                     </div>
 
                     <!-- Submit -->
+                    @if($events->count() > 0)
                     <div class="pt-3  col-span-6">
                         <button type="submit" class=" w-full btn bg-primary-700 hover:text-white rounded-lg px-6 py-[14px]">
-                            Submit
+                            Upload Images
                         </button>
                     </div>
+                    @endif
                 </div>
             </div>
         </form>

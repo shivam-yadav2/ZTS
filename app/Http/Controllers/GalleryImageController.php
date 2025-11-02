@@ -56,8 +56,9 @@ class GalleryImageController extends Controller
 
     public function showImg($eventId)
     {
+        $event = GalleryEvent::findOrFail($eventId);
         $images = GalleryImage::where('event_id', $eventId)->get();
-        return view('admin.pages.GalleryImg.GalleryImgList', compact('images'));
+        return view('admin.pages.GalleryImg.GalleryImgList', compact('images', 'event'));
     }
     public function delete($id) 
     {

@@ -35,38 +35,75 @@
                             </p>
                         </div>
                         <div class="contact-main__inner cta">
+                            <!-- Location -->
                             <div class="contact-main__single">
                                 <div class="thumb">
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div class="content">
                                     <h6>Location</h6>
-                                    <p><a href="#" target="_blank">
+                                    @if($contactInfo && $contactInfo->location)
+                                        @foreach($contactInfo->location as $location)
+                                            <p><a href="https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8" target="_blank">
+                                                {{ $location }}
+                                            </a></p>
+                                        @endforeach
+                                    @else
+                                        <p><a href="https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8" target="_blank">
                                             20/ 143 Indira Nagar, near Ujala Apartment, Lucknow 226016
-                                        </a>
-                                    </p>
+                                        </a></p>
+                                    @endif
                                 </div>
                             </div>
+
+                            <!-- Phone -->
                             <div class="contact-main__single">
                                 <div class="thumb">
                                     <i class="fa-solid fa-phone"></i>
                                 </div>
                                 <div class="content">
                                     <h6>Phone</h6>
-                                    <p><a href="tel:2305-587-3407">+91 5224105853</a></p>
-                                    <!--<p><a href="tel:2305-587-3407">+236 (456) 896 22</a></p>-->
+                                    @if($contactInfo && $contactInfo->phone)
+                                        @foreach($contactInfo->phone as $phone)
+                                            <p><a href="tel:{{ preg_replace('/[^0-9]/', '', $phone) }}">{{ $phone }}</a></p>
+                                        @endforeach
+                                    @else
+                                        <p><a href="tel:5224105853">+91 5224105853</a></p>
+                                    @endif
                                 </div>
                             </div>
+
+                            <!-- Email -->
                             <div class="contact-main__single">
                                 <div class="thumb">
                                     <i class="fa-solid fa-envelope"></i>
                                 </div>
                                 <div class="content">
                                     <h6>Email</h6>
-                                    <!--<p><a href="mailto:support@example.com">example@email.com</a></p>-->
-                                    <p><a href="mailto:support@example.com">zindagitujhesalaam@gmail.com</a></p>
+                                    @if($contactInfo && $contactInfo->email)
+                                        @foreach($contactInfo->email as $email)
+                                            <p><a href="mailto:{{ $email }}">{{ $email }}</a></p>
+                                        @endforeach
+                                    @else
+                                        <p><a href="mailto:zindagitujhesalaam@gmail.com">zindagitujhesalaam@gmail.com</a></p>
+                                    @endif
                                 </div>
                             </div>
+
+                            <!-- WhatsApp -->
+                            @if($contactInfo && $contactInfo->whatsapp_number)
+                            <div class="contact-main__single">
+                                <div class="thumb">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="content">
+                                    <h6>WhatsApp</h6>
+                                    @foreach($contactInfo->whatsapp_number as $whatsapp)
+                                        <p><a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $whatsapp) }}" target="_blank">{{ $whatsapp }}</a></p>
+                                    @endforeach
+                                </div>
+                            </div>
+                            @endif
                             <div class="contact-main__single">
                                 <div class="thumb">
                                     <i class="fa-solid fa-share-nodes"></i>

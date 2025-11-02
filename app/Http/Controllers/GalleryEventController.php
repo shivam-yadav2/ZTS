@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\GalleryEvent;
+use App\Models\GalleryImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Intervention\Image\ImageManager;
@@ -16,7 +17,7 @@ class GalleryEventController extends Controller
      */
     public function index()
     {
-        $info=GalleryEvent::all();
+        $info=GalleryEvent::with('images')->get();
         return view('admin.pages.GalleryEvent.GalleryList',compact('info'));
     }
 
@@ -112,6 +113,11 @@ class GalleryEventController extends Controller
         $imageName = $data->event_img; // keep old image by default
 
         if ($request->hasFile('event_img')) {
+            // Delete old image if exists
+            if ($data->event_img && file_exists(public_path('assets/uploads/events/'.$data->event_img))) {
+                unlink(public_path('assets/uploads/events/'.$data->event_img));
+            }
+
             $image      = $request->file('event_img');
             $imageName  = time() . '.webp';
             $destinationPath = public_path('assets/uploads/events');
@@ -145,20 +151,28 @@ class GalleryEventController extends Controller
      */
     public function destroy(string $id)
     {
+        $data = GalleryEvent::findOrFail($id);
 
-    $data = GalleryEvent::findOrFail($id);
+        // Delete event image file from folder (if exists)
+        $imagePath = public_path('assets/uploads/events/' . $data->event_img);
+        if (file_exists($imagePath) && is_file($imagePath)) {
+            unlink($imagePath);
+        }
 
-    // Delete image file from folder (if exists)
-    $imagePath = public_path('assets/uploads/events/' . $data->event_img);
-    if (file_exists($imagePath) && is_file($imagePath)) {
-        unlink($imagePath);
-    }
+        // Delete all gallery images associated with this event
+        $galleryImages = GalleryImage::where('event_id', $id)->get();
+        foreach ($galleryImages as $image) {
+            $galleryImagePath = public_path('assets/uploads/galleryimg/' . $image->img);
+            if (file_exists($galleryImagePath) && is_file($galleryImagePath)) {
+                unlink($galleryImagePath);
+            }
+            $image->delete();
+        }
 
-    // Delete record from DB
-    $data->delete();
+        // Delete record from DB
+        $data->delete();
 
-    return redirect(url('admin/events'))->with('success', 'Record deleted successfully');
-
+        return redirect(url('admin/events'))->with('success', 'Record deleted successfully');
     }
 
 

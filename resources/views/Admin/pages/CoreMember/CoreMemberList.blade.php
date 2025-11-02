@@ -27,15 +27,13 @@
                                     class="!bg-white dark:!bg-neutral-700 border-b border-neutral-200 dark:border-neutral-600">
                                     Description </th>
                                 <th scope="col"
-                                  colspan="2"  class="!bg-white dark:!bg-neutral-700 border-b border-neutral-200 dark:border-neutral-600">
+                                    class="!bg-white dark:!bg-neutral-700 border-b border-neutral-200 dark:border-neutral-600">
                                     Action</th>
                               
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($info as $value )
-                            
-                         
+                            @forelse ($info as $value )
                             <tr class="odd:bg-neutral-100 dark:odd:bg-neutral-600">
                                 <td>
                                     <div class="flex items-center">
@@ -54,17 +52,25 @@
                                 <td>{{ $value->description }}</td>
                               
                                 <td class="text-center">
-                                    
-
-                    <span
-
-class=""><button type="button" class="bg-info-100 dark:bg-info-600/25 text-success-600 dark:text-success-400 px-8 py-1.5 rounded-full font-medium text-sm"><a href="{{ url('admin/coremember/destroy/'.$value->id) }}">Delete</a>                        </button></span>
-    
-                                    <span
-                                        class="bg-success-100 dark:bg-success-600/25 text-success-600 dark:text-success-400 px-8 py-1.5 rounded-full font-medium text-sm"><a href="{{ url('admin/coremember/edit/'.$value->id) }}">Edit</a></span>
+                                    <span class="mx-1">
+                                        <button type="button" class="bg-danger-100 dark:bg-danger-600/25 text-danger-600 dark:text-danger-400 px-6 py-1.5 rounded-full font-medium text-sm">
+                                            <a href="{{ url('admin/coremember/destroy/'.$value->id) }}" onclick="return confirm('Are you sure you want to delete this core member?')">Delete</a>
+                                        </button>
+                                    </span>
+                                    <span class="mx-1">
+                                        <button type="button" class="bg-success-100 dark:bg-success-600/25 text-success-600 dark:text-success-400 px-6 py-1.5 rounded-full font-medium text-sm">
+                                            <a href="{{ url('admin/coremember/edit/'.$value->id) }}">Edit</a>
+                                        </button>
+                                    </span>
                                 </td>
                             </tr>
-                            @endforeach
+                            @empty
+                            <tr>
+                                <td colspan="4" class="text-center py-8 text-neutral-600 dark:text-neutral-400">
+                                    No core members found. <a href="{{ url('admin/coremember/CoreMemberForm') }}" class="text-primary-600 hover:underline">Add one now</a>
+                                </td>
+                            </tr>
+                            @endforelse
                         </tbody>
                     </table>
                 </div>

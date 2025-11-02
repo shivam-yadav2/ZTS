@@ -1988,6 +1988,8 @@
                                                 {{ $words[4] ?? '' }}
                                             </h1>
 
+                                           
+
                                         </div>
                                     </div>
                                 </div>
@@ -2274,10 +2276,10 @@
             </div>
 
             <div class="cta-container">
-                <button class="btn cta-btn">
+                <a href="{{ url('/gallery') }}" class="btn cta-btn">
                     <i class="fas fa-book-reader"></i>
                     <span>Read Our Success Stories</span>
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -2298,188 +2300,41 @@
                     </div>
                 </div>
             </div>
+            @if($coreMembers->count() > 0)
             <div class="row gutter-40">
+                @foreach ($coreMembers as $index => $member)
                 <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{ $index * 100 }}">
                         <div class="team__single van-tilt">
                             <div class="team__single-thumb">
-                                <a href="team-details.html">
-                                    <img src="{{ asset('frontend_assets/images/members/member1.png') }}" alt="Image">
+                                <a href="#">
+                                    <img src="{{ asset('assets/uploads/CoreMember/'.$member->img) }}" alt="{{ $member->name }}">
                                 </a>
-                                <!--<div class="team__icons">-->
-                                <!--    <div class="team__single-content__icon">-->
-                                <!--        <i class="fa-solid fa-plus"></i>-->
-                                <!--    </div>-->
-                                <!--    <div class="team__single__thumb-social">-->
-                                <!--        <ul>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-facebook-f"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-twitter"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-instagram"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-behance"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--        </ul>-->
-                                <!--    </div>-->
-                                <!--</div>-->
                             </div>
                             <div class="team__single-content">
-                                <h6><a href="team-details.html">Pooja Srivastav</a></h6>
-                                <p>Volunteer</p>
+                                <h6>{{ $member->name }}</h6>
+                                @if($member->designation)
+                                <p>{{ $member->designation }}</p>
+                                @else
+                                <p>Core Member</p>
+                                @endif
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div class="team__single van-tilt">
-                            <div class="team__single-thumb">
-                                <a href="team-details.html">
-                                    <img src="{{ asset('frontend_assets/images/members/member2.png') }}" alt="Image">
-                                </a>
-                                <!--<div class="team__icons">-->
-                                <!--    <div class="team__single-content__icon">-->
-                                <!--        <i class="fa-solid fa-plus"></i>-->
-                                <!--    </div>-->
-                                <!--    <div class="team__single__thumb-social">-->
-                                <!--        <ul>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-facebook-f"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-twitter"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-instagram"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-behance"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--        </ul>-->
-                                <!--    </div>-->
-                                <!--</div>-->
-                            </div>
-                            <div class="team__single-content">
-                                <h6><a href="team-details.html">Sanjeev Mishra</a></h6>
-                                <p>Volunteer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                        <div class="team__single van-tilt">
-                            <div class="team__single-thumb">
-                                <a href="team-details.html">
-                                    <img src="{{ asset('frontend_assets/images/members/member3.png') }}" alt="Image">
-                                </a>
-                                <!--<div class="team__icons">-->
-                                <!--    <div class="team__single-content__icon">-->
-                                <!--        <i class="fa-solid fa-plus"></i>-->
-                                <!--    </div>-->
-                                <!--    <div class="team__single__thumb-social">-->
-                                <!--        <ul>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-facebook-f"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-twitter"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-instagram"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-behance"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--        </ul>-->
-                                <!--    </div>-->
-                                <!--</div>-->
-                            </div>
-                            <div class="team__single-content">
-                                <h6><a href="team-details.html">Santhosh PP</a></h6>
-                                <p>Volunteer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="team__single-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
-                        <div class="team__single van-tilt">
-                            <div class="team__single-thumb">
-                                <a href="team-details.html">
-                                    <img src="{{ asset('frontend_assets/images/members/member4.png') }}" alt="Image">
-                                </a>
-                                <!--<div class="team__icons">-->
-                                <!--    <div class="team__single-content__icon">-->
-                                <!--        <i class="fa-solid fa-plus"></i>-->
-                                <!--    </div>-->
-                                <!--    <div class="team__single__thumb-social">-->
-                                <!--        <ul>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-facebook-f"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-twitter"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-instagram"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--            <li>-->
-                                <!--                <a href="index.html">-->
-                                <!--                    <i class="fa-brands fa-behance"></i>-->
-                                <!--                </a>-->
-                                <!--            </li>-->
-                                <!--        </ul>-->
-                                <!--    </div>-->
-                                <!--</div>-->
-                            </div>
-                            <div class="team__single-content">
-                                <h6><a href="team-details.html">Dr. Priyam Sameer..</a></h6>
-                                <p>Volunteer</p>
-                            </div>
-                        </div>
-                    </div>
+                @endforeach
+            </div>
+            @else
+            <div class="row">
+                <div class="col-12 text-center py-5">
+                    <p class="text-muted">No core members to display</p>
                 </div>
             </div>
+            @endif
             <div class="row">
                 <div class="col-12">
                     <div class="section__cta cta text-center">
-                        <a href="our-team.html" aria-label="our team" title="our team" class="btn--primary">View All
+                        <a href="{{ url('/about/team/core_member') }}" aria-label="our team" title="our team" class="btn--primary">View All
                             <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -2706,7 +2561,7 @@
                             lives in your community.
                         </p>
                         <div class="text-center">
-                            <button class="btn action-btn btn-volunteer">Volunteer</button>
+                            <a href="{{ url('/contact') }}" class="btn action-btn btn-volunteer">Volunteer</a>
                         </div>
                     </div>
                 </div>
@@ -2722,7 +2577,7 @@
                             lasting impact.
                         </p>
                         <div class="text-center">
-                            <button class="btn action-btn btn-partner">Partner</button>
+                            <a href="{{ url('/contact') }}" class="btn action-btn btn-partner">Partner</a>
                         </div>
                     </div>
                 </div>
@@ -2738,7 +2593,7 @@
                             makes a difference.
                         </p>
                         <div class="text-center">
-                            <button class="btn action-btn btn-contribute">Contribute</button>
+                            <a href="{{ url('/contact') }}" class="btn action-btn btn-contribute">Contribute</a>
                         </div>
                     </div>
                 </div>
@@ -2819,7 +2674,7 @@
                         <h3 class="program-title">Phone-a-Friend Helpline</h3>
                         <p class="program-description">24/7 confidential emotional support from trained counselors who care.
                             Reach out anytime, anywhere.</p>
-                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ url('/campaign/phone-a-friend') }}" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -2839,7 +2694,7 @@
                         <h3 class="program-title">Counseling Services</h3>
                         <p class="program-description">Individual, family, and group sessions with licensed professionals to
                             address your unique needs.</p>
-                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ url('/contact') }}" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -2859,7 +2714,7 @@
                         <h3 class="program-title">Workshops & Awareness</h3>
                         <p class="program-description">Life skills, stress management, and mindfulness programs to build
                             resilience and well-being.</p>
-                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ url('/gallery') }}" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -2879,7 +2734,7 @@
                         <h3 class="program-title">Peer Support Groups</h3>
                         <p class="program-description">Safe spaces to share experiences and build resilience with others on
                             similar journeys.</p>
-                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ url('/contact') }}" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -2899,7 +2754,7 @@
                         <h3 class="program-title">Digital Wellness Tools</h3>
                         <p class="program-description">Online counseling and self-assessment tools for accessible,
                             convenient mental health support.</p>
-                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ url('/campaign/phone-a-friend') }}" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -2919,16 +2774,16 @@
                         <h3 class="program-title">Training & Capacity Building</h3>
                         <p class="program-description">Equip teachers, parents, and leaders as mental health advocates in
                             their communities.</p>
-                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ url('/contact') }}" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- CTA Section -->
             <div class="programs-cta">
-                <button class="btn-explore">
+                <a href="{{ url('/contact') }}" class="btn-explore">
                     <i class="fas fa-compass"></i>Explore All Programs
-                </button>
+                </a>
             </div>
         </div>
     </section>
