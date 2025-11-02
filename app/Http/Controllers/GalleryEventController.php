@@ -36,8 +36,8 @@ class GalleryEventController extends Controller
        
         $validator = Validator::make($request->all(), [
             'event_name'        => 'required|min:5|max:200',
-            'event_description' => 'required|min:10|max:500',
-            'event_date'        => 'required|date',
+            'event_description' => 'nullable|min:10|max:500',
+            'event_date'        => 'nullable|date',
             'event_img'         => 'required|image|mimes:jpeg,jpg,webp,png',
         ]);
         

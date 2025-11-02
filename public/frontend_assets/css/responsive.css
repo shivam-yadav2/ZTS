@@ -213,10 +213,10 @@
     line-height: 34px;
   }
   .sub-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .cta {
-    margin-top: 55px;
+    margin-top: 40px;
   }
   .main-pagination {
     margin-top: 60px;
@@ -262,7 +262,7 @@
             padding-inline-end: 0px !important;
   }
   .common-banner .sub-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .banner-two .banner-two__slider-content h1 {
     max-width: 100%;

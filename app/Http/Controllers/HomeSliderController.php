@@ -24,9 +24,9 @@ class HomeSliderController extends Controller
             'img' => 'required|min:5|max:2048|image|mimes:jpeg,jpg,webp,png',
             'text' => 'required|min:10|max:500',
             'sub_text' => 'required|min:5',
-            'btn_text' => 'required',
-            'btn_url' => 'required',
-            'm_img' => 'required|image|mimes:jpeg,jpg,webp,png'
+            'btn_text' => 'nullable',
+            'btn_url' => 'nullable',
+            'm_img' => 'nullable|image|mimes:jpeg,jpg,webp,png'
         ]);
 
       
@@ -34,8 +34,9 @@ class HomeSliderController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        dd($request->all());
-        $imageName = null;
+   
+        $imageName = null;  
+        $imageName2 = null;
 
         if ($request->hasFile('img')) {
             $image = $request->file('img');
@@ -130,13 +131,14 @@ public function slideredit($id){
     $info=HomeSlider::find($id);
 
     $validator = Validator::make($request->all(), [
-        'img' => 'nullable|min:5|max:200|image|mimes:jpeg,jpg,webp,png',
+        'img' => 'nullable|image|mimes:jpeg,jpg,webp,png|max:2048',  // 2 MB limit
         'text' => 'required|min:10|max:500',
         'sub_text' => 'required|min:5',
-        'btn_text' => 'required',
-        'btn_url' => 'required',
-        'm_img' => 'nullable|image|mimes:jpeg,jpg,webp,png'
+        'btn_text' => 'nullable',
+        'btn_url' => 'nullable',
+        'm_img' => 'nullable|image|mimes:jpeg,jpg,webp,png|max:2048'
     ]);
+    
 
   
     if ($validator->fails()) {
@@ -148,36 +150,30 @@ $imageName2 = $info->mobile_img;  // default to existing mobile image
 
    
 
-    if ($request->hasFile('img')) {
-        $image = $request->file('img');
-        $imageName = time() . '.webp';
-        $destinationPath = public_path('assets/uploads/homeslider');
+if ($request->hasFile('img')) {
+    $image = $request->file('img');
+    $imageName = uniqid('main_') . '.webp';
+    $destinationPath = public_path('assets/uploads/homeslider');
 
-        // Create ImageManager with GD driver
-        $manager = new ImageManager(new Driver());
+    $manager = new ImageManager(new Driver());
+    $manager->read($image)
+        ->scale(width: 800)
+        ->toWebp(90)
+        ->save($destinationPath . '/' . $imageName);
+}
 
-        // Read, resize, encode, and save as WebP
-        $manager->read($image)
-            ->scale(width: 800) // maintain aspect ratio
-            ->toWebp(90)
-            ->save($destinationPath . '/' . $imageName);
-    }
+if ($request->hasFile('m_img')) {
+    $image = $request->file('m_img');
+    $imageName2 = uniqid('mobile_') . '.webp';
+    $destinationPath = public_path('assets/uploads/homeslider');
 
+    $manager = new ImageManager(new Driver());
+    $manager->read($image)
+        ->scale(width: 800)
+        ->toWebp(90)
+        ->save($destinationPath . '/' . $imageName2);
+}
 
-    if ($request->hasFile('m_img')) {
-        $image = $request->file('m_img');
-        $imageName2 = time() . '.webp';
-        $destinationPath = public_path('assets/uploads/homeslider');
-
-        // Create ImageManager with GD driver
-        $manager = new ImageManager(new Driver());
-
-        // Read, resize, encode, and save as WebP
-        $manager->read($image)
-            ->scale(width: 800) // maintain aspect ratio
-            ->toWebp(90)
-            ->save($destinationPath . '/' . $imageName2);
-    }
 
     // Save records in DATABASE
     $info->update([

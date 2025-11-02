@@ -1702,12 +1702,12 @@ div {
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
-  font-family: var(--caveat);
+  /*font-family: var(--caveat);*/
   color: var(--base-color);
   font-size: 20px;
   line-height: 34px;
   margin-top: -8px;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .cta {
@@ -4605,7 +4605,7 @@ padding: 0px 30px;
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
-  font-family: var(--caveat);
+  /*font-family: var(--caveat);*/
   color: var(--base-color);
   font-size: 20px;
   line-height: 34px;
@@ -13313,7 +13313,7 @@ padding: 0px 30px;
   font-size: 18px;
 }
 .pg-four .sub-title {
-  font-family: "Edu VIC WA NT Beginner", cursive;
+  /*font-family: "Edu VIC WA NT Beginner", cursive;*/
   font-size: 18px;
   line-height: 28px;
   margin-top: -8px;

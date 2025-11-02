@@ -4,6 +4,7 @@ use App\Http\Controllers\CardTeamController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CoreMemberController;
 use App\Http\Controllers\EnquiryController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\GalleryImageController;
 use App\Http\Controllers\GuidingPrincipleController;
 use App\Http\Controllers\HomeSliderController;
@@ -148,14 +149,14 @@ Route::prefix('admin')->middleware('AdminLogin')->group(function () {
 
 //Frontend Pages Routes
 Route::view('/index2', 'frontend.pages.index');
-Route::view('/', 'frontend.pages.index2');
+// Route::view('/', 'frontend.pages.index2');
 Route::view('/contact', 'frontend.contact');
 
 //About Us Page Routes
 Route::view('/about/guiding_principle', 'frontend.guiding_principle');
-Route::view('/about/team/core_member', 'frontend.team.core_member');
+// Route::view('/about/team/core_member', 'frontend.team.core_member');
 Route::view('/about/team/influencer', 'frontend.team.influencer');
-Route::view('/about/team/board', 'frontend.team.board');
+// Route::view('/about/team/board', 'frontend.team.board');
 Route::view('/about/team/member', 'frontend.team.member');
 
 Route::view('/about/journey/human_first','frontend.journey.human_first');
@@ -170,6 +171,16 @@ Route::view('/campaign/responsible-india','frontend.campaign.responsible_india')
 Route::view('/campaign/be-a-hero','frontend.campaign.be_a_hero');
 
         //Gallery Page Routes
- Route::view('/gallery','frontend.pages.gallery');
- Route::view('/gallery-detail','frontend.pages.gallery_detail');
+//  Route::view('/gallery','frontend.pages.gallery');
+//  Route::view('/gallery-detail','frontend.pages.gallery_detail');
 
+
+
+
+//  Frontend get data routes
+Route::get('/',[FrontendController::class,'GetHomeSlider']);
+Route::get('/gallery',[FrontendController::class,'GetGalleryData']);
+Route::get('/gallery-detail/{id}',[FrontendController::class,'GetGalleryDetail']);
+Route::get('/about/team/core_member',[FrontendController::class,'GetCoreMember']);
+Route::get('/about/team/board',[FrontendController::class,'GetAdvisoryData']);
+Route::get('/about/team/member',[FrontendController::class,'GetMemberData']);

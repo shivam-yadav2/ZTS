@@ -244,120 +244,7 @@
     </style>
 @endsection
 @section('content')
-<!-- === Banner Section start === -->
-    <section class="banner-two">
-         <div class="banner-two__slider swiper">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide1.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide2.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9  col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide3.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="banner-two__slider-single">
-                     <div class="banner-two__slider-bg" data-background="{{asset('frontend_assets/images/slide4.jpg')}}">
-                     </div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-12 col-md-9 col-lg-7 col-xxl-6">
-                              <div class="banner-two__slider-content">
-                                 <span class="sub-title"><i class="icon-donation"></i>Start Contributing poor
-                                    people</span>
-                                 <h1>Giving help <br>
-                                    To Those <span class="bottom-line">peoples</span>
-                                    Who Need It.
-                                 </h1>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="slider-navigation d-none d-md-flex">
-            <button type="button" aria-label="prev slide" title="prev slide" class="prev-banner slider-btn">
-               <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button type="button" aria-label="next slide" title="next slide"
-               class="next-banner slider-btn slider-btn-next">
-               <i class="fa-solid fa-arrow-right"></i>
-            </button>
-         </div>
-         <div class="shape">
-            <img src="{{asset('frontend_assets/images/shape.png')}}" alt="Image">
-         </div>
-         <div class="shape-left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-            <img src="{{asset('frontend_assets/images/banner/banner-two-shape.png')}}" alt="Image">
-         </div>
-         <div class="sprade-shape">
-            <img src="{{asset('frontend_assets/images/sprade-base.png')}}" alt="Image" class="base-img" data-aos="zoom-in"
-               data-aos-duration="1000">
-         </div>
-         <div class="unity">
-            <img src="{{asset('frontend_assets/images/unity.png')}}" alt="Image">
-         </div>
-    </section>
-      <!-- ===  Banner Section End === -->
+
 
 
                     <!-- === Gallery - detail Page === -->
@@ -384,11 +271,13 @@
                     <div class="stat-label">Event Date</div>
                 </div>
             </div> -->
+@foreach ($images as $value)
+
 
             <div class="photo-grid">
                 <div class="photo-item">
                     <a href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=900&fit=crop" data-fancybox="gallery" data-caption="Children Day Celebration - Outdoor Activities">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Children Day Event 1">
+                        <img src="{{ asset('assets/uploads/galleryimg/'.$value->img) }}" alt="Children Day Event 1">
                         <div class="photo-overlay">
                             <div class="overlay-content">
                                 <div class="view-icon">+</div>
@@ -602,7 +491,7 @@
                     </a>
                 </div>
             </div>
-
+            @endforeach
             <div class="pagination-custom">
                 <button class="page-btn" disabled>‹</button>
                 <button class="page-btn active">1</button>

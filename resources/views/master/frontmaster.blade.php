@@ -89,9 +89,9 @@
                                                             <li>
                                                                 <a href="/about/team/core_member">Core Members</a>
                                                             </li>
-                                                            <li>
-                                                                <a href="/about/team/influencer">Leadership Influencers</a>
-                                                            </li>
+                                                            <!--<li>-->
+                                                            <!--    <a href="/about/team/influencer">Leadership Influencers</a>-->
+                                                            <!--</li>-->
                                                             <li>
                                                                 <a href="/about/team/board">Advisory Board</a>
                                                             </li>
@@ -338,14 +338,16 @@
                             <div class="footer-two__widget-content footer-two__widget-content--contact">
                                 <ul>
                                     <li><a href="https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8" target="_blank"><i
-                                                class="fa-solid fa-location-dot"></i>455 West Orchard Street Kings
-                                            Mountain, NC 280867</a>
+                                                class="fa-solid fa-location-dot"></i>20/ 143 Indira Nagar 
+Near Ujala Apartment 
+Lucknow 226016</a>
                                     </li>
-                                    <li><a href="tel:2305-587-3407"><i class="fa-solid fa-phone"></i>+088 (246)
-                                            642-27-10</a>
+                                    <li><a href="tel:5224105853"><i class="fa-solid fa-phone"></i>+91 5224105853</a>
                                     </li>
-                                    <li><a href="mailto:support@example.com"><i
-                                                class="fa-regular fa-envelope"></i>example@email.com</a></li>
+                                    <li><a href="mailto:zindagitujhesalaam@gmail.com
+"><i
+                                                class="fa-regular fa-envelope"></i>zindagitujhesalaam@gmail.com
+</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -357,8 +359,7 @@
                     <div class="row align-items-center gutter-12">
                         <div class="col-12 col-lg-6">
                             <div class="footer-two__copyright-inner text-center text-lg-start">
-                                <p>Copyright &copy; <span id="copyrightYear"></span> <a
-                                        href="index.html">Charifund</a>.
+                                <p>Copyright &copy; <span id="copyrightYear"></span>
                                     All rights
                                     reserved.
                                 </p>

@@ -1,5 +1,18 @@
 @extends('master.frontmaster')
 
+@section('css')
+
+<style>
+    
+  .cta_new {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 250px;
+}
+</style>
+
+@endsection
+
 @section('content')
    @include('frontend.pages.component.banner', [
     'title' => 'Contact Us',
@@ -28,9 +41,8 @@
                                 </div>
                                 <div class="content">
                                     <h6>Location</h6>
-                                    <p><a href="https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8" target="_blank">
-                                            55 Main street, 2nd block,
-                                            Melbourne, Australia
+                                    <p><a href="#" target="_blank">
+                                            20/ 143 Indira Nagar, near Ujala Apartment, Lucknow 226016
                                         </a>
                                     </p>
                                 </div>
@@ -41,8 +53,8 @@
                                 </div>
                                 <div class="content">
                                     <h6>Phone</h6>
-                                    <p><a href="tel:2305-587-3407">+1 (368) 567 89 54 </a></p>
-                                    <p><a href="tel:2305-587-3407">+236 (456) 896 22</a></p>
+                                    <p><a href="tel:2305-587-3407">+91 5224105853</a></p>
+                                    <!--<p><a href="tel:2305-587-3407">+236 (456) 896 22</a></p>-->
                                 </div>
                             </div>
                             <div class="contact-main__single">
@@ -51,8 +63,8 @@
                                 </div>
                                 <div class="content">
                                     <h6>Email</h6>
-                                    <p><a href="mailto:support@example.com">example@email.com</a></p>
-                                    <p><a href="mailto:support@example.com">charifund@email.com</a></p>
+                                    <!--<p><a href="mailto:support@example.com">example@email.com</a></p>-->
+                                    <p><a href="mailto:support@example.com">zindagitujhesalaam@gmail.com</a></p>
                                 </div>
                             </div>
                             <div class="contact-main__single">
@@ -62,19 +74,19 @@
                                 <div class="content">
                                     <h6>Social</h6>
                                     <div class="social">
-                                        <a href="https://www.facebook.com/" target="_blank"
+                                        <a href="https://www.facebook.com/ZindagiTujheSaalam/" target="_blank"
                                             aria-label="share us on facebook" title="facebook">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </a>
-                                        <a href="https://vimeo.com/" target="_blank" aria-label="share us on vimeo"
+                                        <a href="https://www.instagram.com/zindagitujhesalam/" target="_blank" aria-label="share us on vimeo"
                                             title="vimeo">
-                                            <i class="fa-brands fa-vimeo-v"></i>
+                                            <i class="fa-brands fa-instagram"></i>
                                         </a>
-                                        <a href="https://x.com/" target="_blank" aria-label="share us on twitter"
-                                            title="twitter">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com/" target="_blank"
+                                        <!--<a href="https://x.com/" target="_blank" aria-label="share us on twitter"-->
+                                        <!--    title="twitter">-->
+                                        <!--    <i class="fa-brands fa-twitter"></i>-->
+                                        <!--</a>-->
+                                        <a href="https://www.linkedin.com/company/zindagi-tujhe-salaam" target="_blank"
                                             aria-label="share us on linkedin" title="linkedin">
                                             <i class="fa-brands fa-linkedin-in"></i>
                                         </a>
@@ -82,8 +94,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-main__thumb cta">
-                            <img src="/frontend_assets/images/contact-thumb.png" alt="Image">
+                        <div class="contact-main__thumb cta cta_new">
+                            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&h=800&fit=crop" alt="Image">
                         </div>
                     </div>
                 </div>

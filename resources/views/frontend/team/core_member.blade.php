@@ -235,12 +235,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--primary-green);
+        color: #00715d;
         transition: all 0.3s ease;
     }
 
     .member-card-new:hover .stat-icon {
-        background: var(--primary-green);
+        background:#00715d;
         color: white;
         transform: scale(1.1);
     }
@@ -409,19 +409,23 @@
     
     <div class="container">
         <!-- Member 1 -->
+         @foreach ($info as  $value)
         <div class="member-card-new" data-aos="fade-up" data-aos-duration="600">
             <div class="member-card-inner">
                 <div class="member-image-wrapper">
                     <div class="member-image-container">
-                        <img src="{{asset('frontend_assets/images/members/member1.png')}}" alt="Pooja Srivastav" class="member-photo-new">
+                        <img src="{{asset('assets/uploads/teamcard/'.$value->img)}}" alt="Pooja Srivastav" class="member-photo-new">
                     </div>
                     <div class="member-badge">1</div>
                 </div>
                 <div class="member-content-new">
-                    <h3 class="member-name-new">Pooja Srivastav</h3>
-                    <span class="member-role">Core Team Member</span>
+                    <div class="d-flex justify-content-between">
+                        <h3 class="member-name-new">{{ $value->name }}</h3>
+                    <span class="d-lg-block d-none member-role">Core Team Member</span>
+                    </div>
+                    
                     <p class="member-bio-new">
-                        The situation and transforming it powerfully. Positive & negative both are part of our life and we cannot have one alone, but we can have the ability to handle both with a POWERFUL MINDSET. Spreading this energy to people I meet every day. Life is about embracing challenges and turning them into opportunities for growth and transformation.
+{{ $value->description }}
                     </p>
                     <div class="member-stats">
                         <div class="stat-item">
@@ -440,6 +444,7 @@
                 </div>
             </div>
         </div>
+        @endforeach
 
         <!-- Member 2 -->
         <div class="member-card-new" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
@@ -451,8 +456,11 @@
                     <div class="member-badge">2</div>
                 </div>
                 <div class="member-content-new">
-                    <h3 class="member-name-new">Sanjeev Mishra</h3>
-                    <span class="member-role">Core Team Member</span>
+                    
+                    <div class="d-flex justify-content-between">
+                        <h3 class="member-name-new">Sanjeev Mishra</h3>
+                    <span class="d-lg-block d-none member-role">Core Team Member</span>
+                    </div>
                     <p class="member-bio-new">
                         Lots of privileged society who got ALFA, when times came to defend their society these ALFA never stood against wrong. This system runs for thousands of years and the habit of taking responsibility puts human civilization on top of the food chain. True leadership means standing up for what's right, even when it's difficult, and taking responsibility for the betterment of society.
                     </p>
@@ -484,8 +492,11 @@
                     <div class="member-badge">3</div>
                 </div>
                 <div class="member-content-new">
-                    <h3 class="member-name-new">Santhosh P.P</h3>
-                    <span class="member-role">Core Team Member</span>
+                    <div class="d-flex justify-content-between">
+                         <h3 class="member-name-new">Santhosh P.P</h3>
+                    <span class="d-lg-block d-none member-role">Core Team Member</span>
+                    </div>
+                   
                     <p class="member-bio-new">
                         Togetherness is a beautiful word and emotionally connected is the best form of mind. It's not only children but adults who need emotional attachment. They need attention, care like siblings. Let us share love and beauty of life equally. Building strong emotional connections and fostering a sense of belonging creates a more compassionate and understanding world.
                     </p>
@@ -517,8 +528,11 @@
                     <div class="member-badge">4</div>
                 </div>
                 <div class="member-content-new">
-                    <h3 class="member-name-new">Dr. Priyam Sameer Kamdar</h3>
-                    <span class="member-role">Core Team Member</span>
+                    <div class="d-flex justify-content-between">
+                         <h3 class="member-name-new">Dr. Priyam Sameer Kamdar</h3>
+                    <span class="d-lg-block d-none member-role">Core Team Member</span>
+                    </div>
+                   
                     <p class="member-bio-new">
                         आदत रता है तैयारी, बदलो अपनी रोप... Change is inevitable, one who adapts it positively, wins the world. Having a positive attitude, thoughtfulness and mindset can really make a difference in life. Embracing change with optimism and maintaining a growth mindset enables us to overcome any challenge and achieve extraordinary success.
                     </p>
@@ -550,8 +564,11 @@
                     <div class="member-badge">5</div>
                 </div>
                 <div class="member-content-new">
-                    <h3 class="member-name-new">Chandra Shekhar Shukla</h3>
-                    <span class="member-role">Core Team Member</span>
+                    <div class="d-flex justify-content-between">
+                        <h3 class="member-name-new">Chandra Shekhar Shukla</h3>
+                    <span class="d-lg-block d-none member-role">Core Team Member</span>
+                    </div>
+                    
                     <p class="member-bio-new">
                         कताल करता जीवे कर सहारा बनता है, बमता है खुशी या और सीमा है। जीवन पर काम हर किसी को करम, जिंदगी पूर्ण प्रवास। Life is about creating meaningful connections and spreading joy to everyone we meet. Every interaction is an opportunity to make someone's day better and contribute to a more harmonious society.
                     </p>
@@ -583,8 +600,11 @@
                     <div class="member-badge">6</div>
                 </div>
                 <div class="member-content-new">
-                    <h3 class="member-name-new">Seema Yadav</h3>
-                    <span class="member-role">Core Team Member</span>
+                    <div class="d-flex justify-content-between">
+<h3 class="member-name-new">Seema Yadav</h3>
+                    <span class="d-lg-block d-none member-role">Core Team Member</span>
+                    </div>
+                    
                     <p class="member-bio-new">
                         सब के दिलदार जब आती है, कार को की उदारता है। जिंदगी को जैसे प्रभावै है, छोटे में तकदीर बनते है। When we approach life with kindness and generosity, we create beautiful relationships and meaningful impacts. Small acts of kindness can transform lives and build bridges of understanding and compassion in our communities.
                     </p>

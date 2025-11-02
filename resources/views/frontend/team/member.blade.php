@@ -394,18 +394,20 @@
     <div class="container">
         <div class="row">
             <!-- Member 1 -->
+             @foreach ($info as $value )
+            
             <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600">
                 <div class="member-card">
                     <div class="member-image-wrapper">
-                        <img src="{{asset('frontend_assets/images/members/member1.png')}}" alt="Pooja Srivastav" class="member-photo">
+                        <img src="{{asset('assets/uploads/teamcard/'.$value->img)}}" alt="Pooja Srivastav" class="member-photo">
                         <div class="member-overlay"></div>
                         <div class="member-number">01</div>
                     </div>
                     <div class="member-content">
-                        <h3 class="member-name">Pooja Srivastav</h3>
+                        <h3 class="member-name">{{ $value->name }}</h3>
                         <div class="member-divider"></div>
                         <p class="member-bio">
-                            The situation and transforming it powerfully. Positive & negative both are part of our life and we cannot have one alone, but we can have the ability to handle both with a POWERFUL MINDSET. Spreading this energy to people I meet every day.
+{{ $value->description }}
                         </p>
                     </div>
                     <div class="member-footer">
@@ -419,7 +421,7 @@
                     </div>
                 </div>
             </div>
-
+            @endforeach
             <!-- Member 2 -->
             <div class="col-lg-4 col-md-6 p-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="member-card">

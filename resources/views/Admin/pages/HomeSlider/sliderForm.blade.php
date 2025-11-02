@@ -46,7 +46,7 @@
 
                         <div class="md:col-span-6 col-span-12">
                             <label class="form-label">Button text</label>
-                            <input type="text" name="btn_text" class="form-control" placeholder="Enter Button text" required>
+                            <input type="text" name="btn_text" class="form-control" placeholder="Enter Button text" >
                         </div>
                         
                         <div class="md:col-span-6 col-span-12">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="md:col-span-6 col-span-12">
                             <label class="form-label">Button Url</label>
-<input type="text" name="btn_url" class="form-control" placeholder="Enter Button Url" required>
+<input type="text" name="btn_url" class="form-control" placeholder="Enter Button Url" >
                         </div>
                         
 
